@@ -20,8 +20,8 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
-    <ProjectGuid>{EE12C014-77FB-4A77-A3E8-55BFC4B9AAA4}</ProjectGuid>
-    <RootNamespace>My02第一个C程序C书写Helloworld</RootNamespace>
+    <ProjectGuid>{A4BCCD5F-8865-4951-B8A8-DC735085F328}</ProjectGuid>
+    <RootNamespace>My01C书写HelloWorld</RootNamespace>
     <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="01_C++书写HelloWorld.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
