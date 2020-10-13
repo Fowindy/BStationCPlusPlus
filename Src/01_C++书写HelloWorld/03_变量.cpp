@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main()
+int main3()
 {
 	//变量创建的语法:数据类型变量名=变量初始值
 	int a = 10;
