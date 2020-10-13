@@ -133,6 +133,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="07_数据类型_整型.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
