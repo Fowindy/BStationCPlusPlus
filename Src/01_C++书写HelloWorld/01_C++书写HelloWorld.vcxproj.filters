@@ -27,5 +27,8 @@
     <ClCompile Include="04_常量.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="05_关键字.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
