@@ -21,5 +21,8 @@
     <ClCompile Include="02_注释.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="03_变量.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-int main()
+int main1()
 {
 	std::cout<<"hello C++"<<std::endl;
 	system("pause");

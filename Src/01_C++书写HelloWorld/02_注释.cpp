@@ -7,7 +7,7 @@ using namespace std;
 	每个程序都必须有这么一个函数
 	有且仅有一个
 */
-int main1()
+int main2()
 {
 	//7行代码的含义就是在屏幕输出Hello World
 	std::cout << "hello World" << std::endl;
