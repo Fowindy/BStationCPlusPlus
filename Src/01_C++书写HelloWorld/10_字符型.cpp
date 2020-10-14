@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main()
+int main10()
 {
 	//C和c++中字符型变量只占用1个字节
 	//字符型变量并不是把实符本身放到内存中存储, 而是将对应的ASCCI编码放入到存储单元
