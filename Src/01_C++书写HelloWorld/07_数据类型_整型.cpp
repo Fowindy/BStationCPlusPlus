@@ -2,7 +2,7 @@
 using namespace std;
 //数据类型存在意义:
 //给变量分配合适的内存空间
-int main()
+int main7()
 {
 	// 整型
 	//1、短整型(-32768~32767)

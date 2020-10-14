@@ -137,6 +137,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="08_数据类型_sizeof关键字.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

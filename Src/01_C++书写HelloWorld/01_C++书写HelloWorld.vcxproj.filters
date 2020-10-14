@@ -36,5 +36,8 @@
     <ClCompile Include="07_数据类型_整型.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="08_数据类型_sizeof关键字.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
