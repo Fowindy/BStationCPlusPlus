@@ -54,5 +54,8 @@
     <ClCompile Include="13_布尔数据类型.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="14_数据类型-数据的输入.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

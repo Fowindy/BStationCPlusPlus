@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main13()
 {
 	//布尔数据类型:
 	//作用:布尔数据类型代表真或假的值

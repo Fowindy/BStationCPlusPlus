@@ -161,6 +161,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="14_数据类型-数据的输入.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
