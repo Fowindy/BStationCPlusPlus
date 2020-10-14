@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main()
+int main11()
 {
 	//转义字符:用于表示一些不能显示出来的ASCI字符
 	//换行符	\n
