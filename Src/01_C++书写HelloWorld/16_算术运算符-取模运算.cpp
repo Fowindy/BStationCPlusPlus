@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main16()
 {
 	//取模运算的本质就是求余数
 	int a1 = 10;
