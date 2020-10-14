@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>//用C++风格字符串时候，要包含这个头文件
 using namespace std;
-int main()
+int main12()
 {
 	//字符串型:用于表示一串字符
 	//1.C风格字符串：
