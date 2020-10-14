@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 //利用sizeof关键字可以统计数据类型所占内存的大小
-int main()
+int main8()
 {
 	//整型: short(2)	 int(4) long(4) long long(8)
 	short num1 = 10;
