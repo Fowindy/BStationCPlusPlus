@@ -42,5 +42,8 @@
     <ClCompile Include="09_浮点型.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="10_字符型.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

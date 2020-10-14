@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int main()
+int main9()
 {
 	//1.单精度 float
 	//2.双精度 double
