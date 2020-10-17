@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main27()
 {
 	//三只小猪称体重，按重到轻排序
 #pragma region 定义三只小猪的体重变量
