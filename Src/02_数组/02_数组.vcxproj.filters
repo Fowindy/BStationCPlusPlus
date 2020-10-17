@@ -36,5 +36,8 @@
     <ClCompile Include="47_数组-二维数组定义方式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="48_数组-二维数组_数组名的作用.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
