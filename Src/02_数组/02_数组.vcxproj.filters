@@ -27,5 +27,8 @@
     <ClCompile Include="44_数组-一维数组案例_数组元素逆置_方案1.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="45_数组-一维数组案例_数组元素逆置_方案2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
