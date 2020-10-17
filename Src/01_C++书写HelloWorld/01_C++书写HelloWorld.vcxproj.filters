@@ -105,5 +105,8 @@
     <ClCompile Include="30_程序流程控制-循环结构_while语句.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="31_程序流程控制-循环结构案例_猜数字.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
