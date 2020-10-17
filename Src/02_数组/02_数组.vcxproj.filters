@@ -39,5 +39,8 @@
     <ClCompile Include="48_数组-二维数组_数组名的作用.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="49_数组-二维数组案例_考试成绩统计.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
