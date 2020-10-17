@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main26()
 {
 	//程序流程控制-选择结构_多条件的if语句
 	//输入一个考试分数, 如果大于600分, 视为考上一本大学, 在屏幕输出

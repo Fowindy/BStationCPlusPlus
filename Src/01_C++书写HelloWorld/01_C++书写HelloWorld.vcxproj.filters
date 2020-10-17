@@ -93,5 +93,8 @@
     <ClCompile Include="26_程序流程控制-选择结构_嵌套if语句.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="27_程序流程控制-选择结构案例_三只小猪称体重.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

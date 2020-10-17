@@ -213,6 +213,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="27_程序流程控制-选择结构案例_三只小猪称体重.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
