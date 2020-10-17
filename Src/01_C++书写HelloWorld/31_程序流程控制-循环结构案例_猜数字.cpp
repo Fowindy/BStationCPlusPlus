@@ -3,7 +3,7 @@
 using namespace std;
 //time系统时间头文件包含
 #include <ctime>
-int main()
+int main31()
 {
 	//添加随机数种子作用利用当前系统时间生成随机数,防止每次随机数都一样
 	srand((unsigned int)time(NULL));
