@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main22()
 {
 	// Âß¼­ÔËËã·û_»ò(||)
 	int a = 10;
