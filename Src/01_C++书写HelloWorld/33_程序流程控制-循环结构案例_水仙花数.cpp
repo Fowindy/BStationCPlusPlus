@@ -2,7 +2,7 @@
 #include <string>
 #include <math.h>
 using namespace std;
-int main()
+int main33()
 {
 	//案例描述:水仙花数是指一个3位数, 它的每个位上的数字的3次幕之和等于它本身
 	//例a : 1 ^ 3 + 5 ^ 3 + 3 ^ 3 = 153
