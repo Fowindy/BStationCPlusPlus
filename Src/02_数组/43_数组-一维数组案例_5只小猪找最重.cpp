@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main43()
 {
 	//1.创建5只小猪的体重数组
 	int arr[5] = { 300,350,200,400,250 };
