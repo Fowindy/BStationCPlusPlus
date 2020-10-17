@@ -111,5 +111,8 @@
     <ClCompile Include="32_程序流程控制-循环结构_doWhile语句.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="33_程序流程控制-循环结构案例_水仙花数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

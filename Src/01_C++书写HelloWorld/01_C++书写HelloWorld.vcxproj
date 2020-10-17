@@ -237,6 +237,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="33_程序流程控制-循环结构案例_水仙花数.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
