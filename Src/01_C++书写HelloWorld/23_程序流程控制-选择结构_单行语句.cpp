@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main23()
 {
 	//选择结构单行if语句
 	//用户输入分数,如果分数大于600,视为考上一本大学,在屏幕上输出
