@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main42()
 {
 	//数组名的用途
 	//1, 可以统计整个数组在内存中的长度

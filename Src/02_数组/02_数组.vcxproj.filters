@@ -21,5 +21,8 @@
     <ClCompile Include="42_数组-一维数组_数组名的用途.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="43_数组-一维数组案例_5只小猪找最重.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

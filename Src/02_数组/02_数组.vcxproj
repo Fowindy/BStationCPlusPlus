@@ -123,6 +123,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="43_数组-一维数组案例_5只小猪找最重.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
