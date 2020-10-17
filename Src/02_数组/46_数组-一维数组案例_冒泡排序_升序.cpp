@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main46()
 {
 	//利用冒泡排序实现升序序列
 	int arr[] = { 4, 2, 8, 0, 5, 7, 1, 3, 9 };
