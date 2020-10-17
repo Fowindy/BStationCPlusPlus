@@ -90,5 +90,8 @@
     <ClCompile Include="25_程序流程控制-选择结构_多条件的if语句.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="26_程序流程控制-选择结构_嵌套if语句.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
