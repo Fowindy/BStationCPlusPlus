@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main29()
 {
 	//switch语句
 	//给电影进行打分

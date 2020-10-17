@@ -102,5 +102,8 @@
     <ClCompile Include="29_程序流程控制-选择结构_switch语句.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="30_程序流程控制-循环结构_while语句.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

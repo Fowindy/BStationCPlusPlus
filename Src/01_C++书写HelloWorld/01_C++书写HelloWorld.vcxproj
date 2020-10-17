@@ -225,6 +225,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="30_程序流程控制-循环结构_while语句.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
