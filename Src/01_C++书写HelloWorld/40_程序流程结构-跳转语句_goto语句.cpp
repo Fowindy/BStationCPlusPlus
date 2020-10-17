@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main40()
+int main()
 {
 	std::cout << "1.xxxxxxx" << std::endl;
 	std::cout << "2.xxxxxxx" << std::endl;
