@@ -117,5 +117,8 @@
     <ClCompile Include="34_程序流程控制-循环结构_for循环.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="35_程序流程控制-循环结构案例_敲桌子.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

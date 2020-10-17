@@ -245,6 +245,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="35_程序流程控制-循环结构案例_敲桌子.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
