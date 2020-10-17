@@ -261,6 +261,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="39_程序流程结构-跳转语句_continue语句.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

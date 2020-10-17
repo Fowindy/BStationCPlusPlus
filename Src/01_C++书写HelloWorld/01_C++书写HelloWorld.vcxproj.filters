@@ -129,5 +129,8 @@
     <ClCompile Include="38_程序流程结构-跳转语句_break语句.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="39_程序流程结构-跳转语句_continue语句.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
