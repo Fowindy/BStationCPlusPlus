@@ -135,6 +135,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="46_数组-一维数组案例_冒泡排序_升序.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main45()
 {
 	//实现数组元素逆置
 	//1.创建数组
