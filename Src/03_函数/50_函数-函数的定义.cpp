@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main50()
 {
 	//函数的定义
 	//语法:
@@ -11,7 +11,7 @@ int main()
 }
 //注意!!!:函数不能定义在函数内部(也就是不能在main函数中定义函数)
 //加法函数,实现两个整数想加,并且将想加的结果进行返回
-int add(int num1, int num2)
+int add1(int num1, int num2)
 {
 	int sum = num1 + num2;
 	return sum;
