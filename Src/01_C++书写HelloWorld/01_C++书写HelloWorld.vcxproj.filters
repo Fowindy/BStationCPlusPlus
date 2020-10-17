@@ -123,5 +123,8 @@
     <ClCompile Include="36_程序流程控制-嵌套循环.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="37_程序流程控制-嵌套循环案例_乘法口诀表.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

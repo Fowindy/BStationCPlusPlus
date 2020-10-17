@@ -253,6 +253,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="37_程序流程控制-嵌套循环案例_乘法口诀表.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
