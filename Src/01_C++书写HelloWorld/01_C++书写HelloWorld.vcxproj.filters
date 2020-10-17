@@ -99,5 +99,8 @@
     <ClCompile Include="28_程序流程控制-选择结构_三目运算符.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="29_程序流程控制-选择结构_switch语句.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

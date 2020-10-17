@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main28()
 {
 	//三目运算符求三者最大值
 	double num1 = 0;
