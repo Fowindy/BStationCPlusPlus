@@ -123,6 +123,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="67_结构体-结构体嵌套结构体.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="66_结构体-结构体指针.cpp">
       <SubType>
       </SubType>
