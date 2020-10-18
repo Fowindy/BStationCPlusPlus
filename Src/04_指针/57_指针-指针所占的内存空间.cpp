@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main57()
 {
 	//指针所占的内存空间
 	int a = 10;
