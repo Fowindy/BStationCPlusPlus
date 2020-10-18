@@ -18,5 +18,8 @@
     <ClCompile Include="64_结构体-结构体的定义和使用.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="65_结构体-结构体数组.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
