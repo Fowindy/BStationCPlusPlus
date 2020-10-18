@@ -27,5 +27,8 @@
     <ClCompile Include="67_结构体-结构体嵌套结构体.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="68_结构体-结构体做函数的参数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
