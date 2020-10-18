@@ -27,5 +27,8 @@
     <ClCompile Include="53_函数-函数的常见样式.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="54_函数-函数的声明.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
