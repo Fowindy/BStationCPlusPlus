@@ -36,5 +36,13 @@
     <ClCompile Include="62_指针-指针和函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="63_指针-指针配合数组函数案例.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="63_指针-指针配合数组函数案例.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

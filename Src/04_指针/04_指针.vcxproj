@@ -143,6 +143,13 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="63_指针-指针配合数组函数案例.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="63_指针-指针配合数组函数案例.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
