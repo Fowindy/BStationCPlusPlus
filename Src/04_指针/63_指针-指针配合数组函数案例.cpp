@@ -26,7 +26,7 @@ void printArray(int* arr, int length)
 		std::cout<<"升序排序后数组中的第"<<i+1<<"个元素为:"<<arr[i]<<std::endl;
 	}
 }
-int main63()
+int main()
 {
 	//案例描述:封装一个函数,利用冒泡排序,实现对整型数组的升序排序
 	//例如数组: int arr[10] = { 4, 3, 6, 9, 1, 2, 10, 8, 7, 5 };
