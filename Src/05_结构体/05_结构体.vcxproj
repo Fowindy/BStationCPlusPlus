@@ -135,6 +135,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="69_结构体-结构体中const使用场景.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
