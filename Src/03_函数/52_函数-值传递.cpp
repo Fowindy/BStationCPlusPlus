@@ -4,7 +4,7 @@ using namespace std;
 //值传递
 //定义函数,实现两个数字交换函数
 //如果函数不需要返回值,声明的时候返回值类型为void
-void swap(int num1, int num2)
+void swap2(int num1, int num2)
 {
 	std::cout << "交换前:num1 = " << num1 << ",num2 = " << num2 << std::endl;
 	int temp = num1;
