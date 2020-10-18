@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int main()
+int main58()
 {
 	//空指针
 	//1.空指针是指针变量指向内存中地址编号为0的空间;
