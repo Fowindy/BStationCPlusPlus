@@ -18,5 +18,8 @@
     <ClCompile Include="56_指针-指针的定义和使用.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="57_指针-指针所占的内存空间.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
