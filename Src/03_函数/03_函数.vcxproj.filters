@@ -21,5 +21,8 @@
     <ClCompile Include="51_函数-函数的调用.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="52_函数-值传递.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
