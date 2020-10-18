@@ -13,7 +13,7 @@ void swap(int num1, int num2)
 	std::cout << "交换后:num1 = " << num1 << ",num2 = " << num2 << std::endl;
 	//return; 返回值为void的时候,可以不写return
 }
-int main()
+int main52()
 {
 	int a = 10;
 	int b = 20;
