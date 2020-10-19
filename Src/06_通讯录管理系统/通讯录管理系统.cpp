@@ -2,6 +2,8 @@
 #include <string>
 #define MAX 1000
 using namespace std;
+string name;//名字
+int index;//序标
 //设计联系人的结构体
 struct Person
 {
@@ -154,12 +156,11 @@ void delPersonByName(AddressBooks* pAbs)
 {
 	//提示用户输入删除目标联系人的名字
 	cout << "请输入要删除的联系人的名字:" << endl;
-	string name;
 	//检测联系人是否存在
 	cin >> name;
-	if (IsExist(name, pAbs) != -1)
+	index = IsExist(name, pAbs);
+	if (index != -1)
 	{
-		int index = IsExist(name, pAbs);
 		//删除联系人
 		pAbs->personArray[index] = pAbs->personArray[index + 1];
 		pAbs->m_Size--;
@@ -172,7 +173,29 @@ void delPersonByName(AddressBooks* pAbs)
 	system("pause");
 	system("cls");
 }
-
+//4.删除联系人函数
+void searchPerson(AddressBooks* pAbs)
+{
+	//提示用户输入要查询的名字
+	cout<<"请输入要查询用户的名字:"<<endl;
+	cin>>name;
+	index = IsExist(name, pAbs);
+	if (index!=-1)
+	{
+		cout << "姓名:" << pAbs->personArray[index].m_Name << "\t"
+			<< "性别:" << (pAbs->personArray[index].m_Sex == 1 ? "男" : "女") << "\t\t"
+			<< "年龄:" << pAbs->personArray[index].m_Age << "\t\t"
+			<< "电话:" << pAbs->personArray[index].m_Phone << "\t"
+			<< "住址:" << pAbs->personArray[index].m_Address << "\t" << endl;
+		cout<<"查询完成!"<<endl;
+	} 
+	else
+	{
+		cout<<"查无此人"<<endl;
+	}
+	system("pause");
+	system("cls");
+}
 int main()
 {
 	//创建通讯录结构体的变量
@@ -201,6 +224,7 @@ int main()
 			delPersonByName(&abs);
 			break;
 		case 4://4、查找联系人
+			searchPerson(&abs);
 			break;
 		case 5://5、修改联系人
 			break;
