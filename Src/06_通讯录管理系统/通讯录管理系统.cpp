@@ -240,6 +240,39 @@ void modifyPerson(AddressBooks* pAbs)
 	system("pause");
 	system("cls");
 }
+//6.清空联系人
+void cleanPerson(AddressBooks* pAbs)
+{
+	//再次提示客户是否清空通讯录
+	cout<<"确定要清空通讯录吗?(1---Yes,2---NO):"<<endl;
+	int result;
+	while (true)
+	{
+		cin >> result;
+		if (result == 1 || result == 2)
+		{
+			if (result == 1)
+			{
+				//清空
+				pAbs->m_Size = 0;
+				cout<<"清空通讯录完成!"<<endl;
+				break;
+			}
+			else
+			{
+				cout<<"取消清空通讯录!"<<endl;
+				break;
+			}
+		}
+		else
+		{
+			//提示用户输入错误,请重新输入
+			cout << "输入错误!请重新输入!" << endl;
+		}
+	}
+	system("pause");
+	system("cls");
+}
 int main()
 {
 	//创建通讯录结构体的变量
@@ -274,6 +307,7 @@ int main()
 			modifyPerson(&abs);
 			break;
 		case 6://6、清空联系人
+			cleanPerson(&abs);
 			break;
 		case 0://0、退出通讯录
 			cout << "退出系统,欢迎下次使用!" << endl;
