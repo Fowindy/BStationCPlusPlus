@@ -15,6 +15,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "05_结构体", "Src\05_结�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "06_通讯录管理系统", "Src\06_通讯录管理系统\06_通讯录管理系统.vcxproj", "{952FD149-C575-481E-BCEC-C9694EA57547}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "07_程序的内存模型", "Src\07_程序的内存模型\07_程序的内存模型.vcxproj", "{78590B73-66CD-46B1-B568-368AC6B5A3FD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -71,6 +73,14 @@ Global
 		{952FD149-C575-481E-BCEC-C9694EA57547}.Release|x64.Build.0 = Release|x64
 		{952FD149-C575-481E-BCEC-C9694EA57547}.Release|x86.ActiveCfg = Release|Win32
 		{952FD149-C575-481E-BCEC-C9694EA57547}.Release|x86.Build.0 = Release|Win32
+		{78590B73-66CD-46B1-B568-368AC6B5A3FD}.Debug|x64.ActiveCfg = Debug|x64
+		{78590B73-66CD-46B1-B568-368AC6B5A3FD}.Debug|x64.Build.0 = Debug|x64
+		{78590B73-66CD-46B1-B568-368AC6B5A3FD}.Debug|x86.ActiveCfg = Debug|Win32
+		{78590B73-66CD-46B1-B568-368AC6B5A3FD}.Debug|x86.Build.0 = Debug|Win32
+		{78590B73-66CD-46B1-B568-368AC6B5A3FD}.Release|x64.ActiveCfg = Release|x64
+		{78590B73-66CD-46B1-B568-368AC6B5A3FD}.Release|x64.Build.0 = Release|x64
+		{78590B73-66CD-46B1-B568-368AC6B5A3FD}.Release|x86.ActiveCfg = Release|Win32
+		{78590B73-66CD-46B1-B568-368AC6B5A3FD}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
