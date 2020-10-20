@@ -7,7 +7,7 @@ void showValue(const int& val)
 	//val = 1000;//加入const后为只读,不可修改
 	cout<<"val = "<<val<<endl;
 }
-int main10()
+int main()
 {
 	//常量引用
 	//使用场景:用来修饰形参,防止误操作
