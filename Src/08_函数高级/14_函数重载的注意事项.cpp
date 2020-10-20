@@ -20,7 +20,7 @@ void fun2(int a)
 {
 	cout << "func(int a)的调用" << endl;
 }
-int main14()
+int main()
 {
 	int a = 10;
 	func(a);//调用第一个,因为a是变量,可读可写
