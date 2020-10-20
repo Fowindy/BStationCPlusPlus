@@ -27,5 +27,8 @@
     <ClCompile Include="04_内存四区-new操作符.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="05_C++中的引用-引用的基本语法.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
