@@ -33,5 +33,8 @@
     <ClCompile Include="06_C++中的引用-引用的注意事项.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="07_C++中的引用-引用做函数参数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

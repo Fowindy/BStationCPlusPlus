@@ -136,6 +136,10 @@
       </SubType>
     </ClCompile>
     <ClCompile Include="06_C++中的引用-引用的注意事项.cpp" />
+    <ClCompile Include="07_C++中的引用-引用做函数参数.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
