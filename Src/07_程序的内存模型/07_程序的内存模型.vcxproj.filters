@@ -21,5 +21,8 @@
     <ClCompile Include="02_内存四区-栈区.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="03_内存四区-堆区.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

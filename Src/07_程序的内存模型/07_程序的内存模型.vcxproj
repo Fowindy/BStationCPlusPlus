@@ -119,6 +119,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="03_内存四区-堆区.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="02_内存四区-栈区.cpp">
       <SubType>
       </SubType>
