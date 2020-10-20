@@ -195,6 +195,7 @@ void searchPerson(AddressBooks* pAbs)
 	system("pause");
 	system("cls");
 }
+//5.修改联系人
 void modifyPerson(AddressBooks* pAbs)
 {
 	//提示用户输入要修改人的名字
