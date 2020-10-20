@@ -30,5 +30,8 @@
     <ClCompile Include="05_C++中的引用-引用的基本语法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="06_C++中的引用-引用的注意事项.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
