@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
 using namespace std;
-int* func()
+int* func01()
 {
 	//利用new关键字,可以将数据开辟到堆区
 	//指针本质也是一个局部变量,放在栈上,
@@ -11,7 +11,7 @@ int* func()
 int main03()
 {
 	//在堆区开辟数据
-	int *p = func();
+	int *p = func01();
 	cout << *p << endl;//10
 	cout << *p << endl;//10
 	system("pause");
