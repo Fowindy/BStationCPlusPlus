@@ -21,5 +21,8 @@
     <ClCompile Include="35_类做友元.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="36_成员函数做友元.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -48,7 +48,7 @@ void test5()
 	GoodGay gg;
 	gg.visit();
 }
-int main()
+int main35()
 {
 	test5();
 	system("pause");
