@@ -21,5 +21,8 @@
     <ClCompile Include="22_构造函数和析构函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="24_拷贝构造函数的调用时机.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
