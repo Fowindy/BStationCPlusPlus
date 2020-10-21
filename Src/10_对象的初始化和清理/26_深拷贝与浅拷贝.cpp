@@ -29,6 +29,15 @@ public:
 		}
 		cout << "Person6的析构函数的调用" << endl;
 	}
+	//自己实现拷贝构造函数,来解决浅拷贝带来的问题
+	Person6(const Person6 &p)
+	{
+		cout<<"Person6拷贝构造函数的调用"<<endl;
+		m_Age = p.m_Age;
+		//m_Height = p.m_Height;//浅拷贝,编译器默认实现就是这行代码
+		//深拷贝操作:首先通过解引用出的数据开辟自己的堆区内存
+		m_Height = new int(*p.m_Height);
+	}
 	int m_Age;
 	int *m_Height;//创建指向身高的指针---需要把身高的数据开辟到堆区
 };
