@@ -33,7 +33,7 @@ void test11()
 	p2.Person1AddAge(p1).Person1AddAge(p1).Person1AddAge(p1);
 	cout<<"p2µÄÄêÁäÎª:"<<p2.age<<endl;//40
 }
-int main()
+int main31()
 {
 	test1();//18
 	test11();//20
