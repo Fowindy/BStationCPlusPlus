@@ -23,7 +23,10 @@ public:
 void test6()
 {
 	Person6 p1(18);
-	cout<<"p1的年龄为:"<<p1.m_Age<<endl;
+	cout<<"p1的年龄为:"<<p1.m_Age<<endl;//18
+	//2.未定义拷贝构造函数,编译器会自动添加拷贝构造，并且做浅拷贝操作
+	Person6 p2(p1);
+	cout << "p2的年龄为:" << p2.m_Age << endl;//18
 }
 int main() 
 {
