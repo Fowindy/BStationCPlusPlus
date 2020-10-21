@@ -15,16 +15,16 @@ public:
 	//{
 	//	cout<<"Person5的默认构造函数的调用"<<endl;
 	//}
-	Person5(int age)
-	{
-		cout << "Person5的有参构造函数的调用" << endl;
-		m_Age = age;
-	}
-	//Person5(const Person5& p)
+	//Person5(int age)
 	//{
-	//	cout << "Person5的拷贝构造函数的调用" << endl;
-	//	m_Age = p.m_Age;
+	//	cout << "Person5的有参构造函数的调用" << endl;
+	//	m_Age = age;
 	//}
+	Person5(const Person5& p)
+	{
+		cout << "Person5的拷贝构造函数的调用" << endl;
+		m_Age = p.m_Age;
+	}
 	~Person5()
 	{
 		cout<<"Person5的析构函数的调用"<<endl;
@@ -43,8 +43,13 @@ void test07()
 {
 	//3.如果用户提供有参构造，编译器不会提供默认构造，会提供拷贝构造
 	//Person5 p1; //此时如果用户自己没有提供默认构造，会出错
-	Person5 p2(10); //用户提供的有参
-	Person5 p3(p2); //此时如果用户没有提供拷贝构造，编译器会提供
+	//Person5 p2(10); //用户提供的有参
+	//Person5 p3(p2); //此时如果用户没有提供拷贝构造，编译器会提供
+
+	//4.如果用户提供拷贝构造，编译器不会提供其他构造函数
+	//Person5 p4; //此时如果用户自己没有提供默认构造，会出错
+	//Person5 p5(10); //此时如果用户自己没有提供有参，会出错
+	//Person5 p6(p5); //用户自己提供拷贝构造,会出错
 }
 int main()
 {
