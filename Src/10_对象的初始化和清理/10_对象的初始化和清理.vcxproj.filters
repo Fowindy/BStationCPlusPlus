@@ -36,5 +36,8 @@
     <ClCompile Include="28_类对象作为类成员.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="29_静态成员函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

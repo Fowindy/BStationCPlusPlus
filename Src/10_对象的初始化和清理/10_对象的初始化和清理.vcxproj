@@ -140,6 +140,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="29_静态成员函数.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

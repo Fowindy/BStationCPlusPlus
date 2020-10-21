@@ -44,7 +44,7 @@ void test8()
 	cout << p.m_Name << "拿着:" << p.m_Phone.m_PhoneBrand << endl;
 }
 //1.当其他类对象作为本类成员,构造时候先构造类对象，在构造自身，析构的顺序与构造相反
-int main()
+int main28()
 {
 	test8();
 	system("pause");
