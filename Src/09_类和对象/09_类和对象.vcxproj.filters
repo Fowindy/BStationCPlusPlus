@@ -24,5 +24,8 @@
     <ClCompile Include="17_封装的权限控制.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="18_C++中class和struct的区别.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
