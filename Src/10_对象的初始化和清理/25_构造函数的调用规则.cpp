@@ -7,13 +7,14 @@ using namespace std;
 //析构函数(空实现)
 //拷贝构造(值拷贝)
 
+//
 class Person5
 {
 public:
-	Person5()
-	{
-		cout<<"Person5的默认构造函数的调用"<<endl;
-	}
+	//Person5()
+	//{
+	//	cout<<"Person5的默认构造函数的调用"<<endl;
+	//}
 	Person5(int age)
 	{
 		cout << "Person5的有参构造函数的调用" << endl;
@@ -30,17 +31,24 @@ public:
 	}
 	int m_Age;
 };
-void test06()
+//void test06()
+//{
+//	Person5 p;
+//	p.m_Age = 18;
+//	//2.如果不写拷贝构造，编译器会自动添加拷贝构造，并且做浅拷贝操作
+//	Person5 p2(p);
+//	cout<<"p2的年龄为："<<p2.m_Age<<endl;
+//}
+void test07()
 {
-	Person5 p;
-	p.m_Age = 18;
-	//2.如果不写拷贝构造，编译器会自动添加拷贝构造，并且做浅拷贝操作
-	Person5 p2(p);
-	cout<<"p2的年龄为："<<p2.m_Age<<endl;
+	//3.如果用户提供有参构造，编译器不会提供默认构造，会提供拷贝构造
+	//Person5 p1; //此时如果用户自己没有提供默认构造，会出错
+	Person5 p2(10); //用户提供的有参
+	Person5 p3(p2); //此时如果用户没有提供拷贝构造，编译器会提供
 }
 int main()
 {
-	test06();
+	test07();
 	system("pause");
 	return 0;
 }
