@@ -51,7 +51,7 @@ void test07()
 	//Person5 p5(10); //此时如果用户自己没有提供有参，会出错
 	//Person5 p6(p5); //用户自己提供拷贝构造,会出错
 }
-int main()
+int main25()
 {
 	test07();
 	system("pause");

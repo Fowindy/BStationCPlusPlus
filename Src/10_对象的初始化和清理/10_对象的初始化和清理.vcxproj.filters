@@ -27,5 +27,8 @@
     <ClCompile Include="25_构造函数的调用规则.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="26_深拷贝与浅拷贝.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
