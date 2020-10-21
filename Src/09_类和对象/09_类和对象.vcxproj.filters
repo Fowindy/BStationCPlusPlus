@@ -27,5 +27,8 @@
     <ClCompile Include="18_C++中class和struct的区别.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="19_成员属性私有化的优点.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

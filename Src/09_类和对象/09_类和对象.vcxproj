@@ -131,6 +131,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="19_成员属性私有化的优点.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
