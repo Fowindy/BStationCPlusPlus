@@ -22,7 +22,7 @@ int isInCircle(Point& p,Circle& c)
 		return -1;
 	}
 }
-int main21()
+int main()
 {
 	Circle c1;
 	Point center;
