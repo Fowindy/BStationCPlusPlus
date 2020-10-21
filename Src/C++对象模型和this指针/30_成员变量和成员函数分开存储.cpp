@@ -30,7 +30,7 @@ void test01()
 	Person0 p;
 	cout << "size of p = " << sizeof(p) << endl;//4
 }
-int main()
+int main30()
 {
 	test0();
 	test01();

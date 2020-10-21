@@ -119,6 +119,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="31_this指针的用途.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
