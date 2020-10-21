@@ -24,5 +24,8 @@
     <ClCompile Include="32_空指针访问成员函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="33_const修饰成员函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

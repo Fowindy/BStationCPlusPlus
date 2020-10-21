@@ -23,7 +23,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_类和对象", "Src\09_�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_对象的初始化和清理", "Src\10_对象的初始化和清理\10_对象的初始化和清理.vcxproj", "{029DF6A8-906B-4339-A7FD-069F8A369653}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C++对象模型和this指针", "Src\C++对象模型和this指针\C++对象模型和this指针.vcxproj", "{6B302412-39F8-4490-890D-5A2A544E622F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_C++对象模型和this指针", "Src\11_C++对象模型和this指针\11_C++对象模型和this指针.vcxproj", "{6B302412-39F8-4490-890D-5A2A544E622F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

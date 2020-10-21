@@ -27,7 +27,7 @@ void test2()
 	//p->showClassName();
 	p->showPersonAge();
 }
-int main()
+int main32()
 {
 	test2();
 	system("pause");
