@@ -29,7 +29,7 @@ void test7()
 	cout << "m_B = " << p.m_B << endl;
 	cout << "m_C = " << p.m_C << endl;
 }
-int main()
+int main27()
 {
 	test7();
 	system("pause");

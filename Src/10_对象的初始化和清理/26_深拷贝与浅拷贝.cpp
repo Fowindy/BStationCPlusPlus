@@ -50,7 +50,7 @@ void test6()
 	Person6 p2(p1);//浅拷贝带来堆区内存重复释放的问题
 	cout << "p2的年龄为:" << p2.m_Age << ";p2的身高为:" << *p2.m_Height << endl;//18
 }
-int main27()
+int main26()
 {
 	test6();
 	system("pause");

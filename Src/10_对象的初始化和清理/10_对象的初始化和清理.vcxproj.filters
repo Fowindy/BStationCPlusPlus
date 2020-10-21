@@ -33,5 +33,8 @@
     <ClCompile Include="27_初始化列表.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="28_类对象作为类成员.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
