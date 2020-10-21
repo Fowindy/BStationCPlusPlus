@@ -115,7 +115,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="22_构造函数和析构函数.cpp">
+    <ClCompile Include="22_构造函数和析构函数.cpp" />
+    <ClCompile Include="23_构造函数的分类及调用.cpp">
       <SubType>
       </SubType>
     </ClCompile>

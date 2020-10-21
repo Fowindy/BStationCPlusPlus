@@ -31,7 +31,7 @@ void test01()
 	Person p;//局部变量在栈上,test01执行完毕后,释放这个对象
 }
 
-int main()
+int main22()
 {
 	//test01();//自动调用:Person 构造函数的调用
 	Person p;//main函数未结束前不会调用析构
