@@ -30,5 +30,8 @@
     <ClCompile Include="19_成员属性私有化的优点.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="20_封装设计案例1-立方体类.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
