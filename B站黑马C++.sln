@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "09_类和对象", "Src\09_�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_对象的初始化和清理", "Src\10_对象的初始化和清理\10_对象的初始化和清理.vcxproj", "{029DF6A8-906B-4339-A7FD-069F8A369653}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "C++对象模型和this指针", "Src\C++对象模型和this指针\C++对象模型和this指针.vcxproj", "{6B302412-39F8-4490-890D-5A2A544E622F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -111,6 +113,14 @@ Global
 		{029DF6A8-906B-4339-A7FD-069F8A369653}.Release|x64.Build.0 = Release|x64
 		{029DF6A8-906B-4339-A7FD-069F8A369653}.Release|x86.ActiveCfg = Release|Win32
 		{029DF6A8-906B-4339-A7FD-069F8A369653}.Release|x86.Build.0 = Release|Win32
+		{6B302412-39F8-4490-890D-5A2A544E622F}.Debug|x64.ActiveCfg = Debug|x64
+		{6B302412-39F8-4490-890D-5A2A544E622F}.Debug|x64.Build.0 = Debug|x64
+		{6B302412-39F8-4490-890D-5A2A544E622F}.Debug|x86.ActiveCfg = Debug|Win32
+		{6B302412-39F8-4490-890D-5A2A544E622F}.Debug|x86.Build.0 = Debug|Win32
+		{6B302412-39F8-4490-890D-5A2A544E622F}.Release|x64.ActiveCfg = Release|x64
+		{6B302412-39F8-4490-890D-5A2A544E622F}.Release|x64.Build.0 = Release|x64
+		{6B302412-39F8-4490-890D-5A2A544E622F}.Release|x86.ActiveCfg = Release|Win32
+		{6B302412-39F8-4490-890D-5A2A544E622F}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
