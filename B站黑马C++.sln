@@ -25,6 +25,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "10_对象的初始化和清
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_C++对象模型和this指针", "Src\11_C++对象模型和this指针\11_C++对象模型和this指针.vcxproj", "{6B302412-39F8-4490-890D-5A2A544E622F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_友元", "Src\12_友元\12_友元.vcxproj", "{F41B9148-EC3D-451C-936D-FAB56541905D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -121,6 +123,14 @@ Global
 		{6B302412-39F8-4490-890D-5A2A544E622F}.Release|x64.Build.0 = Release|x64
 		{6B302412-39F8-4490-890D-5A2A544E622F}.Release|x86.ActiveCfg = Release|Win32
 		{6B302412-39F8-4490-890D-5A2A544E622F}.Release|x86.Build.0 = Release|Win32
+		{F41B9148-EC3D-451C-936D-FAB56541905D}.Debug|x64.ActiveCfg = Debug|x64
+		{F41B9148-EC3D-451C-936D-FAB56541905D}.Debug|x64.Build.0 = Debug|x64
+		{F41B9148-EC3D-451C-936D-FAB56541905D}.Debug|x86.ActiveCfg = Debug|Win32
+		{F41B9148-EC3D-451C-936D-FAB56541905D}.Debug|x86.Build.0 = Debug|Win32
+		{F41B9148-EC3D-451C-936D-FAB56541905D}.Release|x64.ActiveCfg = Release|x64
+		{F41B9148-EC3D-451C-936D-FAB56541905D}.Release|x64.Build.0 = Release|x64
+		{F41B9148-EC3D-451C-936D-FAB56541905D}.Release|x86.ActiveCfg = Release|Win32
+		{F41B9148-EC3D-451C-936D-FAB56541905D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
