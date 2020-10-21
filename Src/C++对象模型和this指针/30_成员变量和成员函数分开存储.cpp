@@ -5,7 +5,18 @@ using namespace std;
 class Person0
 {
 	int m_A;//非静态的成员变量 属于类对象上
+	static int m_B;//静态成员变量 不属于类的对象上
+	void func()//非静态成员函数 不属于类的对象上
+	{
+
+	}
+	static void func2()//静态成员函数 不属于类的对象上
+	{
+
+	}
 };
+//静态成员变量必须初始化
+int Person0::m_B = 0;
 void test0()
 {
 	Person0 p;
