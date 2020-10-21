@@ -11,13 +11,20 @@ public:
 	static void func()
 	{
 		m_A = 100;//静态成员函数可以访问静态成员变量
-		//m_B = 200;//静态成员函数不可以访问非静态成员变量
+		//m_B = 200;//静态成员函数不可以访问非静态成员变量,无法区分到底是哪个对象的
 		cout<<"static void func()的调用"<<endl;
 	}
 	//静态成员变量(静态成员变量必须在类内声明)
 	static int m_A;
 	//非静态成员变量
 	int m_B;
+	//静态成员函数也是有访问权限的
+private:
+	//静态成员函数
+	static void func2()
+	{
+		cout << "static void func2()的调用" << endl;
+	}
 };
 //静态成员变量必须在类外初始化
 int Person9::m_A = 0;
@@ -29,6 +36,7 @@ void test9()
 	p.func();
 	//2.通过类名调用
 	Person9::func();
+	//Person9::func2();//类外访问不到私有的静态成员函数
 }
 int main()
 {
