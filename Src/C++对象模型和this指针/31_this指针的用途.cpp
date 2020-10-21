@@ -8,7 +8,8 @@ class Person1
 public:
 	Person1(int age)
 	{
-		age = age;
+		//this指针指向的被调用的成员函数所属的对象p1
+		this->age = age;
 	}
 	int age;
 };
@@ -20,7 +21,7 @@ void test1()
 }
 int main()
 {
-	test1();//-858993460
+	test1();//18
 	system("pause");
 	return 0;
 }
