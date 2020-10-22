@@ -6,6 +6,7 @@ using namespace std;
 class Building6;
 class GoodGay6
 {
+public:
 	GoodGay6();
 	void visit();//让visit函数可以访问Building6中的私有成员
 	void visit2();//让visit2函数不能访问Building中的私有成员
@@ -28,6 +29,11 @@ Building6::Building6()
 	m_SittingRoom = "客厅";
 	m_BedRoom = "卧室";
 }
+GoodGay6::GoodGay6()
+{
+	//创建建筑物类对象成员
+	building = new Building6;
+}
 void GoodGay6::visit()
 {
 	cout << "visit函数正在访问:" << building->m_SittingRoom << endl;
@@ -35,16 +41,18 @@ void GoodGay6::visit()
 }
 void GoodGay6::visit2()
 {
-	cout << "visit函数正在访问:" << building->m_SittingRoom << endl;
-	//cout << "visit函数正在访问:" << building->m_BedRoom << endl;
+	cout << "visit2函数正在访问:" << building->m_SittingRoom << endl;
+	//cout << "visit2函数正在访问:" << building->m_BedRoom << endl;
 }
-GoodGay6::GoodGay6()
+void test6()
 {
-	//创建建筑物类对象成员
-	building = new Building6;
+	GoodGay6 gg;
+	gg.visit();
+	gg.visit2();
 }
 int main()
 {
+	test6();
 	system("pause");
 	return 0;
 }

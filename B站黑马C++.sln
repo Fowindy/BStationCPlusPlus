@@ -27,6 +27,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "11_C++对象模型和this�
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "12_友元", "Src\12_友元\12_友元.vcxproj", "{F41B9148-EC3D-451C-936D-FAB56541905D}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "13_运算符重载", "Src\13_运算符重载\13_运算符重载.vcxproj", "{7DE43848-E538-457C-8C9E-2292566E80DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -131,6 +133,14 @@ Global
 		{F41B9148-EC3D-451C-936D-FAB56541905D}.Release|x64.Build.0 = Release|x64
 		{F41B9148-EC3D-451C-936D-FAB56541905D}.Release|x86.ActiveCfg = Release|Win32
 		{F41B9148-EC3D-451C-936D-FAB56541905D}.Release|x86.Build.0 = Release|Win32
+		{7DE43848-E538-457C-8C9E-2292566E80DA}.Debug|x64.ActiveCfg = Debug|x64
+		{7DE43848-E538-457C-8C9E-2292566E80DA}.Debug|x64.Build.0 = Debug|x64
+		{7DE43848-E538-457C-8C9E-2292566E80DA}.Debug|x86.ActiveCfg = Debug|Win32
+		{7DE43848-E538-457C-8C9E-2292566E80DA}.Debug|x86.Build.0 = Debug|Win32
+		{7DE43848-E538-457C-8C9E-2292566E80DA}.Release|x64.ActiveCfg = Release|x64
+		{7DE43848-E538-457C-8C9E-2292566E80DA}.Release|x64.Build.0 = Release|x64
+		{7DE43848-E538-457C-8C9E-2292566E80DA}.Release|x86.ActiveCfg = Release|Win32
+		{7DE43848-E538-457C-8C9E-2292566E80DA}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
