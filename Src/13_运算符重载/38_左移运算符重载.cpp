@@ -4,6 +4,11 @@ using namespace std;
 //左移运算符重载
 class Person8
 {
+	//利用成员函数重载 左移运算符 p.operator<<(cout) 简化版本 p<<cout
+	//不会利用成员函数重载<<运算符,因为无法实现cout在左侧
+	//void operator<<(Person8& p)
+	//{
+	//}
 public:
 	int m_A;
 	int m_B;
