@@ -25,6 +25,14 @@ Person7 operator+(Person7& p1, Person7& p2)
 	temp.m_B = p1.m_B + p2.m_B;
 	return temp;
 }
+//3.运算符重载
+Person7 operator+(Person7& p1, int num)
+{
+	Person7 temp;
+	temp.m_A = p1.m_A + num;
+	temp.m_B = p1.m_B + num;
+	return temp;
+}
 void test7()
 {
 	Person7 p1;
@@ -42,6 +50,10 @@ void test7()
 	Person7 p3 = operator+(p1, p2);
 	cout << "p3.m_A = " << p3.m_A << endl;//25
 	cout << "p3.m_B = " << p3.m_B << endl;//25
+	//3.运算符重载,也可以发生函数重载
+	Person7 p4 = p1 + 100;//Person7 + int
+	cout << "p4.m_A = " << p4.m_A << endl;//110
+	cout << "p4.m_B = " << p4.m_B << endl;//110
 }
 int main()
 {
