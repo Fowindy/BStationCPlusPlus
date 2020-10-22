@@ -15,6 +15,17 @@ public:
 		return *this;
 	}
 	//3.成员函数重载(后++)运算符
+	//MyInteger operator++(int) int代表占位参数,可以区分前置++和后置++
+	//返回MyInteger而不是引用,原因是返回的是temp,成员函数运行后就释放了
+	MyInteger operator++(int)
+	{
+		//先记录当时的结果
+		MyInteger temp = *this;//temp为局部变量
+		//后递增
+		m_Num++;
+		//最后将记录的结果返回
+		return temp;
+	}
 public:
 	MyInteger()
 	{
@@ -32,13 +43,20 @@ ostream& operator<<(ostream& cout, MyInteger myNum)
 void test9()
 {
 	MyInteger myNum;
-	cout << myNum << endl;
-	cout << ++(++myNum) << endl;
-	cout << myNum << endl;
+	cout << myNum << endl;//0
+	cout << ++(++myNum) << endl;//2
+	cout << myNum << endl;//2
+}
+void test10()
+{
+	MyInteger myNum;
+	cout<<myNum++<<endl;//0
+	cout<<myNum<<endl;//1
 }
 int main()
 {
 	test9();
+	test10();
 	system("pause");
 	return 0;
 }
