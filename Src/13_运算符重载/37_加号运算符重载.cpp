@@ -55,7 +55,7 @@ void test7()
 	cout << "p4.m_A = " << p4.m_A << endl;//110
 	cout << "p4.m_B = " << p4.m_B << endl;//110
 }
-int main()
+int main37()
 {
 	test7();
 	system("pause");
