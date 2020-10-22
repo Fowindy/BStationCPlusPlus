@@ -38,7 +38,7 @@ void test8()
 	//m_A = 10,m_B = 10
 	//hello world.
 }
-int main()
+int main38()
 {
 	test8();
 	system("pause");
