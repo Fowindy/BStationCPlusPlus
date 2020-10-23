@@ -27,6 +27,8 @@ void text43()
 	myPrint("hello world");//1.函数运算符的重载_string
 	MyAdd myAdd;
 	cout << myAdd(10, 26) << endl;
+	//3._匿名函数对象:当前行执行完毕立即释放
+	cout << MyAdd()(20, 45) << endl;
 }
 void myPrint(string text)
 {
