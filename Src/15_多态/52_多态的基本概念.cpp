@@ -51,9 +51,15 @@ void test52()
 	Dog dog;
 	doSpeak(dog);
 }
+void test521()
+{
+	cout << "sizeof(Animal) = " << sizeof(Animal) << endl;//不加virtual相当于空类,内存为1
+	//加virtual相当于指针,占4个字节
+}
 int main()
 {
 	test52();
+	test521();
 	system("pause");
 	return 0;
 }
