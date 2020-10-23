@@ -128,6 +128,7 @@ void test57()
 	CPU* cpu1 = new IntelCPU;
 	VideoCard* videoCard1 = new IntelVideoCard;
 	Memory* memory1 = new IntelMemory;
+	cout << "------------------第一台电脑----------------" << endl;
 	//创建第一台电脑
 	Computer* computer1 = new Computer(cpu1, videoCard1, memory1);
 	//第一台电脑开始工作
@@ -139,7 +140,13 @@ void test57()
 	//工作完成释放资源
 	delete computer1;
 	//1.?电脑所有的零件资源怎么释放
-
+	cout << "------------------第二台电脑----------------" << endl;
+	//创建第二台电脑
+	Computer* computer2 = new Computer(new LenovoCPU, new LenovoVideoCard, new LenovoMemory);
+	//第二台电脑开始工作
+	computer2->work();
+	//工作完成释放资源
+	delete computer2;
 }
 int main()
 {
