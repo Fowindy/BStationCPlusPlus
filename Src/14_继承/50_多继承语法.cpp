@@ -42,6 +42,9 @@ void test50()
 	Son501 s;
 	cout << "------------------1.查看子类多继承后占用内存空间----------------" << endl;
 	cout << "sizeof(Son) = " << sizeof(s) << endl;//24
+	cout << "------------------2.子类调用两父类重名成员属性----------------" << endl;
+	cout << "子类调父类Base501中的m_E = " << s.Base501::m_E << endl;//1000
+	cout << "子类调父类Base502中的m_E = " << s.Base502::m_E << endl;//2000
 }
 int main()
 {
