@@ -45,6 +45,7 @@ void test56()
 	Animal56* animal = new Cat56("Tom");
 	animal->Speak();
 	//1.因为父类指针指向Cat并存放在堆区，需要手动释放
+	//2.!原因是父类指针在析构时候不会调用子类中析构函数,导致子类如果有堆区属性,出现内存泄漏
 	delete animal;
 }
 int main()
