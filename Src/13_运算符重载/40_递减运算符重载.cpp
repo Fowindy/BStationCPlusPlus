@@ -49,7 +49,7 @@ void test0()
 	cout << myInt-- << endl;//-1
 	cout << myInt << endl;//-2
 }
-int main()
+int main40()
 {
 	test0();
 	system("pause");

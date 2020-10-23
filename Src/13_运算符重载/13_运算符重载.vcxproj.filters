@@ -27,5 +27,8 @@
     <ClCompile Include="40_递减运算符重载.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="41_递减运算符重载.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
