@@ -13,6 +13,10 @@ public:
 	{
 		cout << "Base 中的 func" << endl;
 	}
+	void func(int a)
+	{
+		cout << "Base 中的 func(int a)" << endl;
+	}
 	int m_A;
 };
 class Son481 :public Base48
@@ -43,6 +47,10 @@ void test481()
 	s2.func();//2.直接调用,如果子类没有,就调父类;子类父类都有就调子类
 	//3.如果通过子类对象访问到父类对象中同名成员函数,需要加作用域
 	s2.Base48::func();
+	// 如果子类中出现和父类同名的成员函数, 子类的同名成员会隐藏掉父类中所有同名成员函数
+	//s2.func(100);//错误
+	//4.如果想访问到父类中被隐藏的同名成员函数,需要加作用域
+	s2.Base48::func(100);
 }
 int main()
 {
