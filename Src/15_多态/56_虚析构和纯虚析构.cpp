@@ -58,7 +58,7 @@ void test56()
 	//2.!原因是父类指针在析构时候不会调用子类中析构函数,导致子类如果有堆区属性,出现内存泄漏
 	delete animal;
 }
-int main()
+int main56()
 {
 	test56();
 	system("pause");
