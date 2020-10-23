@@ -34,7 +34,7 @@ void test47()
 	//继承中的构造和析构顺序如下:
 	//先构造父类, 再构造子类, 析构的顺序与构造的顺序相反
 }
-int main()
+int main47()
 {
 	test47();
 	system("pause");
