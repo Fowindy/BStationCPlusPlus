@@ -59,7 +59,7 @@ void test42()
 		cout << "p1和p2相等" << endl;
 	}
 }
-int main()
+int main42()
 {
 	test42();
 	system("pause");
