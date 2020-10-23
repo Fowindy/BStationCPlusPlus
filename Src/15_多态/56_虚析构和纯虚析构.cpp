@@ -17,8 +17,15 @@ public:
 	//	cout << "Animal析构函数调用" << endl;
 	//}
 	//3.纯虚析构也能解决父类指针释放子类对象时不干净的问题
+	//纯虚析构 需要声明也需要外部实现
+	//有了纯虚析构之后,这个类也属于抽象类,无法实例化对象
 	virtual ~Animal56() = 0;
 };
+//3.1.纯虚析构的外部实现
+Animal56::~Animal56()
+{
+	cout << "Animal纯析构函数调用" << endl;
+}
 class Cat56 :public Animal56
 {
 public:
