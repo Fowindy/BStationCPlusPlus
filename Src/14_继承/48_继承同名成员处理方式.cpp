@@ -9,6 +9,10 @@ public:
 	{
 		m_A = 100;
 	}
+	void func()
+	{
+		cout << "Base 中的 func" << endl;
+	}
 	int m_A;
 };
 class Son481 :public Base48
@@ -18,8 +22,13 @@ public:
 	{
 		m_A = 200;
 	}
+	void func()
+	{
+		cout << "Son 中的 func" << endl;
+	}
 	int m_A;
 };
+//同名成员属性处理
 void test48()
 {
 	Son481 s1;
@@ -27,9 +36,18 @@ void test48()
 	//1.如果通过子类对象访问到父类对象中同名成员,需要加作用域
 	cout << "Base 下 m_A = " << s1.Base48::m_A << endl;//100
 }
+//同名成员函数处理
+void test481()
+{
+	Son481 s2;
+	s2.func();//2.直接调用,如果子类没有,就调父类;子类父类都有就调子类
+}
 int main()
 {
+	cout << "------------------同名成员属性处理----------------" << endl;
 	test48();
+	cout << "------------------同名成员函数处理----------------" << endl;
+	test481();
 	system("pause");
 	return 0;
 }
