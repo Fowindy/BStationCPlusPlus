@@ -23,6 +23,11 @@ void test49()
 	Son491 s;
 	cout << "Son 下 m_A = " << s.m_A << endl;//200
 	cout << "Base 下 m_A = " << s.Base49::m_A << endl;//100
+	//1.2.通过类名访问
+	cout << "------------------通过类名访问----------------" << endl;
+	cout << "Son 下 m_A = " << Son491::m_A << endl;//200
+	//第一个::代表通过类名方式访问 第二个::代表访问父类作用域下
+	cout << "Base 下 m_A = " << Son491::Base49::m_A << endl;//100
 }
 int main()
 {
