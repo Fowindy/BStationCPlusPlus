@@ -1,8 +1,8 @@
 ﻿#include <iostream>
 #include <string>
 using namespace std;
-//Java页面
-class Java
+//公共部分抽象出来一个类
+class BasePage
 {
 public:
 	void header()
@@ -17,48 +17,29 @@ public:
 	{
 		cout << "Java,Python,C++...(公共分类列表)" << endl;
 	}
+};
+//Java页面_子类继承公共部分类
+class Java :public BasePage
+{
+public:
 	void content()
 	{
 		cout << "JAVA学科视频" << endl;
 	}
 };
-//Python页面
-class Python
+//Python页面_子类继承公共部分类
+class Python :public BasePage
 {
 public:
-	void header()
-	{
-		cout << "首页、公开课、登录、注册...（公共头部）" << endl;
-	}
-	void footer()
-	{
-		cout << "帮助中心、交流合作、站内地图...(公共底部)" << endl;
-	}
-	void left()
-	{
-		cout << "Java,Python,C++...(公共分类列表)" << endl;
-	}
 	void content()
 	{
 		cout << "Python学科视频" << endl;
 	}
 };
-//C++页面
-class CPP
+//C++页面_子类继承公共部分类
+class CPP :public BasePage
 {
 public:
-	void header()
-	{
-		cout << "首页、公开课、登录、注册...（公共头部）" << endl;
-	}
-	void footer()
-	{
-		cout << "帮助中心、交流合作、站内地图...(公共底部)" << endl;
-	}
-	void left()
-	{
-		cout << "Java,Python,C++...(公共分类列表)" << endl;
-	}
 	void content()
 	{
 		cout << "C++学科视频" << endl;
