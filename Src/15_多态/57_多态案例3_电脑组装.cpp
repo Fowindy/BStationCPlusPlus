@@ -147,6 +147,14 @@ void test57()
 	computer2->work();
 	//工作完成释放资源
 	delete computer2;
+
+	cout << "------------------第三台电脑----------------" << endl;
+	//创建第二台电脑
+	Computer* computer3 = new Computer(new IntelCPU, new IntelVideoCard, new LenovoMemory);
+	//第二台电脑开始工作
+	computer3->work();
+	//工作完成释放资源
+	delete computer3;
 }
 int main()
 {
