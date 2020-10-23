@@ -53,7 +53,7 @@ void test10()
 	cout<<myNum++<<endl;//0
 	cout<<myNum<<endl;//1
 }
-int main()
+int main39()
 {
 	test9();
 	test10();

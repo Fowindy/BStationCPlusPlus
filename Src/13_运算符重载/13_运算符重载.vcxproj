@@ -127,6 +127,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="40_递减运算符重载.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
