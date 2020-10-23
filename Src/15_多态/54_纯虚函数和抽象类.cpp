@@ -33,7 +33,7 @@ void test54()
 	//base指向堆中数据,记得手动释放
 	delete base;
 }
-int main()
+int main54()
 {
 	test54();
 	system("pause");
