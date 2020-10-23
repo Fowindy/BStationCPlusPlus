@@ -68,7 +68,7 @@ void test45()
 	Son3 s3;
 	//s3.m_A = 300;//到Son3中 变为 私有成员 类外访问不到
 }
-int main()
+int main45()
 {
 	system("pause");
 	return 0;

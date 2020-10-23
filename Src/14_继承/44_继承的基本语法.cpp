@@ -79,7 +79,7 @@ void test01()
 	cp.content();
 }
 
-int main() {
+int main44() {
 
 	test01();
 	system("pause");
