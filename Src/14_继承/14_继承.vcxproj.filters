@@ -24,6 +24,9 @@
     <ClCompile Include="46_继承中的对象模型.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="47_继承中的构造和析构的顺序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="C:\Users\Administrator\Desktop\问题大全\B站黑马C++.assets\继承关系图.png">
