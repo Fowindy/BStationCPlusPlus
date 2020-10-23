@@ -21,6 +21,14 @@ public:
 		cout << "猫咪在说话" << endl;
 	}
 };
+class Dog :public Animal
+{
+public:
+	void speak()
+	{
+		cout << "小狗在说话" << endl;
+	}
+};
 //执行叫的函数
 //1.原因是地址早绑定,在编译阶段确定函数地址
 //如果想执行让猫说话,那么这个函数地址就不能提前绑定,需要在运行阶段进行绑定,地址晚绑定
@@ -32,6 +40,9 @@ void test52()
 {
 	Cat cat;
 	doSpeak(cat);
+	cout << "------------------3.小狗在说话----------------" << endl;
+	Dog dog;
+	doSpeak(dog);
 }
 int main()
 {
