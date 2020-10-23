@@ -1,23 +1,23 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 #include <math.h>
 using namespace std;
 #include "Circle.h"
 #include "Point.h"
-//µãºÍÔ²¹ØÏµ°¸Àý
-//3.È«¾Öº¯Êý:ÅÐ¶ÏµãºÍÔ²µÄ¹ØÏµ
+//ç‚¹å’Œåœ†å…³ç³»æ¡ˆä¾‹
+//3.å…¨å±€å‡½æ•°:åˆ¤æ–­ç‚¹å’Œåœ†çš„å…³ç³»
 int isInCircle(Point& p,Circle& c)
 {
 	double distance = pow(pow(p.getX() - c.getCenter().getX(), 2) + pow(p.getY() - c.getCenter().getY(), 2), 1.0 / 2);
-	if (distance == c.getR())//ÔÚÔ²ÉÏ
+	if (distance == c.getR())//åœ¨åœ†ä¸Š
 	{
 		return 0;
 	}
-	else if (distance > c.getR())//ÔÚÔ²Íâ
+	else if (distance > c.getR())//åœ¨åœ†å¤–
 	{
 		return 1;
 	}
-	else//ÔÚÔ²ÄÚ
+	else//åœ¨åœ†å†…
 	{
 		return -1;
 	}
@@ -38,13 +38,13 @@ int main()
 	switch (isInCircle(p2,c1))
 	{
 	case 0:
-		cout<<"µãÔÚÔ²ÉÏ"<<endl;
+		cout<<"ç‚¹åœ¨åœ†ä¸Š"<<endl;
 		break;
 	case 1:
-		cout<<"µãÔÚÔ²Íâ"<<endl;
+		cout<<"ç‚¹åœ¨åœ†å¤–"<<endl;
 		break;
 	case -1:
-		cout<<"µãÔÚÔ²ÄÚ"<<endl;
+		cout<<"ç‚¹åœ¨åœ†å†…"<<endl;
 		break;
 	}
 	system("pause");

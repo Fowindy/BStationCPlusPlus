@@ -1,15 +1,15 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main35()
 {
-	//°¸ÀýÃèÊö:´Ó1¿ªÊ¼Êýµ½Êý×Ö100Èç¹ûÊý×Ö¸öÎ»º¬ÓÐ7,»òÕßÊý×ÖÊ®Î»º¬ÓÐ7,»òÕß¸ÃÊý×ÖÊÇ7µÄ±¶Êý,ÎÒÃÇ´òÓ¡
-	//ÇÃ×À×Ó, ÆäÓàÊý×ÖÖ±½Ó´òÓ¡Êä³ö¡£
+	//æ¡ˆä¾‹æè¿°:ä»Ž1å¼€å§‹æ•°åˆ°æ•°å­—100å¦‚æžœæ•°å­—ä¸ªä½å«æœ‰7,æˆ–è€…æ•°å­—åä½å«æœ‰7,æˆ–è€…è¯¥æ•°å­—æ˜¯7çš„å€æ•°,æˆ‘ä»¬æ‰“å°
+	//æ•²æ¡Œå­, å…¶ä½™æ•°å­—ç›´æŽ¥æ‰“å°è¾“å‡ºã€‚
 	for (int i = 1; i <= 100; i++)
 	{
 		if (i%10==7 || i/10==7 || i%7==0)
 		{
-			std::cout<<"i = "<<i<<";ÇÃ×À×Ó"<<std::endl;
+			std::cout<<"i = "<<i<<";æ•²æ¡Œå­"<<std::endl;
 		}
 		else
 		{

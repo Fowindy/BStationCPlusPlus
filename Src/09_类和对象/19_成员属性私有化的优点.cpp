@@ -1,49 +1,49 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//³ÉÔ±ÊôÐÔÉèÖÃÎªË½ÓÐµÄÓÅµã:
-//ÓÅµã1£º½«ËùÓÐ³ÉÔ±ÊôÐÔÉèÖÃÎªË½ÓÐ£¬¿ÉÒÔ×Ô¼º¿ØÖÆ¶ÁÐ´È¨ÏÞ
-//ÓÅµã2£º¶ÔÓÚÐ´È¨ÏÞ£¬ÎÒÃÇ¿ÉÒÔ¼ì²âÊý¾ÝµÄÓÐÐ§ÐÔ
-//Éè¼ÆÈËÀà
+//æˆå‘˜å±žæ€§è®¾ç½®ä¸ºç§æœ‰çš„ä¼˜ç‚¹:
+//ä¼˜ç‚¹1ï¼šå°†æ‰€æœ‰æˆå‘˜å±žæ€§è®¾ç½®ä¸ºç§æœ‰ï¼Œå¯ä»¥è‡ªå·±æŽ§åˆ¶è¯»å†™æƒé™
+//ä¼˜ç‚¹2ï¼šå¯¹äºŽå†™æƒé™ï¼Œæˆ‘ä»¬å¯ä»¥æ£€æµ‹æ•°æ®çš„æœ‰æ•ˆæ€§
+//è®¾è®¡äººç±»
 class Person
 {
 private:
-	//ÐÕÃû---¿É¶Á¿ÉÐ´
+	//å§“å---å¯è¯»å¯å†™
 	string m_Name;
-	//ÇéÈË---¿ÉÐ´
+	//æƒ…äºº---å¯å†™
 	string m_Lover;
-	//ÄêÁä---¿É¶Á
+	//å¹´é¾„---å¯è¯»
 	int m_Age;
 public:
-	//ÉèÖÃÐÕÃû---¿ÉÐ´
+	//è®¾ç½®å§“å---å¯å†™
 	void setName(string name)
 	{
 		m_Name = name;
 	}
-	//»ñÈ¡ÐÕÃû---¿É¶Á
+	//èŽ·å–å§“å---å¯è¯»
 	string getName()
 	{
 		return m_Name;
 	}
-	//»ñÈ¡ÄêÁä---¿É¶Á¿ÉÐ´ Èç¹ûÏëÐÞ¸Ä(ÄêÁä·¶Î§±ØÐëÊÇ0~150Ö®¼ä)
+	//èŽ·å–å¹´é¾„---å¯è¯»å¯å†™ å¦‚æžœæƒ³ä¿®æ”¹(å¹´é¾„èŒƒå›´å¿…é¡»æ˜¯0~150ä¹‹é—´)
 	int getAge()
 	{
-		//m_Age = 18;//ÄêÁä³õÊ¼»¯Îª18
+		//m_Age = 18;//å¹´é¾„åˆå§‹åŒ–ä¸º18
 		return m_Age;
 	}
-	//ÉèÖÃÄêÁä
+	//è®¾ç½®å¹´é¾„
 	void setAge(int age)
 	{
-		//ÓÅµã2£º¶ÔÓÚÐ´È¨ÏÞ£¬ÎÒÃÇ¿ÉÒÔ¼ì²âÊý¾ÝµÄÓÐÐ§ÐÔ
+		//ä¼˜ç‚¹2ï¼šå¯¹äºŽå†™æƒé™ï¼Œæˆ‘ä»¬å¯ä»¥æ£€æµ‹æ•°æ®çš„æœ‰æ•ˆæ€§
 		if (age<0 || age>150)
 		{
 			m_Age = 0;
-			cout<<"ÄêÁäÊäÈëÓÐÎó!"<<endl;
+			cout<<"å¹´é¾„è¾“å…¥æœ‰è¯¯!"<<endl;
 			return;
 		}
 		m_Age = age;
 	}
-	//ÉèÖÃÇéÈË---¿ÉÐ´
+	//è®¾ç½®æƒ…äºº---å¯å†™
 	void setLover(string lover)
 	{
 		m_Lover = lover;
@@ -52,12 +52,12 @@ public:
 int main19()
 {
 	Person p1;
-	p1.setName("ÕÅÈý");
-	//ÉèÖÃÇéÈË
-	p1.setLover("ÁõÒà·Æ");
+	p1.setName("å¼ ä¸‰");
+	//è®¾ç½®æƒ…äºº
+	p1.setLover("åˆ˜äº¦è²");
 	p1.setAge(18);
-	cout << "ÐÕÃûÎª:" << p1.getName() << endl;
-	cout << "ÄêÁäÎª:" << p1.getAge() << endl;
+	cout << "å§“åä¸º:" << p1.getName() << endl;
+	cout << "å¹´é¾„ä¸º:" << p1.getAge() << endl;
 	system("pause");
 	return 0;
 }

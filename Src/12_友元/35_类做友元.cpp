@@ -1,47 +1,47 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//Àà×öÓÑÔª
-//ÉùÃ÷Àà
+//ç±»åšå‹å…ƒ
+//å£°æ˜ç±»
 class Building5;
-//ºÃ»ùÓÑÀà
+//å¥½åŸºå‹ç±»
 class GoodGay
 {
 public:
 	GoodGay();
-	//ºÃ»ùÓÑÀàÓĞ²ÎÊıº¯ÊıµÄÉùÃ÷
+	//å¥½åŸºå‹ç±»æœ‰å‚æ•°å‡½æ•°çš„å£°æ˜
 	void visit();
-	//ºÃ»ùÓÑÀàÖĞ¶¨ÒåBuildingÀà³ÉÔ±
+	//å¥½åŸºå‹ç±»ä¸­å®šä¹‰Buildingç±»æˆå‘˜
 	Building5* building;
 };
-//½¨ÖşÎïÀà
+//å»ºç­‘ç‰©ç±»
 class Building5
 {
-	//Àà×öÓÑÔªÉùÃ÷
+	//ç±»åšå‹å…ƒå£°æ˜
 	friend class GoodGay;
 public:
-	//ÀàÄÚÉùÃ÷³ÉÔ±º¯Êı
+	//ç±»å†…å£°æ˜æˆå‘˜å‡½æ•°
 	Building5();
 public:
-	string m_SittingRoom;//¿ÍÌü
+	string m_SittingRoom;//å®¢å…
 private:
-	string m_BedRoom;//ÎÔÊÒ
+	string m_BedRoom;//å§å®¤
 };
-//ÀàÍâÊµÏÖ³ÉÔ±º¯Êı
+//ç±»å¤–å®ç°æˆå‘˜å‡½æ•°
 Building5::Building5()
 {
-	m_SittingRoom = "¿ÍÌü";
-	m_BedRoom = "ÎÔÊÒ";
+	m_SittingRoom = "å®¢å…";
+	m_BedRoom = "å§å®¤";
 }
 GoodGay::GoodGay()
 {
-	//´´½¨Ò»¸ö½¨ÖşÎïµÄ¶ÔÏó
+	//åˆ›å»ºä¸€ä¸ªå»ºç­‘ç‰©çš„å¯¹è±¡
 	building = new Building5;
 }
 void GoodGay::visit()
 {
-	cout<<"ºÃ»ùÓÑÀàÕıÔÚ·ÃÎÊ:"<<building->m_SittingRoom<<endl;
-	cout<<"ºÃ»ùÓÑÀàÕıÔÚ·ÃÎÊ:"<<building->m_BedRoom<<endl;
+	cout<<"å¥½åŸºå‹ç±»æ­£åœ¨è®¿é—®:"<<building->m_SittingRoom<<endl;
+	cout<<"å¥½åŸºå‹ç±»æ­£åœ¨è®¿é—®:"<<building->m_BedRoom<<endl;
 }
 void test5()
 {

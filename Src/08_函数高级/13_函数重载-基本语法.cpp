@@ -1,45 +1,45 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//º¯ÊýÖØÔØ
-//¿ÉÒÔÈÃº¯ÊýÃûÏàÍ¬,Ìá¸ß¸´ÓÃÐÔ
-//º¯ÊýÖØÔØÂú×ãµÄÌõ¼þ
-//1.Í¬Ò»¸ö×÷ÓÃÓòÏÂ(È«¾Ö×÷ÓÃÓò)
-//2.º¯ÊýÃû³ÆÏàÍ¬
-//3.º¯Êý²ÎÊýÀàÐÍ²»Í¬»òÕß¸öÊý²»Í¬,»òÕßË³Ðò²»Í¬
-void func()//µÚÒ»¸ö
+//å‡½æ•°é‡è½½
+//å¯ä»¥è®©å‡½æ•°åç›¸åŒ,æé«˜å¤ç”¨æ€§
+//å‡½æ•°é‡è½½æ»¡è¶³çš„æ¡ä»¶
+//1.åŒä¸€ä¸ªä½œç”¨åŸŸä¸‹(å…¨å±€ä½œç”¨åŸŸ)
+//2.å‡½æ•°åç§°ç›¸åŒ
+//3.å‡½æ•°å‚æ•°ç±»åž‹ä¸åŒæˆ–è€…ä¸ªæ•°ä¸åŒ,æˆ–è€…é¡ºåºä¸åŒ
+void func()//ç¬¬ä¸€ä¸ª
 {
-	cout<<"funcµÄµ÷ÓÃ"<<endl;
+	cout<<"funcçš„è°ƒç”¨"<<endl;
 }
-void func(int a)//µÚ¶þ¸ö
+void func(int a)//ç¬¬äºŒä¸ª
 {
-	cout<<"func(int a)µÄµ÷ÓÃ"<<endl;
+	cout<<"func(int a)çš„è°ƒç”¨"<<endl;
 }
-void func(double a)//µÚÈý¸ö
+void func(double a)//ç¬¬ä¸‰ä¸ª
 {
-	cout << "func(double a)µÄµ÷ÓÃ" << endl;
+	cout << "func(double a)çš„è°ƒç”¨" << endl;
 }
-void func(int a, double b)//µÚËÄ¸ö
+void func(int a, double b)//ç¬¬å››ä¸ª
 {
-	cout << "func(int double)µÄµ÷ÓÃ" << endl;
+	cout << "func(int double)çš„è°ƒç”¨" << endl;
 }
-void func(double a, int b)//µÚÎå¸ö
+void func(double a, int b)//ç¬¬äº”ä¸ª
 {
-	cout << "func(double int)µÄµ÷ÓÃ" << endl;
+	cout << "func(double int)çš„è°ƒç”¨" << endl;
 }
-//×¢ÒâÊÂÏî
-//1.º¯ÊýµÄ·µ»ØÖµ²»¿ÉÒÔ×÷Îªº¯ÊýÖØÔØµÄÌõ¼þ,ÒòÎªº¯ÊýÓÐ·µ»ØÖµ,¿ÉÒÔ²»ÐèÒª½ÓÊÜº¯Êý·µ»ØÖµµÄ±äÁ¿
-//int void func(double a, int b)//´íÎó
+//æ³¨æ„äº‹é¡¹
+//1.å‡½æ•°çš„è¿”å›žå€¼ä¸å¯ä»¥ä½œä¸ºå‡½æ•°é‡è½½çš„æ¡ä»¶,å› ä¸ºå‡½æ•°æœ‰è¿”å›žå€¼,å¯ä»¥ä¸éœ€è¦æŽ¥å—å‡½æ•°è¿”å›žå€¼çš„å˜é‡
+//int void func(double a, int b)//é”™è¯¯
 //{
-//	cout << "func(double int)µÄµ÷ÓÃ" << endl;
+//	cout << "func(double int)çš„è°ƒç”¨" << endl;
 //}
 int main13()
 {
-	func();//µ÷ÓÃµÚÒ»¸ö
-	func(10);//µ÷ÓÃµÚ¶þ¸ö
-	func(3.14);//µ÷ÓÃµÚÈý¸ö
-	func(10, 3.14);//µ÷ÓÃµÚËÄ¸ö
-	func(3.14, 10);//µ÷ÓÃµÚÎå¸ö
+	func();//è°ƒç”¨ç¬¬ä¸€ä¸ª
+	func(10);//è°ƒç”¨ç¬¬äºŒä¸ª
+	func(3.14);//è°ƒç”¨ç¬¬ä¸‰ä¸ª
+	func(10, 3.14);//è°ƒç”¨ç¬¬å››ä¸ª
+	func(3.14, 10);//è°ƒç”¨ç¬¬äº”ä¸ª
 	system("pause");
 	return 0;
 }

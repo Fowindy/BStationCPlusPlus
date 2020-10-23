@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//¼ÓºÅÔËËã·ûÖØÔØ
+//åŠ å·è¿ç®—ç¬¦é‡è½½
 class Person7
 {
 public:
 	int m_A;
 	int m_B;
-	//1.³ÉÔ±º¯ÊıÖØÔØ+ºÅ
+	//1.æˆå‘˜å‡½æ•°é‡è½½+å·
 public:
 	//Person7 operator+(Person7& p)
 	//{
@@ -17,7 +17,7 @@ public:
 	//	return temp;
 	//}
 };
-//2.È«¾Öº¯ÊıÖØÔØ+ºÅ
+//2.å…¨å±€å‡½æ•°é‡è½½+å·
 Person7 operator+(Person7& p1, Person7& p2)
 {
 	Person7 temp;
@@ -25,7 +25,7 @@ Person7 operator+(Person7& p1, Person7& p2)
 	temp.m_B = p1.m_B + p2.m_B;
 	return temp;
 }
-//3.ÔËËã·ûÖØÔØ
+//3.è¿ç®—ç¬¦é‡è½½
 Person7 operator+(Person7& p1, int num)
 {
 	Person7 temp;
@@ -44,13 +44,13 @@ void test7()
 	p2.m_B = 15;
 
 	//Person7 p3 = p1 + p2;
-	//1.1.³ÉÔ±º¯ÊıÖØÔØµÄ±¾ÖÊµ÷ÓÃ
+	//1.1.æˆå‘˜å‡½æ•°é‡è½½çš„æœ¬è´¨è°ƒç”¨
 	//Person7 p3 = p1.operator+(p2);
-	//2.1.È«¾Öº¯ÊıÖØÔØµÄ±¾ÖÊµ÷ÓÃ
+	//2.1.å…¨å±€å‡½æ•°é‡è½½çš„æœ¬è´¨è°ƒç”¨
 	Person7 p3 = operator+(p1, p2);
 	cout << "p3.m_A = " << p3.m_A << endl;//25
 	cout << "p3.m_B = " << p3.m_B << endl;//25
-	//3.ÔËËã·ûÖØÔØ,Ò²¿ÉÒÔ·¢Éúº¯ÊıÖØÔØ
+	//3.è¿ç®—ç¬¦é‡è½½,ä¹Ÿå¯ä»¥å‘ç”Ÿå‡½æ•°é‡è½½
 	Person7 p4 = p1 + 100;//Person7 + int
 	cout << "p4.m_A = " << p4.m_A << endl;//110
 	cout << "p4.m_B = " << p4.m_B << endl;//110

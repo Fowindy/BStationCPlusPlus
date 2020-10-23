@@ -1,17 +1,17 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main32()
 {
-	//do.. whileiÓï¾ä
-	//ÔÚÆÁÄ»ÖĞÊä³ö0µ½9Õâ10¸öÊı×Ö
+	//do.. whileiè¯­å¥
+	//åœ¨å±å¹•ä¸­è¾“å‡º0åˆ°9è¿™10ä¸ªæ•°å­—
 	int num = 0;
 	do 
 	{
 		std::cout<<"num = "<<num<<std::endl;
 		num++;
 	} while (num < 10);
-	// do... whileºÍwhileÑ­»·Çø±ğÔÚÓÚdo. ..while»áÏÈÖ´ĞĞÒ»´ÎÑ­»·Óï¾ä
+	// do... whileå’Œwhileå¾ªç¯åŒºåˆ«åœ¨äºdo. ..whileä¼šå…ˆæ‰§è¡Œä¸€æ¬¡å¾ªç¯è¯­å¥
 	system("pause");
 	return 0;
 }

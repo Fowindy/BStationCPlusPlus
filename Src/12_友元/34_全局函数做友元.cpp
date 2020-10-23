@@ -1,27 +1,27 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//½¨ÖşÎïÀà
+//å»ºç­‘ç‰©ç±»
 class Building4
 {
-	//È«¾Öº¯ÊıÓÑÔªµÄÉùÃ÷
+	//å…¨å±€å‡½æ•°å‹å…ƒçš„å£°æ˜
 	friend void goodGay( Building4* building);
 public:
 	 Building4()
 	{
-		m_SittingRoom = "¿ÍÌü";
-		m_BedRoom = "ÎÔÊÒ";
+		m_SittingRoom = "å®¢å…";
+		m_BedRoom = "å§å®¤";
 	}
 public:
-	string m_SittingRoom;//¿ÍÌü
+	string m_SittingRoom;//å®¢å…
 private:
-	string m_BedRoom;//ÎÔÊÒ
+	string m_BedRoom;//å§å®¤
 };
-//È«¾Öº¯Êı
+//å…¨å±€å‡½æ•°
 void goodGay( Building4* building)
 {
-	cout << "ºÃ»ùÓÑÈ«¾Öº¯ÊıÕıÔÚ·ÃÎÊ:" << building->m_SittingRoom << endl;
-	cout << "ºÃ»ùÓÑÈ«¾Öº¯ÊıÕıÔÚ·ÃÎÊ:" << building->m_BedRoom << endl;
+	cout << "å¥½åŸºå‹å…¨å±€å‡½æ•°æ­£åœ¨è®¿é—®:" << building->m_SittingRoom << endl;
+	cout << "å¥½åŸºå‹å…¨å±€å‡½æ•°æ­£åœ¨è®¿é—®:" << building->m_BedRoom << endl;
 }
 void test4()
 {

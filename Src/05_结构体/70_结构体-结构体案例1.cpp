@@ -1,31 +1,31 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 #include <ctime>
-//¶¨ÒåÑ§ÉúµÄ½á¹¹Ìå
+//å®šä¹‰å­¦ç”Ÿçš„ç»“æ„ä½“
 struct Student
 {
-	//Ñ§ÉúµÄĞÕÃû
+	//å­¦ç”Ÿçš„å§“å
 	string sName;
-	//·ÖÊı
+	//åˆ†æ•°
 	int score;
 };
-//¶¨ÒåÀÏÊ¦µÄ½á¹¹Ìå
+//å®šä¹‰è€å¸ˆçš„ç»“æ„ä½“
 struct Teacher
 {
-	//Ñ§Éú½á¹¹ÌåÊı×é±äÁ¿
-	Student stuArray[5];//ÖØÒª!!!Ñ§ÉúÇ¶Ì×¶¨Òå±ØĞëÀÏÊ¦½á¹¹ÌåÖĞµÄ×î¿ªÊ¼,·ñÔò±¨´í
-	//ÀÏÊ¦ĞÕÃû
+	//å­¦ç”Ÿç»“æ„ä½“æ•°ç»„å˜é‡
+	Student stuArray[5];//é‡è¦!!!å­¦ç”ŸåµŒå¥—å®šä¹‰å¿…é¡»è€å¸ˆç»“æ„ä½“ä¸­çš„æœ€å¼€å§‹,å¦åˆ™æŠ¥é”™
+	//è€å¸ˆå§“å
 	string tName;
 };
-//¸øÀÏÊ¦ºÍÑ§Éú¸³ÖµµÄº¯Êı
+//ç»™è€å¸ˆå’Œå­¦ç”Ÿèµ‹å€¼çš„å‡½æ•°
 void allocateSpace(Teacher tArray[], int length)
 {
-	//¶¨ÒåÒ»¸öÃû×Öºó×º±äÁ¿
+	//å®šä¹‰ä¸€ä¸ªåå­—åç¼€å˜é‡
 	string nameSeed = "ABCDE";
-	//³õÊ¼»¯ÀÏÊ¦Ãû×ÖÍ·
+	//åˆå§‹åŒ–è€å¸ˆåå­—å¤´
 	string tName = "Teacher_";
-	//³õÊ¼»¯ÀÏÊ¦Ãû×ÖÍ·
+	//åˆå§‹åŒ–è€å¸ˆåå­—å¤´
 	string sName = "Student_";
 	for (int i = 0; i < length; i++)
 	{
@@ -33,7 +33,7 @@ void allocateSpace(Teacher tArray[], int length)
 		for (int j = 0; j < sizeof(tArray[i].stuArray) / sizeof(tArray[i].stuArray[0]); j++)
 		{
 			tArray[i].stuArray[j].sName = sName + nameSeed[j];
-			//·ÖÊıËæ»ú
+			//åˆ†æ•°éšæœº
 			int random = rand() % 61 + 40;//40~100
 			tArray[i].stuArray[j].score = random;
 		}
@@ -43,24 +43,24 @@ void printInfo(Teacher tArray[], int length)
 {
 	for (int i = 0; i < length; i++)
 	{
-		cout << "µÚ" << i + 1 << "Î»ÀÏÊ¦µÄÃû×Ö:" << tArray[i].tName<<endl;
+		cout << "ç¬¬" << i + 1 << "ä½è€å¸ˆçš„åå­—:" << tArray[i].tName<<endl;
 		for (int j = 0; j < sizeof(tArray[i].stuArray) / sizeof(tArray[i].stuArray[0]); j++)
 		{
-			cout << "\tµÚ" << j + 1 << "Î»Ñ§ÉúµÄÃû×Ö:" << tArray[i].stuArray[j].sName
-				<< ";µÚ" << j + 1 << "Î»Ñ§ÉúµÄ·ÖÊı:" << tArray[i].stuArray[j].score << endl;
+			cout << "\tç¬¬" << j + 1 << "ä½å­¦ç”Ÿçš„åå­—:" << tArray[i].stuArray[j].sName
+				<< ";ç¬¬" << j + 1 << "ä½å­¦ç”Ÿçš„åˆ†æ•°:" << tArray[i].stuArray[j].score << endl;
 		}
 	}
 }
-//1.´´½¨3ÃûÀÏÊ¦µÄÊı×é
-Teacher tArray[3];//ÖØÒª!!!Teacher¶¨Òå±ØĞëÔÚmainº¯ÊıÖ®Ç°,·ñÔò±¨´í
+//1.åˆ›å»º3åè€å¸ˆçš„æ•°ç»„
+Teacher tArray[3];//é‡è¦!!!Teacherå®šä¹‰å¿…é¡»åœ¨mainå‡½æ•°ä¹‹å‰,å¦åˆ™æŠ¥é”™
 int main70()
 {
-	//Ìí¼ÓËæ»úÊıÖÖ×Ó×÷ÓÃÀûÓÃµ±Ç°ÏµÍ³Ê±¼äÉú³ÉËæ»úÊı,·ÀÖ¹Ã¿´ÎÔËĞĞËæ»úÊı¶¼Ò»Ñù
+	//æ·»åŠ éšæœºæ•°ç§å­ä½œç”¨åˆ©ç”¨å½“å‰ç³»ç»Ÿæ—¶é—´ç”Ÿæˆéšæœºæ•°,é˜²æ­¢æ¯æ¬¡è¿è¡Œéšæœºæ•°éƒ½ä¸€æ ·
 	srand((unsigned int)time(NULL));
-	//2.Í¨¹ıº¯Êı¸ø3ÃûÀÏÊ¦µÄĞÅÏ¢¸³Öµ,²¢¸øÀÏÊ¦´øµÄÑ§ÉúĞÅÏ¢¸³Öµ
+	//2.é€šè¿‡å‡½æ•°ç»™3åè€å¸ˆçš„ä¿¡æ¯èµ‹å€¼,å¹¶ç»™è€å¸ˆå¸¦çš„å­¦ç”Ÿä¿¡æ¯èµ‹å€¼
 	int len = sizeof(tArray) / sizeof(Teacher);
 	allocateSpace(tArray, len);
-	//3.´òÓ¡ËùÓĞÀÏÊ¦Ëù´øµÄÑ§ÉúĞÅÏ¢
+	//3.æ‰“å°æ‰€æœ‰è€å¸ˆæ‰€å¸¦çš„å­¦ç”Ÿä¿¡æ¯
 	printInfo(tArray, len);
 	system("pause");
 	return 0;

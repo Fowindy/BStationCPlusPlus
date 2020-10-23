@@ -1,66 +1,66 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//¹¹Ôìº¯ÊýµÄ·ÖÀà¼°µ÷ÓÃ
-//·ÖÀà
-// °´ÕÕ²ÎÊý·ÖÀà ÎÞ²Î¹¹Ôì(Ä¬ÈÏ¹¹Ôì)ºÍÓÐ²Î¹¹Ôì
-//°´ÕÕÀàÐÍ·ÖÀà ÆÕÍ¨¹¹Ôì¿½±´¹¹Ôì
+//æž„é€ å‡½æ•°çš„åˆ†ç±»åŠè°ƒç”¨
+//åˆ†ç±»
+// æŒ‰ç…§å‚æ•°åˆ†ç±» æ— å‚æž„é€ (é»˜è®¤æž„é€ )å’Œæœ‰å‚æž„é€ 
+//æŒ‰ç…§ç±»åž‹åˆ†ç±» æ™®é€šæž„é€ æ‹·è´æž„é€ 
 class Person3
 {
 public:
-	//¹¹Ôìº¯Êý
+	//æž„é€ å‡½æ•°
 	Person3()
 	{
-		cout<<"Person3µÄÎÞ²Î¹¹Ôìº¯Êýµ÷ÓÃ"<<endl;
+		cout<<"Person3çš„æ— å‚æž„é€ å‡½æ•°è°ƒç”¨"<<endl;
 	}
-	//¹¹Ôìº¯Êý
+	//æž„é€ å‡½æ•°
 	Person3(int a)
 	{
 		age = a;
-		cout << "Person3µÄÓÐ²Î¹¹Ôìº¯Êýµ÷ÓÃ" << endl;
+		cout << "Person3çš„æœ‰å‚æž„é€ å‡½æ•°è°ƒç”¨" << endl;
 	}
-	//¿½±´¹¹Ôìº¯Êý
+	//æ‹·è´æž„é€ å‡½æ•°
 	Person3(const Person3& p)
 	{
-		//½«´«ÈëµÄÈËÉíÉÏµÄËùÓÐÊôÐÔ,¿½±´µ½ÎÒÉíÉÏ
+		//å°†ä¼ å…¥çš„äººèº«ä¸Šçš„æ‰€æœ‰å±žæ€§,æ‹·è´åˆ°æˆ‘èº«ä¸Š
 		age = p.age;
-		cout<<"Person3¿½±´¹¹Ôìº¯Êýµ÷ÓÃ"<<endl;
+		cout<<"Person3æ‹·è´æž„é€ å‡½æ•°è°ƒç”¨"<<endl;
 	}
 	~Person3()
 	{
-		cout<<"Person3µÄÎö¹¹º¯Êýµ÷ÓÃ"<<endl;
+		cout<<"Person3çš„æžæž„å‡½æ•°è°ƒç”¨"<<endl;
 	}
 	int age;
 };
-//µ÷ÓÃ
+//è°ƒç”¨
 void test02()
 {
-	//1.À¨ºÅ·¨
-	Person3 p1;//Ä¬ÈÏ¹¹Ôìº¯ÊýµÄµ÷ÓÃ
-	Person3 p2(10);//ÓÐ²Î¹¹Ôìº¯Êý
-	Person3 p3(p2);//¿½±´¹¹Ôìº¯Êýµ÷ÓÃ
-	cout << "P2µÄÄêÁäÎª:" << p2.age << endl;//10
-	cout << "P3µÄÄêÁäÎª:" << p3.age << endl;//10
-	//×¢ÒâÊÂÏî:
-	//µ÷ÓÃÄ¬ÈÏ¹¹Ôìº¯ÊýÊ±ºò,²»Òª¼Ó()
-	//ÒòÎªÏÂÃæÕâÐÐ´úÂë,±àÒëÆ÷»áÈÏÎªÊÇÒ»¸öº¯ÊýµÄÉùÃ÷
-	Person3 p4();//´íÎó,»áÈÏÎªÊÇº¯ÊýÉùÃ÷,²»»áÈÏÎªÊÇÔÚ´´½¨¶ÔÏó
-	//2.ÏÔÊ½·¨
+	//1.æ‹¬å·æ³•
+	Person3 p1;//é»˜è®¤æž„é€ å‡½æ•°çš„è°ƒç”¨
+	Person3 p2(10);//æœ‰å‚æž„é€ å‡½æ•°
+	Person3 p3(p2);//æ‹·è´æž„é€ å‡½æ•°è°ƒç”¨
+	cout << "P2çš„å¹´é¾„ä¸º:" << p2.age << endl;//10
+	cout << "P3çš„å¹´é¾„ä¸º:" << p3.age << endl;//10
+	//æ³¨æ„äº‹é¡¹:
+	//è°ƒç”¨é»˜è®¤æž„é€ å‡½æ•°æ—¶å€™,ä¸è¦åŠ ()
+	//å› ä¸ºä¸‹é¢è¿™è¡Œä»£ç ,ç¼–è¯‘å™¨ä¼šè®¤ä¸ºæ˜¯ä¸€ä¸ªå‡½æ•°çš„å£°æ˜Ž
+	Person3 p4();//é”™è¯¯,ä¼šè®¤ä¸ºæ˜¯å‡½æ•°å£°æ˜Ž,ä¸ä¼šè®¤ä¸ºæ˜¯åœ¨åˆ›å»ºå¯¹è±¡
+	//2.æ˜¾å¼æ³•
 	Person3 p5;
-	Person3 p6 = Person3(20);//ÓÐ²Î¹¹Ôì
-	Person3 p7 = Person3(p6);//¿½±´¹¹Ôì
-	cout << "P6µÄÄêÁäÎª:" << p6.age << endl;//20
-	cout << "P7µÄÄêÁäÎª:" << p7.age << endl;//20
-	Person3(20);//ÄäÃû¶ÔÏó ÌØµã:µ±Ç°ÐÐÖ´ÐÐ½áÊøºó,ÏµÍ³»áÁ¢¼´»ØÊÕµôÄäÃû¶ÔÏó
+	Person3 p6 = Person3(20);//æœ‰å‚æž„é€ 
+	Person3 p7 = Person3(p6);//æ‹·è´æž„é€ 
+	cout << "P6çš„å¹´é¾„ä¸º:" << p6.age << endl;//20
+	cout << "P7çš„å¹´é¾„ä¸º:" << p7.age << endl;//20
+	Person3(20);//åŒ¿åå¯¹è±¡ ç‰¹ç‚¹:å½“å‰è¡Œæ‰§è¡Œç»“æŸåŽ,ç³»ç»Ÿä¼šç«‹å³å›žæ”¶æŽ‰åŒ¿åå¯¹è±¡
 	cout<<"aaaa"<<endl;
-	//×¢ÒâÊÂÏî2
-	//²»ÒªÀûÓÃ¿½±´¾ÐÔìº¯Êý³õÊ¼»¯ÄäÃû¶ÔÏó ±àÒëÆ÷»áÈÏÎªPerson3(p3)===Person3 p3;¶ÔÏóÉùÃ÷
-	//Person3(p3);//´íÎó
-	//3.ÒþÊ½×ª»»·¨
-	Person3 p8 = 30;//Ïàµ±ÓÚ Ð´ÁË Person3 p8 = Person3(30);
+	//æ³¨æ„äº‹é¡¹2
+	//ä¸è¦åˆ©ç”¨æ‹·è´æ‹˜é€ å‡½æ•°åˆå§‹åŒ–åŒ¿åå¯¹è±¡ ç¼–è¯‘å™¨ä¼šè®¤ä¸ºPerson3(p3)===Person3 p3;å¯¹è±¡å£°æ˜Ž
+	//Person3(p3);//é”™è¯¯
+	//3.éšå¼è½¬æ¢æ³•
+	Person3 p8 = 30;//ç›¸å½“äºŽ å†™äº† Person3 p8 = Person3(30);
 	Person3 p9 = p8;
-	cout << "P8µÄÄêÁäÎª:" << p8.age << endl;//30
-	cout << "P9µÄÄêÁäÎª:" << p9.age << endl;//30
+	cout << "P8çš„å¹´é¾„ä¸º:" << p8.age << endl;//30
+	cout << "P9çš„å¹´é¾„ä¸º:" << p9.age << endl;//30
 }
 int main23()
 {

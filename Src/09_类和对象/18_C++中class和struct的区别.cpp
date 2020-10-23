@@ -1,23 +1,23 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//C++ÖĞclassºÍstructµÄÇø±ğ
-//struct Ä¬ÈÏÈ¨ÏŞÊÇ ¹«¹² public
-//class Ä¬ÈÏÈ¨ÏŞÊÇ Ë½ÓĞ private
+//C++ä¸­classå’Œstructçš„åŒºåˆ«
+//struct é»˜è®¤æƒé™æ˜¯ å…¬å…± public
+//class é»˜è®¤æƒé™æ˜¯ ç§æœ‰ private
 class C1
 {
-	int m_A;//Ä¬ÈÏÈ¨ÏŞÊÇË½ÓĞ
+	int m_A;//é»˜è®¤æƒé™æ˜¯ç§æœ‰
 };
 struct C2
 {
-	int m_A;//Ä¬ÈÏÈ¨ÏŞÊÇ¹«¹²
+	int m_A;//é»˜è®¤æƒé™æ˜¯å…¬å…±
 };
 int main18()
 {
 	C1 c1;
-	//c1.m_A = 100;//ÔÚclassÖĞÄ¬ÈÏÈ¨ÏŞË½ÓĞ,ÀàÍâ²»ÄÜ·ÃÎÊ;
+	//c1.m_A = 100;//åœ¨classä¸­é»˜è®¤æƒé™ç§æœ‰,ç±»å¤–ä¸èƒ½è®¿é—®;
 	C2 c2;
-	c2.m_A = 100;//ÔÚstructÖĞÄ¬ÈÏÈ¨ÏŞ¹«¹²,ÀàÍâ¿ÉÒÔ·ÃÎÊ;
+	c2.m_A = 100;//åœ¨structä¸­é»˜è®¤æƒé™å…¬å…±,ç±»å¤–å¯ä»¥è®¿é—®;
 	system("pause");
 	return 0;
 }

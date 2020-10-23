@@ -1,18 +1,18 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 int main11()
 {
-	//×ªÒå×Ö·û:ÓÃÓÚ±íÊ¾Ò»Ğ©²»ÄÜÏÔÊ¾³öÀ´µÄASCI×Ö·û
-	//»»ĞĞ·û	\n
+	//è½¬ä¹‰å­—ç¬¦:ç”¨äºè¡¨ç¤ºä¸€äº›ä¸èƒ½æ˜¾ç¤ºå‡ºæ¥çš„ASCIå­—ç¬¦
+	//æ¢è¡Œç¬¦	\n
 	std::cout << "hello world\n";
-	//µÈ¼ÛÓÚ
+	//ç­‰ä»·äº
 	std::cout << "hello world" << std::endl;
-	//·´Ğ±¸Ü \\
+	//åæ–œæ  \\
 
 	std::cout<<"\\"<<std::endl;
-	//Ë®Æ½ÖÆ±í·û\t(¿Õ¸ñ¶àÉÙ=8-(Ç°Ãæ×Ö·û³¤¶È%8))
-	//×÷ÓÃ:¿ÉÒÔÕûÆëÊä³öÊı¾İ
-	std::cout<<"aaaaaaaabbbb\thelloWorld"<<std::endl;//¿Õ¸ñ4
+	//æ°´å¹³åˆ¶è¡¨ç¬¦\t(ç©ºæ ¼å¤šå°‘=8-(å‰é¢å­—ç¬¦é•¿åº¦%8))
+	//ä½œç”¨:å¯ä»¥æ•´é½è¾“å‡ºæ•°æ®
+	std::cout<<"aaaaaaaabbbb\thelloWorld"<<std::endl;//ç©ºæ ¼4
 	std::cout<<"aa\t\thelloWorld"<<std::endl;
 	std::cout<<"aaaaaa\t\thelloWorld"<<std::endl;
 	system("pause");

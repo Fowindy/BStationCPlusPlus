@@ -1,29 +1,29 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//µİÔöÔËËã·ûÖØÔØ
+//é€’å¢è¿ç®—ç¬¦é‡è½½
 class MyInteger
 {
 	friend ostream& operator<<(ostream& cout, MyInteger myNum);
 public:
-	//2.³ÉÔ±º¯ÊıÖØÔØ(Ç°++)ÔËËã·û,·µ»ØÒıÓÃÊÇÎªÁËÒ»Ö±¶ÔÒ»¸öÊı¾İ½øĞĞµİÔö²Ù×÷
+	//2.æˆå‘˜å‡½æ•°é‡è½½(å‰++)è¿ç®—ç¬¦,è¿”å›å¼•ç”¨æ˜¯ä¸ºäº†ä¸€ç›´å¯¹ä¸€ä¸ªæ•°æ®è¿›è¡Œé€’å¢æ“ä½œ
 	MyInteger& operator++()
 	{
-		//ÏÈ½øĞĞ++ÔËËã
+		//å…ˆè¿›è¡Œ++è¿ç®—
 		m_Num++;
-		//ÔÙ½«×ÔÉí·µ»Ø
+		//å†å°†è‡ªèº«è¿”å›
 		return *this;
 	}
-	//3.³ÉÔ±º¯ÊıÖØÔØ(ºó++)ÔËËã·û
-	//MyInteger operator++(int) int´ú±íÕ¼Î»²ÎÊı,¿ÉÒÔÇø·ÖÇ°ÖÃ++ºÍºóÖÃ++
-	//·µ»ØMyInteger¶ø²»ÊÇÒıÓÃ,Ô­ÒòÊÇ·µ»ØµÄÊÇtemp,³ÉÔ±º¯ÊıÔËĞĞºó¾ÍÊÍ·ÅÁË
+	//3.æˆå‘˜å‡½æ•°é‡è½½(å++)è¿ç®—ç¬¦
+	//MyInteger operator++(int) intä»£è¡¨å ä½å‚æ•°,å¯ä»¥åŒºåˆ†å‰ç½®++å’Œåç½®++
+	//è¿”å›MyIntegerè€Œä¸æ˜¯å¼•ç”¨,åŸå› æ˜¯è¿”å›çš„æ˜¯temp,æˆå‘˜å‡½æ•°è¿è¡Œåå°±é‡Šæ”¾äº†
 	MyInteger operator++(int)
 	{
-		//ÏÈ¼ÇÂ¼µ±Ê±µÄ½á¹û
-		MyInteger temp = *this;//tempÎª¾Ö²¿±äÁ¿
-		//ºóµİÔö
+		//å…ˆè®°å½•å½“æ—¶çš„ç»“æœ
+		MyInteger temp = *this;//tempä¸ºå±€éƒ¨å˜é‡
+		//åé€’å¢
 		m_Num++;
-		//×îºó½«¼ÇÂ¼µÄ½á¹û·µ»Ø
+		//æœ€åå°†è®°å½•çš„ç»“æœè¿”å›
 		return temp;
 	}
 public:
@@ -34,7 +34,7 @@ public:
 private:
 	int m_Num;
 };
-//1.ÉÏ½Ú¿ÎÄÚÈİ:È«¾Öº¯ÊıÊµÏÖ×óÒÆÔËËã·ûÖØÔØ
+//1.ä¸ŠèŠ‚è¯¾å†…å®¹:å…¨å±€å‡½æ•°å®ç°å·¦ç§»è¿ç®—ç¬¦é‡è½½
 ostream& operator<<(ostream& cout, MyInteger myNum)
 {
 	cout<<myNum.m_Num;

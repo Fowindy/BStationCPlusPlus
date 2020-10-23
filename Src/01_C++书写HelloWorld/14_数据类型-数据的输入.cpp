@@ -1,37 +1,37 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main14()
 {
-	//×÷ÓÃ:ÓÃÓÚ´Ó¼üÅÌ»ñÈ¡Êı¾İ
-	//¹Ø¼ü×Ö : cin
-	//Óï·¨ : cin >> ±äÁ¿
+	//ä½œç”¨:ç”¨äºä»é”®ç›˜è·å–æ•°æ®
+	//å…³é”®å­— : cin
+	//è¯­æ³• : cin >> å˜é‡
 
-	//1¡¢ÕûĞÍ
+	//1ã€æ•´å‹
 	int a = 0;
-	std::cout<<"Çë¸øÕûĞÍ±äÁ¿a¸³Öµ:"<<std::endl;
+	std::cout<<"è¯·ç»™æ•´å‹å˜é‡aèµ‹å€¼:"<<std::endl;
 	std::cin>>a;
-	std::cout<<"ÕûĞÍ±äÁ¿a = "<<a<<std::endl;
-	//2¡¢¸¡µãĞÍ
+	std::cout<<"æ•´å‹å˜é‡a = "<<a<<std::endl;
+	//2ã€æµ®ç‚¹å‹
 	float f = 3.1415926f;
-	std::cout<<"Çë¸ø¸¡µãĞÍ±äÁ¿f¸³Öµ:"<<std::endl;
+	std::cout<<"è¯·ç»™æµ®ç‚¹å‹å˜é‡fèµ‹å€¼:"<<std::endl;
 	std::cin>>f;
-	std::cout<<"¸¡µãĞÍ±äÁ¿f = "<<f<<std::endl;
-	//3¡¢×Ö·ûĞÍ
+	std::cout<<"æµ®ç‚¹å‹å˜é‡f = "<<f<<std::endl;
+	//3ã€å­—ç¬¦å‹
 	char ch = 'a';
-	std::cout<<"Çë¸ø×Ö·ûĞÍ±äÁ¿¸³Öµch:"<<std::endl;
+	std::cout<<"è¯·ç»™å­—ç¬¦å‹å˜é‡èµ‹å€¼ch:"<<std::endl;
 	std::cin>>ch;
-	std::cout<<"×Ö·ûĞÍ±äÁ¿ch = "<<ch<<std::endl;
-	//4¡¢×Ö·û´®ĞÍ
-	string str = "";//C++×Ö·û´®ÀàĞÍ²»ÄÜ³õÊ¼»¯³ÉNULL
-	std::cout<<"Çë¸ø×Ö·û´®ĞÍ±äÁ¿str¸³Öµ:"<<std::endl;
+	std::cout<<"å­—ç¬¦å‹å˜é‡ch = "<<ch<<std::endl;
+	//4ã€å­—ç¬¦ä¸²å‹
+	string str = "";//C++å­—ç¬¦ä¸²ç±»å‹ä¸èƒ½åˆå§‹åŒ–æˆNULL
+	std::cout<<"è¯·ç»™å­—ç¬¦ä¸²å‹å˜é‡strèµ‹å€¼:"<<std::endl;
 	std::cin>>str;
-	std::cout<<"×Ö·û´®ĞÍ±äÁ¿str = "<<str<<std::endl;
-	//5¡¢²¼¶ûÀàĞÍ
+	std::cout<<"å­—ç¬¦ä¸²å‹å˜é‡str = "<<str<<std::endl;
+	//5ã€å¸ƒå°”ç±»å‹
 	bool flag = true;
-	std::cout<<"Çë¸ø²¼¶ûÀàĞÍ±äÁ¿flag¸³Öµ:"<<std::endl;
+	std::cout<<"è¯·ç»™å¸ƒå°”ç±»å‹å˜é‡flagèµ‹å€¼:"<<std::endl;
 	std::cin>>flag;
-	std::cout<<"²¼¶ûÀàĞÍ±äÁ¿flag = "<<flag<<std::endl;//Êä³ö1»òÕß0;1´ú±íÕæ,0´ú±í¼Ù;·Ç0ÊıÖµ×Ö·ûÎªÕæ,ÆäÓàÎª¼Ù
+	std::cout<<"å¸ƒå°”ç±»å‹å˜é‡flag = "<<flag<<std::endl;//è¾“å‡º1æˆ–è€…0;1ä»£è¡¨çœŸ,0ä»£è¡¨å‡;é0æ•°å€¼å­—ç¬¦ä¸ºçœŸ,å…¶ä½™ä¸ºå‡
 	system("pause");
 	return 0;
 }

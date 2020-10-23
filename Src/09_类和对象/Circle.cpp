@@ -1,24 +1,24 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 #include "Circle.h"
-//1.Ô²Àà
-//ÉèÖÃ°ë¾¶
+//1.åœ†ç±»
+//è®¾ç½®åŠå¾„
 void Circle::setR(double r)
 {
 	m_R = r;
 }
-//»ñÈ¡°ë¾¶
+//è·å–åŠå¾„
 double Circle::getR()
 {
 	return m_R;
 }
-//ÉèÖÃÔ²ĞÄ
+//è®¾ç½®åœ†å¿ƒ
 void Circle::setCenter(Point center)
 {
 	m_Center = center;
 }
-//»ñÈ¡Ô²ĞÄ
+//è·å–åœ†å¿ƒ
 Point Circle::getCenter()
 {
 	return m_Center;

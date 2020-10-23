@@ -1,55 +1,55 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//Éè¼ÆÒ»¸öÑ§ÉúÀà£¬ÊôÐÔÓÐÐÕÃûºÍÑ§ºÅ£¬¿ÉÒÔ¸øÐÕÃûºÍÑ§ºÅ¸³Öµ£¬¿ÉÒÔÏÔÊ¾Ñ§ÉúµÄÐÕÃûºÍÑ§ºÅ
+//è®¾è®¡ä¸€ä¸ªå­¦ç”Ÿç±»ï¼Œå±žæ€§æœ‰å§“åå’Œå­¦å·ï¼Œå¯ä»¥ç»™å§“åå’Œå­¦å·èµ‹å€¼ï¼Œå¯ä»¥æ˜¾ç¤ºå­¦ç”Ÿçš„å§“åå’Œå­¦å·
 class Student
 {
-	//ÀàÖÐµÄÊôÐÔºÍÐÐÎª ÎÒÃÇÍ³Ò»³ÆÎª³ÉÔ±
-	//ÊôÐÔ	³ÉÔ±ÊôÐÔ ³ÉÔ±±äÁ¿
-	//ÐÐÎª	³ÉÔ±º¯Êý	³ÉÔ±·½·¨
+	//ç±»ä¸­çš„å±žæ€§å’Œè¡Œä¸º æˆ‘ä»¬ç»Ÿä¸€ç§°ä¸ºæˆå‘˜
+	//å±žæ€§	æˆå‘˜å±žæ€§ æˆå‘˜å˜é‡
+	//è¡Œä¸º	æˆå‘˜å‡½æ•°	æˆå‘˜æ–¹æ³•
 public:
-	//ÊôÐÔ:
-	//ÐÕÃû
+	//å±žæ€§:
+	//å§“å
 	string m_name;
-	//Ñ§ºÅ
+	//å­¦å·
 	int m_id;
 public:
-	//ÐÐÎª:
-	//ÉèÖÃÐÕÃû
+	//è¡Œä¸º:
+	//è®¾ç½®å§“å
 	void setName(string name)
 	{
 		m_name = name;
 	}
-	//ÉèÖÃÑ§ºÅ
+	//è®¾ç½®å­¦å·
 	void setId(int id)
 	{
 		m_id = id;
 	}
-	//ÏÔÊ¾ÐÕÃûºÍÑ§ºÅ
+	//æ˜¾ç¤ºå§“åå’Œå­¦å·
 	void showStudent()
 	{
-		cout<<"Ñ§ÉúµÄÐÕÃû:"<<m_name<<";Ñ§ÉúµÄÑ§ºÅ:"<<m_id<<endl;
+		cout<<"å­¦ç”Ÿçš„å§“å:"<<m_name<<";å­¦ç”Ÿçš„å­¦å·:"<<m_id<<endl;
 	}
 
 };
 int main16()
 {
-	//Í¨¹ýÑ§ÉúÀà,´´½¨¾ßÌåµÄÑ§Éú(¶ÔÏó)  ÊµÀý»¯¶ÔÏó
+	//é€šè¿‡å­¦ç”Ÿç±»,åˆ›å»ºå…·ä½“çš„å­¦ç”Ÿ(å¯¹è±¡)  å®žä¾‹åŒ–å¯¹è±¡
 	Student stu1;
-	//¸østu1¶ÔÏó,½øÐÐÊôÐÔ¸³Öµ
-	stu1.m_name = "ÕÅÈý";
+	//ç»™stu1å¯¹è±¡,è¿›è¡Œå±žæ€§èµ‹å€¼
+	stu1.m_name = "å¼ ä¸‰";
 	stu1.m_id = 1;
-	//ÏÔÊ¾Ñ§ÉúÐÅÏ¢
+	//æ˜¾ç¤ºå­¦ç”Ÿä¿¡æ¯
 	stu1.showStudent();
 
 	Student stu2;
-	stu2.m_name = "ÀîËÄ";
+	stu2.m_name = "æŽå››";
 	stu2.m_id = 2;
 	stu2.showStudent();
 
-	//Í¨¹ýsetÐÐÎª¸øÊôÐÔ¸³ÖµµÄ·½Ê½
+	//é€šè¿‡setè¡Œä¸ºç»™å±žæ€§èµ‹å€¼çš„æ–¹å¼
 	Student stu3;
-	stu3.setName("ÍõÎå");
+	stu3.setName("çŽ‹äº”");
 	stu3.setId(3);
 	stu3.showStudent();
 	system("pause");

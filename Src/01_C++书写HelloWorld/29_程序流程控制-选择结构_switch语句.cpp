@@ -1,40 +1,40 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main29()
 {
-	//switchÓï¾ä
-	//¸øµçÓ°½øĞĞ´ò·Ö
-	//10~9¾­µä
-	//8~7·Ç³£ºÃ
-	//6~5Ò»°ã
-	//5ÒÔÏÂ ÀÃÆ¬
-	std::cout << "Çë¸øµçÓ°´ò·Ö(0-10):" << std::endl;
+	//switchè¯­å¥
+	//ç»™ç”µå½±è¿›è¡Œæ‰“åˆ†
+	//10~9ç»å…¸
+	//8~7éå¸¸å¥½
+	//6~5ä¸€èˆ¬
+	//5ä»¥ä¸‹ çƒ‚ç‰‡
+	std::cout << "è¯·ç»™ç”µå½±æ‰“åˆ†(0-10):" << std::endl;
 	int score = 0;
 	std::cin >> score;
-	std::cout << "Äú¸øµçÓ°´òµÄÆÀ·ÖÎª:" << score << std::endl;
+	std::cout << "æ‚¨ç»™ç”µå½±æ‰“çš„è¯„åˆ†ä¸º:" << score << std::endl;
 	switch (score)
 	{
 	case 10:
 	case 9:
-		std::cout<<"¾­µäµçÓ°"<<std::endl;
-		break;//ÍË³öµ±Ç°·ÖÖ§(breakÒ»¶¨Òª)
+		std::cout<<"ç»å…¸ç”µå½±"<<std::endl;
+		break;//é€€å‡ºå½“å‰åˆ†æ”¯(breakä¸€å®šè¦)
 	case 8:
 	case 7:
-		std::cout<<"·Ç³£ºÃµÄµçÓ°"<<std::endl;
+		std::cout<<"éå¸¸å¥½çš„ç”µå½±"<<std::endl;
 		break;
 	case 6:
 	case 5:
-		std::cout<<"Ò»°ãµÄµçÓ°"<<std::endl;
+		std::cout<<"ä¸€èˆ¬çš„ç”µå½±"<<std::endl;
 		break;
 	default:
-		std::cout<<"ÀÃÆ¬"<<std::endl;
+		std::cout<<"çƒ‚ç‰‡"<<std::endl;
 		break;
 	}
-	//×¢Òâ1: caseÀïÈç¹ûÃ»ÓĞbreak, ÄÇÃ´³ÌĞò»áÒ»Ö±ÏòÏÂÖ´ĞĞ
-	//ifºÍswitchÇø±ğ:
-	//switchÈ±µã:ÅĞ¶ÏÊ±ºòÖ»ÄÜÊÇÕûĞÍ»òÕß×Ö·ûĞÍÃ¶¾ÙĞÍ,²»¿ÉÒÔÊÇÒ»¸öÇø¼ä
-	//switchÓÅµã:½á¹¹ÇåÎú,Ö´ĞĞĞ§ÂÊ¸ß
+	//æ³¨æ„1: caseé‡Œå¦‚æœæ²¡æœ‰break, é‚£ä¹ˆç¨‹åºä¼šä¸€ç›´å‘ä¸‹æ‰§è¡Œ
+	//ifå’ŒswitchåŒºåˆ«:
+	//switchç¼ºç‚¹:åˆ¤æ–­æ—¶å€™åªèƒ½æ˜¯æ•´å‹æˆ–è€…å­—ç¬¦å‹æšä¸¾å‹,ä¸å¯ä»¥æ˜¯ä¸€ä¸ªåŒºé—´
+	//switchä¼˜ç‚¹:ç»“æ„æ¸…æ™°,æ‰§è¡Œæ•ˆç‡é«˜
 	system("pause");
 	return 0;
 }

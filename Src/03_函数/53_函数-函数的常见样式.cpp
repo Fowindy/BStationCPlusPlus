@@ -1,30 +1,30 @@
-#include <iostream>
+О╩©#include <iostream>
 #include <string>
 using namespace std;
-//╨╞йЩЁё╪ШяЫй╫
-//1║╒ нч╡ннч╥╣
+//Е┤╫Ф∙╟Е╦╦Х╖│Ф═╥Е╪▐
+//1Ц─│ Ф≈═Е▐┌Ф≈═Х©■
 void test01()
 {
-	//void a = 10; //нчюЮпм╡╩©ирт╢╢╫╗╠Да©,т╜рРнч╥╗╥жеДдз╢Ф
+	//void a = 10; //Ф≈═Г╠╩Е·▀Д╦█Е▐╞Д╩╔Е┬⌡Е╩╨Е▐≤И┤▐,Е▌÷Е⌡═Ф≈═ФЁ∙Е┬├И┘█Е├┘Е╜≤
 	cout << "this is test01" << endl;
-	//test01(); ╨╞йЩ╣Всц
+	//test01(); Е┤╫Ф∙╟Х╟┐Г■╗
 }
 
-//2║╒ сп╡ннч╥╣
+//2Ц─│ Ф°┴Е▐┌Ф≈═Х©■
 void test02(int a)
 {
 	cout << "this is test02" << endl;
 	cout << "a = " << a << endl;
 }
 
-//3║╒нч╡нсп╥╣
+//3Ц─│Ф≈═Е▐┌Ф°┴Х©■
 int test03()
 {
 	cout << "this is test03 " << endl;
 	return 10;
 }
 
-//4║╒сп╡нсп╥╣
+//4Ц─│Ф°┴Е▐┌Ф°┴Х©■
 int test04(int a, int b)
 {
 	cout << "this is test04 " << endl;
@@ -33,13 +33,13 @@ int test04(int a, int b)
 }
 int main53()
 {
-	//нч╡ннч╥╣╣д╣Всц
+	//Ф≈═Е▐┌Ф≈═Х©■Г └Х╟┐Г■╗
 	test01();
-	//сп╡ннч╥╣╣д╣Всц
+	//Ф°┴Е▐┌Ф≈═Х©■Г └Х╟┐Г■╗
 	test02(2);
-	//нч╡нсп╥╣╣д╣Всц
+	//Ф≈═Е▐┌Ф°┴Х©■Г └Х╟┐Г■╗
 	cout<<test03()<<endl;
-	//сп╡нсп╥╣╣д╣Всц
+	//Ф°┴Е▐┌Ф°┴Х©■Г └Х╟┐Г■╗
 	cout<<test04(4,5)<<endl;
 	system("pause");
 	return 0;

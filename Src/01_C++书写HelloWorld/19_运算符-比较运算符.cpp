@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main19()
 {
-	//±È½ÏÔËËã·û
+	//æ¯”è¾ƒè¿ç®—ç¬¦
 	// == 
 	int a = 10;
 	int b = 20;

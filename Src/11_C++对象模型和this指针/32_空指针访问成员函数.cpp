@@ -1,7 +1,7 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//¿ÕÖ¸Õë·ÃÎÊ³ÉÔ±º¯Êı
+//ç©ºæŒ‡é’ˆè®¿é—®æˆå‘˜å‡½æ•°
 class Person2
 {
 public:
@@ -11,18 +11,18 @@ public:
 	}
 	void showPersonAge()
 	{
-		//±¨´í:Ô­ÒòÊÇ´«ÈëµÄÖ¸ÕëÊÇÎªNULL
+		//æŠ¥é”™:åŸå› æ˜¯ä¼ å…¥çš„æŒ‡é’ˆæ˜¯ä¸ºNULL
 		if (this == NULL)
 		{
 			return;
 		}
-		cout << "age = " << this->m_Age << endl;//m_Age±àÒëÆ÷Ä¬ÈÏÎªthis->m_Age
+		cout << "age = " << this->m_Age << endl;//m_Ageç¼–è¯‘å™¨é»˜è®¤ä¸ºthis->m_Age
 	}
 	int m_Age;
 };
 void test2()
 {
-	//´´½¨¿ÕÖ¸Õë
+	//åˆ›å»ºç©ºæŒ‡é’ˆ
 	Person2* p = NULL;
 	//p->showClassName();
 	p->showPersonAge();

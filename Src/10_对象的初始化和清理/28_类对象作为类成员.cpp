@@ -1,49 +1,49 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//Àà¶ÔÏó×÷ÎªÀà³ÉÔ±
-//ÊÖ»úÀà
+//ç±»å¯¹è±¡ä½œä¸ºç±»æˆå‘˜
+//æ‰‹æœºç±»
 class Phone
 {
 public:
 	Phone(string phoneBrand)
 	{
-		cout<<"PhoneµÄ¹¹Ôìº¯Êıµ÷ÓÃ"<<endl;
+		cout<<"Phoneçš„æ„é€ å‡½æ•°è°ƒç”¨"<<endl;
 		m_PhoneBrand = phoneBrand;
 	}
 	~Phone()
 	{
-		cout<<"PhoneµÄÎö¹¹º¯Êıµ÷ÓÃ"<<endl;
+		cout<<"Phoneçš„ææ„å‡½æ•°è°ƒç”¨"<<endl;
 	}
 public:
-	//ÊÖ»úÆ·ÅÆÃû³Æ
+	//æ‰‹æœºå“ç‰Œåç§°
 	string m_PhoneBrand;
 };
-//ÈËÀà
+//äººç±»
 class Person8
 {
 public:
-	//Phone m_Phone = phoneBrand;//ÒşÊ½×ª»»·¨
+	//Phone m_Phone = phoneBrand;//éšå¼è½¬æ¢æ³•
 	Person8(string name,string phoneBrand):m_Name(name),m_Phone(phoneBrand)
 	{
-		cout<<"Person8µÄ¹¹Ôìº¯Êıµ÷ÓÃ"<<endl;
+		cout<<"Person8çš„æ„é€ å‡½æ•°è°ƒç”¨"<<endl;
 	}
 	~Person8()
 	{
-		cout<<"Person8µÄÎö¹¹º¯Êıµ÷ÓÃ"<<endl;
+		cout<<"Person8çš„ææ„å‡½æ•°è°ƒç”¨"<<endl;
 	}
 public:
-	//ĞÕÃû
+	//å§“å
 	string m_Name;
-	//ÊÖ»úÀà³ÉÔ±
+	//æ‰‹æœºç±»æˆå‘˜
 	Phone m_Phone;
 };
 void test8()
 {
-	Person8 p("ÕÅÈı", "Apple");
-	cout << p.m_Name << "ÄÃ×Å:" << p.m_Phone.m_PhoneBrand << endl;
+	Person8 p("å¼ ä¸‰", "Apple");
+	cout << p.m_Name << "æ‹¿ç€:" << p.m_Phone.m_PhoneBrand << endl;
 }
-//1.µ±ÆäËûÀà¶ÔÏó×÷Îª±¾Àà³ÉÔ±,¹¹ÔìÊ±ºòÏÈ¹¹ÔìÀà¶ÔÏó£¬ÔÚ¹¹Ôì×ÔÉí£¬Îö¹¹µÄË³ĞòÓë¹¹ÔìÏà·´
+//1.å½“å…¶ä»–ç±»å¯¹è±¡ä½œä¸ºæœ¬ç±»æˆå‘˜,æ„é€ æ—¶å€™å…ˆæ„é€ ç±»å¯¹è±¡ï¼Œåœ¨æ„é€ è‡ªèº«ï¼Œææ„çš„é¡ºåºä¸æ„é€ ç›¸å
 int main28()
 {
 	test8();

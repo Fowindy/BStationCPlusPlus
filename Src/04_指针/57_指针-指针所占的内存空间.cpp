@@ -1,13 +1,13 @@
-#include <iostream>
+﻿#include <iostream>
 #include <string>
 using namespace std;
 int main57()
 {
-	//ָ����ռ���ڴ�ռ�
+	//指针所占的内存空间
 	int a = 10;
 	int *p = &a;
-	//��32λ����ƽ̨:�κ����͵�ָ��ռ��4���ֽڿռ�
-	//��64λ����ƽ̨:�κ����͵�ָ��ռ��8���ֽڿռ�
+	//在32位开发平台:任何类型的指针占用4个字节空间
+	//在64位开发平台:任何类型的指针占用8个字节空间
 	std::cout << "sizeof(p) = " << sizeof(p) << std::endl;//4
 	std::cout << "sizeof(int *) = " << sizeof(int *) << std::endl;//4
 	std::cout << "sizeof(double *) = " << sizeof(double *) << std::endl;//4

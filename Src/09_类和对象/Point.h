@@ -1,19 +1,19 @@
-#pragma once
+ï»¿#pragma once
 #include<iostream>
 using namespace std;
-//2.µãÀà
+//2.ç‚¹ç±»
 class Point
 {
 private:
-	double m_X;//X×ø±ê
-	double m_Y;//Y×ø±ê
+	double m_X;//Xåæ ‡
+	double m_Y;//Yåæ ‡
 public:
-	//ÉèÖÃX×ø±ê
+	//è®¾ç½®Xåæ ‡
 	void setX(double x);
-	//»ñÈ¡X×ø±ê
+	//è·å–Xåæ ‡
 	double getX();
-	//ÉèÖÃY×ø±ê
+	//è®¾ç½®Yåæ ‡
 	void setY(double y);
-	//»ñÈ¡Y×ø±ê
+	//è·å–Yåæ ‡
 	double getY();
 };

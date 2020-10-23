@@ -1,37 +1,37 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//thisÖ¸ÕëµÄÓÃÍ¾
+//thisæŒ‡é’ˆçš„ç”¨é€”
 class Person1
 {
 public:
 	Person1(int age)
 	{
-		//thisÖ¸ÕëÖ¸ÏòµÄ±»µ÷ÓÃµÄ³ÉÔ±º¯ÊıËùÊôµÄ¶ÔÏóp1
+		//thisæŒ‡é’ˆæŒ‡å‘çš„è¢«è°ƒç”¨çš„æˆå‘˜å‡½æ•°æ‰€å±çš„å¯¹è±¡p1
 		this->age = age;
 	}
 	Person1& Person1AddAge(Person1 &p)
 	{
 		this->age += p.age;
-		//thisÊÇÖ¸Ïò±»µ÷ÓÃµÄ³ÉÔ±º¯ÊıËùÊôµÄ¶ÔÏóp2µÄÖ¸Õë,¶ø*thisÔòÊÇp2¶ÔÏó±¾Ìå
+		//thisæ˜¯æŒ‡å‘è¢«è°ƒç”¨çš„æˆå‘˜å‡½æ•°æ‰€å±çš„å¯¹è±¡p2çš„æŒ‡é’ˆ,è€Œ*thisåˆ™æ˜¯p2å¯¹è±¡æœ¬ä½“
 		return *this;
 	}
 	int age;
 };
-//1.½â¾öÃû³Æ³åÍ»
+//1.è§£å†³åç§°å†²çª
 void test1()
 {
 	Person1 p1(18);
-	cout<<"p1µÄÄêÁäÎª:"<<p1.age<<endl;
+	cout<<"p1çš„å¹´é¾„ä¸º:"<<p1.age<<endl;
 }
-//2.·µ»Ø¶ÔÏó±¾ÉíÓÃ*this
+//2.è¿”å›å¯¹è±¡æœ¬èº«ç”¨*this
 void test11()
 {
 	Person1 p1(10);
 	Person1 p2(10);
-	//Á´Ê½±à³ÌË¼Ïë
+	//é“¾å¼ç¼–ç¨‹æ€æƒ³
 	p2.Person1AddAge(p1).Person1AddAge(p1).Person1AddAge(p1);
-	cout<<"p2µÄÄêÁäÎª:"<<p2.age<<endl;//40
+	cout<<"p2çš„å¹´é¾„ä¸º:"<<p2.age<<endl;//40
 }
 int main31()
 {

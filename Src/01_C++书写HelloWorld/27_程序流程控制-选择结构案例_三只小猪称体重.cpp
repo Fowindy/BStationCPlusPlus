@@ -1,60 +1,60 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main27()
 {
-	//ÈıÖ»Ğ¡Öí³ÆÌåÖØ£¬°´ÖØµ½ÇáÅÅĞò
-#pragma region ¶¨ÒåÈıÖ»Ğ¡ÖíµÄÌåÖØ±äÁ¿
+	//ä¸‰åªå°çŒªç§°ä½“é‡ï¼ŒæŒ‰é‡åˆ°è½»æ’åº
+#pragma region å®šä¹‰ä¸‰åªå°çŒªçš„ä½“é‡å˜é‡
 	double weightA = 0;
 	double weightB = 0;
 	double weightC = 0;
 #pragma endregion
-	cout << "ÇëÊäÈëĞ¡ÖíAµÄÌåÖØ:" << endl;
+	cout << "è¯·è¾“å…¥å°çŒªAçš„ä½“é‡:" << endl;
 	cin >> weightA;
-	cout << "ÇëÊäÈëĞ¡ÖíBµÄÌåÖØ" << endl;
+	cout << "è¯·è¾“å…¥å°çŒªBçš„ä½“é‡" << endl;
 	cin >> weightB;
-	cout << "ÇëÊäÈëĞ¡ÖíCµÄÌåÖØ" << endl;
+	cout << "è¯·è¾“å…¥å°çŒªCçš„ä½“é‡" << endl;
 	cin >> weightC;
-	cout << "Ğ¡ÖíAµÄÌåÖØÎª:" << weightA << endl;
-	cout << "Ğ¡ÖíBµÄÌåÖØÎª:" << weightB << endl;
-	cout << "Ğ¡ÖíCµÄÌåÖØÎª:" << weightC << endl;
-	//3¡¢ÅĞ¶ÏÄÄÖ»Ğ¡Öí×îÖØ
+	cout << "å°çŒªAçš„ä½“é‡ä¸º:" << weightA << endl;
+	cout << "å°çŒªBçš„ä½“é‡ä¸º:" << weightB << endl;
+	cout << "å°çŒªCçš„ä½“é‡ä¸º:" << weightC << endl;
+	//3ã€åˆ¤æ–­å“ªåªå°çŒªæœ€é‡
 	if (weightA >= weightB)//A>B
 	{
 		if (weightB >= weightC)//B>C
 		{
-			std::cout << "Ğ¡ÖíA×îÖØ" << std::endl;
-			std::cout << "Ğ¡ÖíÌåÖØÅÅĞòÎª£ºĞ¡ÖíA>Ğ¡ÖíB>Ğ¡ÖíC" << std::endl;
+			std::cout << "å°çŒªAæœ€é‡" << std::endl;
+			std::cout << "å°çŒªä½“é‡æ’åºä¸ºï¼šå°çŒªA>å°çŒªB>å°çŒªC" << std::endl;
 		}
 		else if (weightA >= weightC)//A>C
 		{
-			std::cout << "Ğ¡ÖíA×îÖØ" << std::endl;
-			std::cout << "Ğ¡ÖíÌåÖØÅÅĞòÎª£ºĞ¡ÖíA>Ğ¡ÖíC>Ğ¡ÖíB" << std::endl;
+			std::cout << "å°çŒªAæœ€é‡" << std::endl;
+			std::cout << "å°çŒªä½“é‡æ’åºä¸ºï¼šå°çŒªA>å°çŒªC>å°çŒªB" << std::endl;
 		}
 		else
 		{
-			std::cout << "Ğ¡ÖíC×îÖØ" << std::endl;
-			std::cout << "Ğ¡ÖíÌåÖØÅÅĞòÎª£ºĞ¡ÖíC>Ğ¡ÖíA>Ğ¡ÖíB" << std::endl;
+			std::cout << "å°çŒªCæœ€é‡" << std::endl;
+			std::cout << "å°çŒªä½“é‡æ’åºä¸ºï¼šå°çŒªC>å°çŒªA>å°çŒªB" << std::endl;
 		}
 	}
 	else//B>A
 	{
 		if (weightA >= weightC)
 		{
-			std::cout << "Ğ¡ÖíB×îÖØ" << std::endl;
-			std::cout << "Ğ¡ÖíÌåÖØÅÅĞòÎª£ºĞ¡ÖíB>Ğ¡ÖíA>Ğ¡ÖíC" << std::endl;
+			std::cout << "å°çŒªBæœ€é‡" << std::endl;
+			std::cout << "å°çŒªä½“é‡æ’åºä¸ºï¼šå°çŒªB>å°çŒªA>å°çŒªC" << std::endl;
 		}
 		else
 		{
 			if (weightB >= weightC)
 			{
-				std::cout << "Ğ¡ÖíB×îÖØ" << std::endl;
-				std::cout << "Ğ¡ÖíÌåÖØÅÅĞòÎª£ºĞ¡ÖíB>Ğ¡ÖíC>Ğ¡ÖíA" << std::endl;
+				std::cout << "å°çŒªBæœ€é‡" << std::endl;
+				std::cout << "å°çŒªä½“é‡æ’åºä¸ºï¼šå°çŒªB>å°çŒªC>å°çŒªA" << std::endl;
 			}
 			else
 			{
-				std::cout << "Ğ¡ÖíC×îÖØ" << std::endl;
-				std::cout << "Ğ¡ÖíÌåÖØÅÅĞòÎª£ºĞ¡ÖíC>Ğ¡ÖíB>Ğ¡ÖíA" << std::endl;
+				std::cout << "å°çŒªCæœ€é‡" << std::endl;
+				std::cout << "å°çŒªä½“é‡æ’åºä¸ºï¼šå°çŒªC>å°çŒªB>å°çŒªA" << std::endl;
 			}
 		}
 	}

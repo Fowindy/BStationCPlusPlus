@@ -1,14 +1,14 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main20()
 {
-	//Âß¼­ÔËËã·û·Ç!
+	//é€»è¾‘è¿ç®—ç¬¦é!
 	int a = 10;
-	//ÔÚC++ÖĞ³ıÁË0¶¼ÎªÕæ
+	//åœ¨C++ä¸­é™¤äº†0éƒ½ä¸ºçœŸ
 	cout << !a << endl;//0
 	cout << !!a << endl;//1
-	//×Ü½á:Õæ±ä¼Ù,¼Ù±äÕæ
+	//æ€»ç»“:çœŸå˜å‡,å‡å˜çœŸ
 	system("pause");
 	return 0;
 }

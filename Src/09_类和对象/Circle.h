@@ -1,21 +1,21 @@
-#pragma once
+ï»¿#pragma once
 #include<iostream>
 using namespace std;
 #include "Point.h"
-//1.Ô²Àà
+//1.åœ†ç±»
 class Circle
 {
 private:
-	int m_R;//°ë¾¶
-	//ÔÚÀàÖĞ¿ÉÒÔÈÃÁíÍâÒ»¸öÀà,×÷Îª±¾ÀàÖĞµÄ³ÉÔ±
-	Point m_Center;//Ô²ĞÄ
+	int m_R;//åŠå¾„
+	//åœ¨ç±»ä¸­å¯ä»¥è®©å¦å¤–ä¸€ä¸ªç±»,ä½œä¸ºæœ¬ç±»ä¸­çš„æˆå‘˜
+	Point m_Center;//åœ†å¿ƒ
 public:
-	//ÉèÖÃ°ë¾¶
+	//è®¾ç½®åŠå¾„
 	void setR(double r);
-	//»ñÈ¡°ë¾¶
+	//è·å–åŠå¾„
 	double getR();
-	//ÉèÖÃÔ²ĞÄ
+	//è®¾ç½®åœ†å¿ƒ
 	void setCenter(Point center);
-	//»ñÈ¡Ô²ĞÄ
+	//è·å–åœ†å¿ƒ
 	Point getCenter();
 };

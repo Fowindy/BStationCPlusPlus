@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//³õÊ¼»¯ÁĞ±í
+//åˆå§‹åŒ–åˆ—è¡¨
 class Person7
 {
 public:
-	//1.´«Í³³õÊ¼»¯²Ù×÷
+	//1.ä¼ ç»Ÿåˆå§‹åŒ–æ“ä½œ
 	//Person7(int a,int b,int c)
 	//{
 	//	m_A = a;
@@ -13,7 +13,7 @@ public:
 	//	m_C = c;
 	//}
 
-	//2.³õÊ¼»¯ÁĞ±í³õÊ¼»¯ÊôĞÔ
+	//2.åˆå§‹åŒ–åˆ—è¡¨åˆå§‹åŒ–å±æ€§
 	Person7(int a,int b,int c) :m_A(a), m_B(b), m_C(c)
 	{
 	}

@@ -1,12 +1,12 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main05()
 {
-	//ÒıÓÃµÄ»ù±¾Óï·¨
-	//Êı¾İÀàĞÍ &±ğÃû = Ô­Ãû;
+	//å¼•ç”¨çš„åŸºæœ¬è¯­æ³•
+	//æ•°æ®ç±»å‹ &åˆ«å = åŸå;
 	int a = 10;
-	//¶¨ÒåÒıÓÃ
+	//å®šä¹‰å¼•ç”¨
 	int &b = a;
 	cout << "a = " << a << endl;//10
 	cout << "b = " << b << endl;//10

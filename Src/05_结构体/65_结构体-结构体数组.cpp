@@ -1,35 +1,35 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//½á¹¹ÌåÊı×é
-//1.¶¨Òå½á¹¹Ìå
+//ç»“æ„ä½“æ•°ç»„
+//1.å®šä¹‰ç»“æ„ä½“
 struct Student
 {
-	//³ÉÔ±ÁĞ±í
-	//ĞÕÃû
+	//æˆå‘˜åˆ—è¡¨
+	//å§“å
 	string name;
-	//ÄêÁä
+	//å¹´é¾„
 	int age;
-	//·ÖÊı
+	//åˆ†æ•°
 	int score;
 };
 int main65()
 {
-	//2.´´½¨½á¹¹ÌåÊı×é
+	//2.åˆ›å»ºç»“æ„ä½“æ•°ç»„
 	Student stuArray[3] =
 	{
-		{"ÕÅÈı",18,80 },
-		{"ÀîËÄ",19,60 },
-		{"ÍõÎå",20,70 }
+		{"å¼ ä¸‰",18,80 },
+		{"æå››",19,60 },
+		{"ç‹äº”",20,70 }
 	};
-	//3.¸ø½á¹¹ÌåÊı×éÖĞµÄÔªËØ¸³Öµ
+	//3.ç»™ç»“æ„ä½“æ•°ç»„ä¸­çš„å…ƒç´ èµ‹å€¼
 	stuArray[2].age = 23;
-	stuArray[2].name = "ÕÔÁù";
+	stuArray[2].name = "èµµå…­";
 	stuArray[2].score = 78;
-	//4.±éÀú½á¹¹ÌåÊı×é
+	//4.éå†ç»“æ„ä½“æ•°ç»„
 	for (int i = 0; i < sizeof(stuArray)/sizeof(stuArray[0]) ; i++)
 	{
-		std::cout<<"ĞÕÃû:"<<stuArray[i].name<<";ÄêÁä:"<<stuArray[i].age<<";·ÖÊı:"<<stuArray[i].score<<std::endl;
+		std::cout<<"å§“å:"<<stuArray[i].name<<";å¹´é¾„:"<<stuArray[i].age<<";åˆ†æ•°:"<<stuArray[i].score<<std::endl;
 	}
 	system("pause");
 	return 0;

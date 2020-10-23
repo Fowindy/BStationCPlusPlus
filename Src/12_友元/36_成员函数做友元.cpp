@@ -1,20 +1,20 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//³ÉÔ±º¯Êı×öÓÑÔª
-//ÀàÉùÃ÷
+//æˆå‘˜å‡½æ•°åšå‹å…ƒ
+//ç±»å£°æ˜
 class Building6;
 class GoodGay6
 {
 public:
 	GoodGay6();
-	void visit();//ÈÃvisitº¯Êı¿ÉÒÔ·ÃÎÊBuilding6ÖĞµÄË½ÓĞ³ÉÔ±
-	void visit2();//ÈÃvisit2º¯Êı²»ÄÜ·ÃÎÊBuildingÖĞµÄË½ÓĞ³ÉÔ±
+	void visit();//è®©visitå‡½æ•°å¯ä»¥è®¿é—®Building6ä¸­çš„ç§æœ‰æˆå‘˜
+	void visit2();//è®©visit2å‡½æ•°ä¸èƒ½è®¿é—®Buildingä¸­çš„ç§æœ‰æˆå‘˜
 	Building6* building;
 };
 class Building6
 {
-	//¸æËß±àÒëÆ÷GoodGayÀàÏÂµÄvisit³ÉÔ±º¯Êı×÷Îª±¾ÀàµÄºÃÅóÓÑ, ¿ÉÒÔ·ÃÎÊË½ÓĞ³ÉÔ±
+	//å‘Šè¯‰ç¼–è¯‘å™¨GoodGayç±»ä¸‹çš„visitæˆå‘˜å‡½æ•°ä½œä¸ºæœ¬ç±»çš„å¥½æœ‹å‹, å¯ä»¥è®¿é—®ç§æœ‰æˆå‘˜
 	friend void GoodGay6::visit();
 public:
 	Building6();
@@ -23,26 +23,26 @@ public:
 private:
 	string m_BedRoom;
 };
-//ÀàÍâÊµÏÖ³ÉÔ±º¯Êı
+//ç±»å¤–å®ç°æˆå‘˜å‡½æ•°
 Building6::Building6()
 {
-	m_SittingRoom = "¿ÍÌü";
-	m_BedRoom = "ÎÔÊÒ";
+	m_SittingRoom = "å®¢å…";
+	m_BedRoom = "å§å®¤";
 }
 GoodGay6::GoodGay6()
 {
-	//´´½¨½¨ÖşÎïÀà¶ÔÏó³ÉÔ±
+	//åˆ›å»ºå»ºç­‘ç‰©ç±»å¯¹è±¡æˆå‘˜
 	building = new Building6;
 }
 void GoodGay6::visit()
 {
-	cout << "visitº¯ÊıÕıÔÚ·ÃÎÊ:" << building->m_SittingRoom << endl;
-	cout << "visitº¯ÊıÕıÔÚ·ÃÎÊ:" << building->m_BedRoom << endl;
+	cout << "visitå‡½æ•°æ­£åœ¨è®¿é—®:" << building->m_SittingRoom << endl;
+	cout << "visitå‡½æ•°æ­£åœ¨è®¿é—®:" << building->m_BedRoom << endl;
 }
 void GoodGay6::visit2()
 {
-	cout << "visit2º¯ÊıÕıÔÚ·ÃÎÊ:" << building->m_SittingRoom << endl;
-	//cout << "visit2º¯ÊıÕıÔÚ·ÃÎÊ:" << building->m_BedRoom << endl;
+	cout << "visit2å‡½æ•°æ­£åœ¨è®¿é—®:" << building->m_SittingRoom << endl;
+	//cout << "visit2å‡½æ•°æ­£åœ¨è®¿é—®:" << building->m_BedRoom << endl;
 }
 void test6()
 {

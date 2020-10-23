@@ -1,22 +1,22 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//¼ÓÈëconst±ÜÃâÎóĞŞ¸Ä
+//åŠ å…¥consté¿å…è¯¯ä¿®æ”¹
 void showValue(const int& val)
 {
-	//val = 1000;//¼ÓÈëconstºóÎªÖ»¶Á,²»¿ÉĞŞ¸Ä
+	//val = 1000;//åŠ å…¥conståä¸ºåªè¯»,ä¸å¯ä¿®æ”¹
 	cout<<"val = "<<val<<endl;
 }
 int main()
 {
-	//³£Á¿ÒıÓÃ
-	//Ê¹ÓÃ³¡¾°:ÓÃÀ´ĞŞÊÎĞÎ²Î,·ÀÖ¹Îó²Ù×÷
+	//å¸¸é‡å¼•ç”¨
+	//ä½¿ç”¨åœºæ™¯:ç”¨æ¥ä¿®é¥°å½¢å‚,é˜²æ­¢è¯¯æ“ä½œ
 	int a = 10;
-	//int& ref = a;//ºÏ·¨
-	//int& ref = 10;//ÒıÓÃ±ØĞëÒıÒ»¿éºÏ·¨µÄÄÚ´æ¿Õ¼ä
-	//¼ÓÉÏconstÖ®ºó,±àÒëÆ÷½«´úÂëĞŞ¸Ä int temp = 10;const int& ref = temp;
+	//int& ref = a;//åˆæ³•
+	//int& ref = 10;//å¼•ç”¨å¿…é¡»å¼•ä¸€å—åˆæ³•çš„å†…å­˜ç©ºé—´
+	//åŠ ä¸Šconstä¹‹å,ç¼–è¯‘å™¨å°†ä»£ç ä¿®æ”¹ int temp = 10;const int& ref = temp;
 	const int& ref = 10;
-	//ref = 20;//¼ÓÈëconstÖ®ºó±äÎªÖ»¶Á,²»¿ÉÒÔĞŞ¸Ä
+	//ref = 20;//åŠ å…¥constä¹‹åå˜ä¸ºåªè¯»,ä¸å¯ä»¥ä¿®æ”¹
 
 	int b = 100;
 	showValue(b);//val = 1000

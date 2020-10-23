@@ -1,18 +1,18 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 int main9()
 {
-	//1.µ¥¾«¶È float
-	//2.Ë«¾«¶È double
-	//Ä¬ÈÏÇé¿öÏÂ,Êä³öÒ»¸öĞ¡Êı,»áÏÔÊ¾³ö6Î»ÓĞĞ§Êı×Ö
-	float f1 = 3.14f;//¼ÓfÊ¡È¥×ª»»²½Öè
+	//1.å•ç²¾åº¦ float
+	//2.åŒç²¾åº¦ double
+	//é»˜è®¤æƒ…å†µä¸‹,è¾“å‡ºä¸€ä¸ªå°æ•°,ä¼šæ˜¾ç¤ºå‡º6ä½æœ‰æ•ˆæ•°å­—
+	float f1 = 3.14f;//åŠ fçœå»è½¬æ¢æ­¥éª¤
 	std::cout<<"f1 = "<<f1<<std::endl;
 	double d1 = 3.1415926;
 	std::cout<<"d1 = "<<d1<<std::endl;//3.14159
-	//Í³¼ÆfloatºÍdoubleÕ¼ÓÃµÄÄÚ´æ¿Õ¼ä
-	std::cout<<"floatÕ¼ÓÃµÄÄÚ´æ¿Õ¼äÎª:"<<sizeof(f1)<<std::endl;//4
-	std::cout<<"doubleÕ¼ÓÃµÄÄÚ´æ¿Õ¼äÎª:"<<sizeof(d1)<<std::endl;//8
-	//¿ÆÑ§¼ÆÊı·¨
+	//ç»Ÿè®¡floatå’Œdoubleå ç”¨çš„å†…å­˜ç©ºé—´
+	std::cout<<"floatå ç”¨çš„å†…å­˜ç©ºé—´ä¸º:"<<sizeof(f1)<<std::endl;//4
+	std::cout<<"doubleå ç”¨çš„å†…å­˜ç©ºé—´ä¸º:"<<sizeof(d1)<<std::endl;//8
+	//ç§‘å­¦è®¡æ•°æ³•
 	float f2 = 3e2;//3*10^2
 	std::cout<<"f2 = "<<f2<<std::endl;//300
 	float f3 = 3e-2;//3*10^-2

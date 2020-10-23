@@ -1,39 +1,39 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//½á¹¹ÌåÇ¶Ì×½á¹¹Ìå
-//0.¶¨ÒåÑ§ÉúµÄ½á¹¹Ìå
+//ç»“æ„ä½“åµŒå¥—ç»“æ„ä½“
+//0.å®šä¹‰å­¦ç”Ÿçš„ç»“æ„ä½“
 struct Student
 {
-	string name;//ĞÕÃû
-	int age;//ÄêÁä
-	int score;//·ÖÊı
+	string name;//å§“å
+	int age;//å¹´é¾„
+	int score;//åˆ†æ•°
 };
-//1.¶¨ÒåÀÏÊ¦½á¹¹Ìå
+//1.å®šä¹‰è€å¸ˆç»“æ„ä½“
 struct Teacher
 {
-	int id;//½ÌÊ¦±àºÅ
-	string name;//½ÌÊ¦ĞÕÃû
-	int age;//½ÌÊ¦ÄêÁä
-	Student stu;//¸¨µ¼Ñ§Éú(½á¹¹Ìå)
+	int id;//æ•™å¸ˆç¼–å·
+	string name;//æ•™å¸ˆå§“å
+	int age;//æ•™å¸ˆå¹´é¾„
+	Student stu;//è¾…å¯¼å­¦ç”Ÿ(ç»“æ„ä½“)
 };
 int main67()
 {
-	//´´½¨ÀÏÊ¦
+	//åˆ›å»ºè€å¸ˆ
 	Teacher t;
-	//¸øÀÏÊ¦½á¹¹ÌåÖĞµÄ³ÉÔ±ÁĞ±íÊôĞÔ¸³Öµ
-	t.name = "ÀÏÍõ";
+	//ç»™è€å¸ˆç»“æ„ä½“ä¸­çš„æˆå‘˜åˆ—è¡¨å±æ€§èµ‹å€¼
+	t.name = "è€ç‹";
 	t.age = 35;
 	t.id = 1001;
-	t.stu.name = "Ğ¡Íõ";
+	t.stu.name = "å°ç‹";
 	t.stu.age = 18;
 	t.stu.score = 89;
-	std::cout<<"ÀÏÊ¦ĞÕÃû:"<< t.name
-		<<";ÀÏÊ¦±àºÅ:"<<t.id
-		<<";ÀÏÊ¦ÄêÁä:"<<t.age
-		<<";ÀÏÊ¦¸¨µ¼µÄÑ§ÉúĞÕÃû:"<<t.stu.name
-		<<";Ñ§ÉúµÄÄêÁä:"<<t.stu.age
-		<<";Ñ§Éú¿¼ÊÔµÄ·ÖÊı:"<<t.stu.score<<::endl;
+	std::cout<<"è€å¸ˆå§“å:"<< t.name
+		<<";è€å¸ˆç¼–å·:"<<t.id
+		<<";è€å¸ˆå¹´é¾„:"<<t.age
+		<<";è€å¸ˆè¾…å¯¼çš„å­¦ç”Ÿå§“å:"<<t.stu.name
+		<<";å­¦ç”Ÿçš„å¹´é¾„:"<<t.stu.age
+		<<";å­¦ç”Ÿè€ƒè¯•çš„åˆ†æ•°:"<<t.stu.score<<::endl;
 	system("pause");
 	return 0;
 }

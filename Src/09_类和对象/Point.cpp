@@ -1,23 +1,23 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 #include "Point.h"
-//ÉèÖÃX×ø±ê
+//è®¾ç½®Xåæ ‡
 void Point::setX(double x)
 {
 	m_X = x;
 }
-//»ñÈ¡X×ø±ê
+//è·å–Xåæ ‡
 double Point::getX()
 {
 	return m_X;
 }
-//ÉèÖÃY×ø±ê
+//è®¾ç½®Yåæ ‡
 void Point::setY(double y)
 {
 	m_Y = y;
 }
-//»ñÈ¡Y×ø±ê
+//è·å–Yåæ ‡
 double Point::getY()
 {
 	return m_Y;

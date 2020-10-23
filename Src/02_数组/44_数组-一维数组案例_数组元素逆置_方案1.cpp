@@ -1,11 +1,11 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main44()
 {
-	//¶¨ÒåÒ»¸öÊı×é
+	//å®šä¹‰ä¸€ä¸ªæ•°ç»„
 	int arr[] = { 1,2,3,4,5,6};
-	//¶¨ÒåÒ»¸öÁãÊ±±äÁ¿ÓÃÓÚ½»»»Êı¾İ
+	//å®šä¹‰ä¸€ä¸ªé›¶æ—¶å˜é‡ç”¨äºäº¤æ¢æ•°æ®
 	int temp = 0;
 	for (int i = 0; i < sizeof(arr)/sizeof(arr[0])/2 ; i++)
 	{

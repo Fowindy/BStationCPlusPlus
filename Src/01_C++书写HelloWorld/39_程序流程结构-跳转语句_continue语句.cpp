@@ -1,16 +1,16 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main39()
 {
-	//continueÓï¾äµÄÓÃÍ¾
-	//°¸Àı:ÆæÊıÊä³öÅ¼Êı²»Êä³ö
+	//continueè¯­å¥çš„ç”¨é€”
+	//æ¡ˆä¾‹:å¥‡æ•°è¾“å‡ºå¶æ•°ä¸è¾“å‡º
 	for (int i = 0; i <= 100; i++)
 	{
 		if (i % 2 == 0)
 		{
-			continue;//¿ÉÒÔÉ¸Ñ¡Ìõ¼ş,Ö´ĞĞµ½´Ë¾Í²»ÔÙÏòÏÂÖ´ĞĞ,Ö´ĞĞÏÂÒ»´ÎÑ­»·
-			//break»áÍË³öÑ­»·,¶øcontinue²»»á
+			continue;//å¯ä»¥ç­›é€‰æ¡ä»¶,æ‰§è¡Œåˆ°æ­¤å°±ä¸å†å‘ä¸‹æ‰§è¡Œ,æ‰§è¡Œä¸‹ä¸€æ¬¡å¾ªç¯
+			//breakä¼šé€€å‡ºå¾ªç¯,è€Œcontinueä¸ä¼š
 		}
 		std::cout << i << std::endl;
 	}

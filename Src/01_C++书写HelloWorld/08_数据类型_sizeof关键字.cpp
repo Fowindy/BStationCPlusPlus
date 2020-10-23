@@ -1,19 +1,19 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
-//ÀûÓÃsizeof¹Ø¼ü×Ö¿ÉÒÔÍ³¼ÆÊı¾İÀàĞÍËùÕ¼ÄÚ´æµÄ´óĞ¡
+//åˆ©ç”¨sizeofå…³é”®å­—å¯ä»¥ç»Ÿè®¡æ•°æ®ç±»å‹æ‰€å å†…å­˜çš„å¤§å°
 int main8()
 {
-	//ÕûĞÍ: short(2)	 int(4) long(4) long long(8)
+	//æ•´å‹: short(2)	 int(4) long(4) long long(8)
 	short num1 = 10;
-	std::cout<<"shortÕ¼ÓÃµÄÄÚ´æ¿Õ¼äÎª:"<<sizeof(num1)<<std::endl;
+	std::cout<<"shortå ç”¨çš„å†…å­˜ç©ºé—´ä¸º:"<<sizeof(num1)<<std::endl;
 	int num2 = 10;
-	std::cout<<"intÕ¼ÓÃµÄÄÚ´æ¿Õ¼äÎª:"<<sizeof(num2)<<std::endl;
+	std::cout<<"intå ç”¨çš„å†…å­˜ç©ºé—´ä¸º:"<<sizeof(num2)<<std::endl;
 	long num3 = 10;
-	std::cout<<"longÕ¼ÓÃµÄÄÚ´æ¿Õ¼äÎª:"<<sizeof(num3)<<std::endl;
+	std::cout<<"longå ç”¨çš„å†…å­˜ç©ºé—´ä¸º:"<<sizeof(num3)<<std::endl;
 	long long num4 = 10;
-	std::cout<<"long long Õ¼ÓÃµÄÄÚ´æ¿Õ¼äÎª:"<<sizeof(num4)<<std::endl;
+	std::cout<<"long long å ç”¨çš„å†…å­˜ç©ºé—´ä¸º:"<<sizeof(num4)<<std::endl;
 
-	//ÕûĞÍ½áÂÛ: short <int <= long <= long long
+	//æ•´å‹ç»“è®º: short <int <= long <= long long
 	system("pause");
 	return 0;
 }

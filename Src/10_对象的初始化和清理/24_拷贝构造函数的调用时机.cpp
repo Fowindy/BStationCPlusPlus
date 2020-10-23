@@ -1,50 +1,50 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 
-// ¿½±´¹¹Ôìº¯Êıµ÷ÓÃÊ±»ú
+// æ‹·è´æ„é€ å‡½æ•°è°ƒç”¨æ—¶æœº
 
 class Person4
 {
 public:
 	Person4()
 	{
-		cout<<"Person4Ä¬ÈÏ¹¹Ôìº¯ÊıµÄµ÷ÓÃ"<<endl;
+		cout<<"Person4é»˜è®¤æ„é€ å‡½æ•°çš„è°ƒç”¨"<<endl;
 	}
 	Person4(int age)
 	{
 		m_Age = age;
-		cout<<"Person4ÓĞ²Î¹¹Ôìº¯ÊıµÄµ÷ÓÃ"<<endl;
+		cout<<"Person4æœ‰å‚æ„é€ å‡½æ•°çš„è°ƒç”¨"<<endl;
 	}
 	Person4(const Person4& p)
 	{
 		m_Age = p.m_Age;
-		cout << "Person4¿½±´¹¹Ôìº¯ÊıµÄµ÷ÓÃ" << endl;
+		cout << "Person4æ‹·è´æ„é€ å‡½æ•°çš„è°ƒç”¨" << endl;
 	}
 	~Person4()
 	{
-		cout<<"Person4Îö¹¹º¯ÊıµÄµ÷ÓÃ"<<endl;
+		cout<<"Person4ææ„å‡½æ•°çš„è°ƒç”¨"<<endl;
 	}
 	int m_Age;
 };
-//1¡¢Ê¹ÓÃÒ»¸öÒÑ¾­´´½¨Íê±ÏµÄ¶ÔÏóÀ´³õÊ¼»¯Ò»¸öĞÂ¶ÔÏó
+//1ã€ä½¿ç”¨ä¸€ä¸ªå·²ç»åˆ›å»ºå®Œæ¯•çš„å¯¹è±¡æ¥åˆå§‹åŒ–ä¸€ä¸ªæ–°å¯¹è±¡
 void test03()
 {
 	Person4 p1(20);
 	Person4 p2(p1);
-	cout<<"p2µÄÄêÁäÎª:"<<p2.m_Age<<endl;
+	cout<<"p2çš„å¹´é¾„ä¸º:"<<p2.m_Age<<endl;
 }
 void doWork(Person4 p)
 {
 
 }
-//2¡¢Öµ´«µİµÄ·½Ê½¸øº¯Êı²ÎÊı´«Öµ
+//2ã€å€¼ä¼ é€’çš„æ–¹å¼ç»™å‡½æ•°å‚æ•°ä¼ å€¼
 void test04()
 {
 	Person4 p;
 	doWork(p);
 }
-//3¡¢Öµ·½Ê½·µ»Ø¾Ö²¿¶ÔÏó
+//3ã€å€¼æ–¹å¼è¿”å›å±€éƒ¨å¯¹è±¡
 Person4 doWork2()
 {
 	Person4 p1;

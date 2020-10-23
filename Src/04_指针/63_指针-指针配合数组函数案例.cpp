@@ -1,8 +1,8 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 
-//Ã°ÅİÅÅĞòº¯Êı
+//å†’æ³¡æ’åºå‡½æ•°
 void bubbleSort(int* arr,int length)
 {
 	for (int i = 0; i < length -1 ; i++)
@@ -18,25 +18,25 @@ void bubbleSort(int* arr,int length)
 		}
 	}
 }
-//´òÓ¡Êı×éº¯Êı
+//æ‰“å°æ•°ç»„å‡½æ•°
 void printArray(int* arr, int length)
 {
 	for (int i = 0; i < length; i++)
 	{
-		std::cout<<"ÉıĞòÅÅĞòºóÊı×éÖĞµÄµÚ"<<i+1<<"¸öÔªËØÎª:"<<arr[i]<<std::endl;
+		std::cout<<"å‡åºæ’åºåæ•°ç»„ä¸­çš„ç¬¬"<<i+1<<"ä¸ªå…ƒç´ ä¸º:"<<arr[i]<<std::endl;
 	}
 }
 int main()
 {
-	//°¸ÀıÃèÊö:·â×°Ò»¸öº¯Êı,ÀûÓÃÃ°ÅİÅÅĞò,ÊµÏÖ¶ÔÕûĞÍÊı×éµÄÉıĞòÅÅĞò
-	//ÀıÈçÊı×é: int arr[10] = { 4, 3, 6, 9, 1, 2, 10, 8, 7, 5 };
-	//1.ÏÈ´´½¨Ò»¸öÊı×é
+	//æ¡ˆä¾‹æè¿°:å°è£…ä¸€ä¸ªå‡½æ•°,åˆ©ç”¨å†’æ³¡æ’åº,å®ç°å¯¹æ•´å‹æ•°ç»„çš„å‡åºæ’åº
+	//ä¾‹å¦‚æ•°ç»„: int arr[10] = { 4, 3, 6, 9, 1, 2, 10, 8, 7, 5 };
+	//1.å…ˆåˆ›å»ºä¸€ä¸ªæ•°ç»„
 	int arr[10] = { 4, 3, 6, 9, 1, 2, 10, 8, 7, 5 };
-	//Êı×éµÄ³¤¶È
+	//æ•°ç»„çš„é•¿åº¦
 	int length = sizeof(arr) / sizeof(arr[0]);
-	//2.´´½¨º¯Êı,ÊµÏÖÃ°ÅİÅÅĞò
+	//2.åˆ›å»ºå‡½æ•°,å®ç°å†’æ³¡æ’åº
 	bubbleSort(arr, length);
-	//3.´òÓ¡ÅÅĞòºóµÄÊı×é
+	//3.æ‰“å°æ’åºåçš„æ•°ç»„
 	printArray(arr, length);
 	system("pause");
 	return 0;

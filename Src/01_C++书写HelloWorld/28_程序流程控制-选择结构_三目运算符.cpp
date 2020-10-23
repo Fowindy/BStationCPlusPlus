@@ -1,18 +1,18 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main28()
 {
-	//ÈıÄ¿ÔËËã·ûÇóÈıÕß×î´óÖµ
+	//ä¸‰ç›®è¿ç®—ç¬¦æ±‚ä¸‰è€…æœ€å¤§å€¼
 	double num1 = 0;
 	double num2 = 0;
 	double num3 = 0;
 	double numMax = 0;
-	std::cout<<"ÇëÊäÈëÈı¸öÊı(»Ø³µ¼ä¸ô):"<<std::endl;
+	std::cout<<"è¯·è¾“å…¥ä¸‰ä¸ªæ•°(å›è½¦é—´éš”):"<<std::endl;
 	std::cin>>num1>>num2>>num3;
 	numMax = (num1 >= num2 ? num1 : num2) >= num3 ? (num1 >= num2 ? num1 : num2) : num3;
-	std::cout<<"×î´óÖµÎª:"<<numMax<<std::endl;
-	//ÔÚC++ÖĞ£¬ÈıÄ¿ÔËËã·û·µ»ØµÄÊÇ±äÁ¿£¬¿ÉÒÔ¼ÌĞø¸³Öµ
+	std::cout<<"æœ€å¤§å€¼ä¸º:"<<numMax<<std::endl;
+	//åœ¨C++ä¸­ï¼Œä¸‰ç›®è¿ç®—ç¬¦è¿”å›çš„æ˜¯å˜é‡ï¼Œå¯ä»¥ç»§ç»­èµ‹å€¼
 	(num1 >= num2 ? num1 : num2) = 100;
 	std::cout<<"num1="<<num1<<std::endl;
 	std::cout<<"num2="<<num2<<std::endl;

@@ -1,17 +1,17 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
-//Öµ´«µİ
-//¶¨Òåº¯Êı,ÊµÏÖÁ½¸öÊı×Ö½»»»º¯Êı
-//Èç¹ûº¯Êı²»ĞèÒª·µ»ØÖµ,ÉùÃ÷µÄÊ±ºò·µ»ØÖµÀàĞÍÎªvoid
+//å€¼ä¼ é€’
+//å®šä¹‰å‡½æ•°,å®ç°ä¸¤ä¸ªæ•°å­—äº¤æ¢å‡½æ•°
+//å¦‚æœå‡½æ•°ä¸éœ€è¦è¿”å›å€¼,å£°æ˜çš„æ—¶å€™è¿”å›å€¼ç±»å‹ä¸ºvoid
 void swap2(int num1, int num2)
 {
-	std::cout << "½»»»Ç°:num1 = " << num1 << ",num2 = " << num2 << std::endl;
+	std::cout << "äº¤æ¢å‰:num1 = " << num1 << ",num2 = " << num2 << std::endl;
 	int temp = num1;
 	num1 = num2;
 	num2 = temp;
-	std::cout << "½»»»ºó:num1 = " << num1 << ",num2 = " << num2 << std::endl;
-	//return; ·µ»ØÖµÎªvoidµÄÊ±ºò,¿ÉÒÔ²»Ğ´return
+	std::cout << "äº¤æ¢å:num1 = " << num1 << ",num2 = " << num2 << std::endl;
+	//return; è¿”å›å€¼ä¸ºvoidçš„æ—¶å€™,å¯ä»¥ä¸å†™return
 }
 int main52()
 {
@@ -19,7 +19,7 @@ int main52()
 	int b = 20;
 	cout << "a = " << a << endl;//10
 	cout << "b = " << b << endl;//20
-	//µ±ÎÒÃÇ×öÖµ´«µİµÄÊ±ºò,º¯ÊıµÄĞÎ²Î·¢Éú¸Ä±ä,²¢²»»áÓ°ÏìÊµ²Î
+	//å½“æˆ‘ä»¬åšå€¼ä¼ é€’çš„æ—¶å€™,å‡½æ•°çš„å½¢å‚å‘ç”Ÿæ”¹å˜,å¹¶ä¸ä¼šå½±å“å®å‚
 	swap(a, b);
 	cout << "a = " << a << endl;//10
 	cout << "b = " << b << endl;//20

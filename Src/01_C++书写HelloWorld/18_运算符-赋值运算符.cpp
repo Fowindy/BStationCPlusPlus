@@ -1,32 +1,32 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main18()
 {
-	//¸³ÖµÔËËã·û
+	//èµ‹å€¼è¿ç®—ç¬¦
 	// =
 	int a = 10;
 	a = 100;
 	std::cout << "a = " << a << std::endl;//100
 	// +=
 	a = 10;
-	a += 2;//µÈ¼ÛÓÚ a = a + 2;
+	a += 2;//ç­‰ä»·äº a = a + 2;
 	std::cout << "a = " << a << std::endl;//12
 	// -=
 	a = 10;
-	a -= 2;//µÈ¼ÛÓÚ a = a -2;
+	a -= 2;//ç­‰ä»·äº a = a -2;
 	std::cout << "a = " << a << std::endl;//8
 	// *=
 	a = 10;
-	a *= 2;//µÈ¼ÛÓÚ a = a * 2;
+	a *= 2;//ç­‰ä»·äº a = a * 2;
 	std::cout << "a = " << a << std::endl;//20
 	// /=
 	a = 10;
-	a /= 2;//µÈ¼ÛÓÚ a = a / 2;
+	a /= 2;//ç­‰ä»·äº a = a / 2;
 	std::cout << "a = " << a << std::endl;//5
 	// %=
 	a = 10;
-	a %= 2;//µÈ¼ÛÓÚ a = a % 2;
+	a %= 2;//ç­‰ä»·äº a = a % 2;
 	std::cout << "a = " << a << std::endl;//0
 	system("pause");
 	return 0;

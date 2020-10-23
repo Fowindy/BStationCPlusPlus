@@ -1,15 +1,15 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
-//1.µ¥ÐÐ×¢ÊÍ
-//2.¶àÐÐ×¢ÊÍ
+//1.å•è¡Œæ³¨é‡Š
+//2.å¤šè¡Œæ³¨é‡Š
 /*
-	mainÊÇÒ»¸ö³ÌÐòµÄÈë¿Ú
-	Ã¿¸ö³ÌÐò¶¼±ØÐëÓÐÕâÃ´Ò»¸öº¯Êý
-	ÓÐÇÒ½öÓÐÒ»¸ö
+	mainæ˜¯ä¸€ä¸ªç¨‹åºçš„å…¥å£
+	æ¯ä¸ªç¨‹åºéƒ½å¿…é¡»æœ‰è¿™ä¹ˆä¸€ä¸ªå‡½æ•°
+	æœ‰ä¸”ä»…æœ‰ä¸€ä¸ª
 */
 int main2()
 {
-	//7ÐÐ´úÂëµÄº¬Òå¾ÍÊÇÔÚÆÁÄ»Êä³öHello World
+	//7è¡Œä»£ç çš„å«ä¹‰å°±æ˜¯åœ¨å±å¹•è¾“å‡ºHello World
 	std::cout << "hello World" << std::endl;
 	system("pause");
 	return 0;

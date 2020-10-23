@@ -1,39 +1,39 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main38()
 {
-	//breakµÄÊ¹ÓÃÊ±»ú
-	//1.³öÏÖÔÚswitchÓë¾çÖĞ
-	std::cout<<"ÇëÑ¡Ôñ¸±±¾µÄÄÑ¶È:"<<std::endl;
-	std::cout<<"1.ÆÕÍ¨"<<std::endl;
-	std::cout<<"2.ÖĞµÈ"<<std::endl;
-	std::cout<<"3.À§ÄÑ"<<std::endl;
-	int select = 0;//´´½¨Ñ¡Ôñ½á¹û±äÁ¿
-	std::cin>>select;//µÈ´ıÓÃ»§ÊäÈëÑ¡Ôñ±äÁ¿
+	//breakçš„ä½¿ç”¨æ—¶æœº
+	//1.å‡ºç°åœ¨switchä¸å‰§ä¸­
+	std::cout<<"è¯·é€‰æ‹©å‰¯æœ¬çš„éš¾åº¦:"<<std::endl;
+	std::cout<<"1.æ™®é€š"<<std::endl;
+	std::cout<<"2.ä¸­ç­‰"<<std::endl;
+	std::cout<<"3.å›°éš¾"<<std::endl;
+	int select = 0;//åˆ›å»ºé€‰æ‹©ç»“æœå˜é‡
+	std::cin>>select;//ç­‰å¾…ç”¨æˆ·è¾“å…¥é€‰æ‹©å˜é‡
 	switch (select)
 	{
 	case 1:
-		std::cout<<"ÄúÑ¡ÔñµÄÊÇÆÕÍ¨ÄÑ¶È"<<std::endl;
+		std::cout<<"æ‚¨é€‰æ‹©çš„æ˜¯æ™®é€šéš¾åº¦"<<std::endl;
 		break;
 	case 2:
-		std::cout << "ÄúÑ¡ÔñµÄÊÇÖĞµÈÄÑ¶È" << std::endl;
+		std::cout << "æ‚¨é€‰æ‹©çš„æ˜¯ä¸­ç­‰éš¾åº¦" << std::endl;
 		break;
 	case 3:
-		std::cout << "ÄúÑ¡ÔñµÄÊÇÀ§ÄÑÄÑ¶È" << std::endl;
+		std::cout << "æ‚¨é€‰æ‹©çš„æ˜¯å›°éš¾éš¾åº¦" << std::endl;
 		break;
 	}
-	//2.³öÏÖÔÚÑ­»·Óï¾äÖĞ
+	//2.å‡ºç°åœ¨å¾ªç¯è¯­å¥ä¸­
 	for (int i = 0; i < 10; i++)
 	{
-		//Èç¹ûiµÈÓÚ5,ÍË³öÑ­»·,²»ÔÙ´òÓ¡
+		//å¦‚æœiç­‰äº5,é€€å‡ºå¾ªç¯,ä¸å†æ‰“å°
 		if (i==5)
 		{
-			break;//ÍË³öÑ­»·
+			break;//é€€å‡ºå¾ªç¯
 		}
 		std::cout<<i<<std::endl;
 	}
-	//3.³öÏÖÔÚÇ¶Ì×Ñ­»·Óï¾äÖĞ
+	//3.å‡ºç°åœ¨åµŒå¥—å¾ªç¯è¯­å¥ä¸­
 	for (int i = 0; i < 10; i++)
 	{
 		for (int j = 0; j < 10; j++)

@@ -1,12 +1,12 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main37()
 {
-	//´òÓ¡ÕýÈý½ÇµÄ³Ë·¨¿Ú¾÷±í
-	for (int i = 1; i <= 9; i++)//ÐÐ
+	//æ‰“å°æ­£ä¸‰è§’çš„ä¹˜æ³•å£è¯€è¡¨
+	for (int i = 1; i <= 9; i++)//è¡Œ
 	{
-		for (int j = 1; j <= i; j++)//ÁÐ
+		for (int j = 1; j <= i; j++)//åˆ—
 		{
 			std::cout<<j<<" * "<<i<<" = "<<j*i<<"\t";
 		}

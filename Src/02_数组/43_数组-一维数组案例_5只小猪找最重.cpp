@@ -1,12 +1,12 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main43()
 {
-	//1.´´½¨5Ö»Ğ¡ÖíµÄÌåÖØÊı×é
+	//1.åˆ›å»º5åªå°çŒªçš„ä½“é‡æ•°ç»„
 	int arr[5] = { 300,350,200,400,250 };
-	//2.´ÓÊı×éÖĞÕÒµ½×î´óÖµ
-	int max = 0;//ÏÈ¶¨ÒåÒ»¸ö×î´óÖµÎª0
+	//2.ä»æ•°ç»„ä¸­æ‰¾åˆ°æœ€å¤§å€¼
+	int max = 0;//å…ˆå®šä¹‰ä¸€ä¸ªæœ€å¤§å€¼ä¸º0
 	for (int i = 0; i < sizeof(arr)/sizeof(arr[0]) ; i++)
 	{
 		if (max <= arr[i]) 
@@ -14,7 +14,7 @@ int main43()
 			max = arr[i];
 		}
 	}
-	cout<<"5Ö»Ğ¡ÖíÖĞ×îÖØµÄĞ¡ÖíÌåÖØÎª:"<<max<<endl;
+	cout<<"5åªå°çŒªä¸­æœ€é‡çš„å°çŒªä½“é‡ä¸º:"<<max<<endl;
 	system("pause");
 	return 0;
 }

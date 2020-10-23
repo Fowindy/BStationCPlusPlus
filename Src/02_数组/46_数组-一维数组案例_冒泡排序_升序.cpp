@@ -1,24 +1,24 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main46()
 {
-	//ÀûÓÃÃ°ÅİÅÅĞòÊµÏÖÉıĞòĞòÁĞ
+	//åˆ©ç”¨å†’æ³¡æ’åºå®ç°å‡åºåºåˆ—
 	int arr[] = { 4, 2, 8, 0, 5, 7, 1, 3, 9 };
-	std::cout<<"ÅÅĞòÇ°:"<<std::endl;
+	std::cout<<"æ’åºå‰:"<<std::endl;
 	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
 	{
 		cout<<arr[i]<<"\t";
 	}
 	cout<<endl;
-	//¿ªÊ¼Ã°ÅİÅÅĞò
-	//×Ü¹²ÅÅĞòÂÖÊıÎª:ÔªËØ¸öÊı-1
+	//å¼€å§‹å†’æ³¡æ’åº
+	//æ€»å…±æ’åºè½®æ•°ä¸º:å…ƒç´ ä¸ªæ•°-1
 	for (int i = 0; i < sizeof(arr)/sizeof(arr[0])-1 ; i++)
 	{
-		//ÄÚ´æÑ­»·¶Ô±È´ÎÊı:ÔªËØ¸öÊı-1-µ±Ç°ÂÖÊı
+		//å†…å­˜å¾ªç¯å¯¹æ¯”æ¬¡æ•°:å…ƒç´ ä¸ªæ•°-1-å½“å‰è½®æ•°
 		for (int j = 0; j < sizeof(arr) / sizeof(arr[0]) - 1 - i; j++)
 		{
-			//Èç¹ûµÚÒ»¸öÊı×Ö±ÈµÚ¶ş¸ö´ó,Ôò½»»»Ë³Ğò
+			//å¦‚æœç¬¬ä¸€ä¸ªæ•°å­—æ¯”ç¬¬äºŒä¸ªå¤§,åˆ™äº¤æ¢é¡ºåº
 			if (arr[j] >= arr[j + 1])
 			{
 				int temp = arr[j];
@@ -27,7 +27,7 @@ int main46()
 			}
 		}
 	}
-	std::cout << "ÅÅĞòºó:" << std::endl;
+	std::cout << "æ’åºå:" << std::endl;
 	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
 	{
 		cout << arr[i] << "\t";

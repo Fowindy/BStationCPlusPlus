@@ -1,9 +1,9 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main22()
 {
-	// Âß¼­ÔËËã·û_»ò(||)
+	// é€»è¾‘è¿ç®—ç¬¦_æˆ–(||)
 	int a = 10;
 	int b = 10;
 	cout << (a || b) << endl;//1
@@ -16,7 +16,7 @@ int main22()
 	b = 0;
 	cout << (a || b) << endl;//0
 
-	//Í¬¼ÙÎª¼Ù,ÆäÓàÎªÕæ
+	//åŒå‡ä¸ºå‡,å…¶ä½™ä¸ºçœŸ
 	system("pause");
 	return 0;
 }

@@ -1,34 +1,34 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main45()
 {
-	//ÊµÏÖÊı×éÔªËØÄæÖÃ
-	//1.´´½¨Êı×é
+	//å®ç°æ•°ç»„å…ƒç´ é€†ç½®
+	//1.åˆ›å»ºæ•°ç»„
 	int arr[] = { 1,2,3,4,5,6};
-	std::cout<<"Êı×éÄæÖÃÇ°:"<<std::endl;
+	std::cout<<"æ•°ç»„é€†ç½®å‰:"<<std::endl;
 	for (int i = 0; i < sizeof(arr)/sizeof(arr[0]) ; i++)
 	{
 		std::cout<<arr[i]<<"\t";
 	}
 	cout<<endl;
-	//2.ÊµÏÖÄæÖÃ
-	//2.1.¼ÇÂ¼ÆğÊ¼ÏÂ±êÎ»ÖÃ
+	//2.å®ç°é€†ç½®
+	//2.1.è®°å½•èµ·å§‹ä¸‹æ ‡ä½ç½®
 	int startIndex = 0;
-	//2.2.¼ÇÂ¼½áÊøÏÂ±êÎ»ÖÃ
+	//2.2.è®°å½•ç»“æŸä¸‹æ ‡ä½ç½®
 	int endIndex = sizeof(arr) / sizeof(arr[0]) - 1;
 	int temp = 0;
 	while (startIndex <= endIndex)
 	{
-		//2.3.ÆğÊ¼ÏÂ±êÓë½áÊøÏÂ±êµÄÔªËØ»¥»»
+		//2.3.èµ·å§‹ä¸‹æ ‡ä¸ç»“æŸä¸‹æ ‡çš„å…ƒç´ äº’æ¢
 		temp = arr[startIndex];
 		arr[startIndex] = arr[endIndex];
 		arr[endIndex] = temp;
-		//2.4.ÆğÊ¼ÏÂ±ê¼Ó,½áÊøÏÂ±ê¼õ
+		//2.4.èµ·å§‹ä¸‹æ ‡åŠ ,ç»“æŸä¸‹æ ‡å‡
 		startIndex++;
 		endIndex--;
 	}
-	std::cout << "Êı×éÄæÖÃºó:" << std::endl;
+	std::cout << "æ•°ç»„é€†ç½®å:" << std::endl;
 	for (int i = 0; i < sizeof(arr) / sizeof(arr[0]); i++)
 	{
 		std::cout << arr[i] << "\t";

@@ -1,13 +1,13 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main30()
 {
-	//whileÑ­»·
-	//ÔÚÆÁÄ»ÖĞ´òÓ¡³ö0-9ÕâÊ®¸öÊı×Ö
+	//whileå¾ªç¯
+	//åœ¨å±å¹•ä¸­æ‰“å°å‡º0-9è¿™åä¸ªæ•°å­—
 	int num = 0;
-	//ÔÚwhile()ÖĞÌîÈëÑ­»·Ìõ¼ş
-	//×¢ÒâÊÂÏî:ÔÚĞ´whileÑ­»·Ê±Ò»¶¨Òª±ÜÃâËÀÑ­»·µÄ³öÏÖ
+	//åœ¨while()ä¸­å¡«å…¥å¾ªç¯æ¡ä»¶
+	//æ³¨æ„äº‹é¡¹:åœ¨å†™whileå¾ªç¯æ—¶ä¸€å®šè¦é¿å…æ­»å¾ªç¯çš„å‡ºç°
 	while (num<10)
 	{
 		std::cout<<"num = "<<num<<std::endl;

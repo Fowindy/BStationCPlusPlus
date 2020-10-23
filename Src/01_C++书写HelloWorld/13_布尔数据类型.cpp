@@ -1,23 +1,23 @@
-#include <iostream>
+ï»¿#include <iostream>
 #include <string>
 using namespace std;
 int main13()
 {
-	//²¼¶ûÊı¾İÀàĞÍ:
-	//×÷ÓÃ:²¼¶ûÊı¾İÀàĞÍ´ú±íÕæ»ò¼ÙµÄÖµ
-	//boolÀàĞÍÖ»ÓĞÁ½¸öÖµ :
-	//true---Õæ(±¾ÖÊÊÇ1)
-	//false---¼Ù(±¾ÖÊÊÇ0)
-	//boolÀàĞÍÕ¼1¸ö×Ö½Ú´óĞ¡
+	//å¸ƒå°”æ•°æ®ç±»å‹:
+	//ä½œç”¨:å¸ƒå°”æ•°æ®ç±»å‹ä»£è¡¨çœŸæˆ–å‡çš„å€¼
+	//boolç±»å‹åªæœ‰ä¸¤ä¸ªå€¼ :
+	//true---çœŸ(æœ¬è´¨æ˜¯1)
+	//false---å‡(æœ¬è´¨æ˜¯0)
+	//boolç±»å‹å 1ä¸ªå­—èŠ‚å¤§å°
 
-	//1¡¢´´½¨boolÊı¾İÀàĞÍ
-	bool flag = true;//true´ú±íÕæ
+	//1ã€åˆ›å»ºboolæ•°æ®ç±»å‹
+	bool flag = true;//trueä»£è¡¨çœŸ
 	std::cout<<flag<<std::endl;
-	flag = false;//false´ú±í¼Ù
+	flag = false;//falseä»£è¡¨å‡
 	std::cout<<flag<<std::endl;
-	//±¾ÖÊÉÏ1´ú±íÕæ0´ú±í¼Ù
-	//2¡¢²é¿´boolÀàĞÍËùÕ¼ÄÚ´æ¿Õ¼ä
-	std::cout<<"boolÀàĞÍËùÕ¼ÄÚ´æ¿Õ¼äÎª:"<<sizeof(flag)<<std::endl;
+	//æœ¬è´¨ä¸Š1ä»£è¡¨çœŸ0ä»£è¡¨å‡
+	//2ã€æŸ¥çœ‹boolç±»å‹æ‰€å å†…å­˜ç©ºé—´
+	std::cout<<"boolç±»å‹æ‰€å å†…å­˜ç©ºé—´ä¸º:"<<sizeof(flag)<<std::endl;
 	system("pause");
 	return 0;
 }
