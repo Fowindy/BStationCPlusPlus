@@ -12,10 +12,12 @@ public:
 	}
 	virtual void Speak() = 0;
 	//2.<<解决方法:将父类析构加关键字virtual改成虚析构,利用虚析构可以解决父类指针释放子类对象时不干净的问题
-	virtual ~Animal56()
-	{
-		cout << "Animal析构函数调用" << endl;
-	}
+	//virtual ~Animal56()
+	//{
+	//	cout << "Animal析构函数调用" << endl;
+	//}
+	//3.纯虚析构也能解决父类指针释放子类对象时不干净的问题
+	virtual ~Animal56() = 0;
 };
 class Cat56 :public Animal56
 {
