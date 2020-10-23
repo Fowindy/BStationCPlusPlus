@@ -25,11 +25,23 @@ public:
 			return 0;
 		}
 	}
+	//3.不等运算符重载
+	bool operator!=(Person42& p)
+	{
+		if (this->m_Age != p.m_Age || this->m_Name != p.m_Name)
+		{
+			return 1;
+		}
+		else
+		{
+			return 0;
+		}
+	}
 };
 void test42()
 {
 	Person42 p1("Tom", 18);
-	Person42 p2("Tom", 19);
+	Person42 p2("Tom", 10);
 	if (p1 == p2)
 	{
 		cout << "p1和p2相等" << endl;
@@ -37,6 +49,14 @@ void test42()
 	else
 	{
 		cout << "p1和p2不相等" << endl;
+	}
+	if (p1 != p2)
+	{
+		cout << "p1和p2不相等" << endl;
+	}
+	else
+	{
+		cout << "p1和p2相等" << endl;
 	}
 }
 int main()
