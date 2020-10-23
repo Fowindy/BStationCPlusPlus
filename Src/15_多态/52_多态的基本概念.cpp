@@ -6,7 +6,8 @@ using namespace std;
 class Animal
 {
 public:
-	void speak()
+	//2.父类设置为虚函数则可实现
+	virtual void speak()
 	{
 		cout << "动物在说话" << endl;
 	}
@@ -15,7 +16,7 @@ public:
 class Cat :public Animal
 {
 public:
-	void shout()
+	void speak()
 	{
 		cout << "猫咪在说话" << endl;
 	}
@@ -25,7 +26,7 @@ public:
 //如果想执行让猫说话,那么这个函数地址就不能提前绑定,需要在运行阶段进行绑定,地址晚绑定
 void doSpeak(Animal& animal)//Animal的引用:Animal& animal = cat;
 {
-	animal.speak();//动物在说话
+	animal.speak();//动物在说话//猫咪在说话
 }
 void test52()
 {
