@@ -46,7 +46,7 @@ void test50()
 	cout << "子类调父类Base501中的m_E = " << s.Base501::m_E << endl;//1000
 	cout << "子类调父类Base502中的m_E = " << s.Base502::m_E << endl;//2000
 }
-int main()
+int main50()
 {
 	test50();
 	system("pause");

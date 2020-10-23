@@ -47,6 +47,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="51_菱形继承.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="C:\Users\Administrator\Desktop\问题大全\B站黑马C++.assets\继承关系图.png" />
