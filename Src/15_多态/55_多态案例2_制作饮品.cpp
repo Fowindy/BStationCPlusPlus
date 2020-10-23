@@ -87,7 +87,7 @@ void test55()
 	cout << "------------------制作茶水----------------" << endl;
 	DoWork(new Tea);
 }
-int main()
+int main55()
 {
 	test55();
 	system("pause");
