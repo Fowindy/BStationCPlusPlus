@@ -16,6 +16,11 @@ class Son :public Base54
 {
 	//1.子类未重写父类中的纯虚函数,也属于抽象类
 public:
+	//2.重写父类中的纯虚函数
+	virtual void func()
+	{
+		cout << "Son func()函数调用" << endl;
+	}
 };
 void test54()
 {
@@ -23,9 +28,14 @@ void test54()
 	//new Base;// 抽象类是无法实例化对象
 	//Son s; //抽象类是无法实例化对象
 	//new Son;// 抽象类是无法实例化对象
+	Base54* base = new Son;
+	base->func();
+	//base指向堆中数据,记得手动释放
+	delete base;
 }
 int main()
 {
+	test54();
 	system("pause");
 	return 0;
 }

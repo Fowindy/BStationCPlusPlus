@@ -119,7 +119,7 @@ void test53()
 	result = calc.getResult(oper);
 	cout << "结果为:" << calc.m_Num1 << " " << oper << " " << calc.m_Num2 << " = " << result << endl;
 }
-int main()
+int main53()
 {
 	//test53();
 	test531();
