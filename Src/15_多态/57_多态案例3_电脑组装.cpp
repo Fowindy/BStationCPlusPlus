@@ -112,9 +112,14 @@ void test57()
 	Computer* computer1 = new Computer(cpu1, videoCard1, memory1);
 	//第一台电脑开始工作
 	computer1->work();
+	//1.<<方案1:直接释放
+	delete cpu1;
+	delete videoCard1;
+	delete memory1;
 	//工作完成释放资源
 	delete computer1;
 	//1.?电脑所有的零件资源怎么释放
+
 }
 int main()
 {
