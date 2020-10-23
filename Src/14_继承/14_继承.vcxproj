@@ -28,6 +28,9 @@
       </SubType>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Administrator\Desktop\问题大全\B站黑马C++.assets\继承关系图.png" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
     <ProjectGuid>{D5036670-4CB6-4394-832D-3CD5B4409DD5}</ProjectGuid>

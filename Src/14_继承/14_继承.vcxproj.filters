@@ -22,4 +22,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Administrator\Desktop\问题大全\B站黑马C++.assets\继承关系图.png">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
 </Project>
