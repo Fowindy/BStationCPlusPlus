@@ -56,7 +56,7 @@ void test521()
 	cout << "sizeof(Animal) = " << sizeof(Animal) << endl;//不加virtual相当于空类,内存为1
 	//加virtual相当于指针,占4个字节
 }
-int main()
+int main52()
 {
 	test52();
 	test521();

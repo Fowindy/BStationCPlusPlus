@@ -18,6 +18,9 @@
     <ClCompile Include="52_多态的基本概念.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="53_多态案例-计算器的实现.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Image Include="C:\Users\Administrator\Desktop\问题大全\B站黑马C++.assets\多态原理剖析.png">
