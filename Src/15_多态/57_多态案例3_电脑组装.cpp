@@ -44,6 +44,26 @@ public:
 #pragma endregion
 
 	}
+	//1.<<方案2:在电脑类的析构函数中释放零件指针
+	~Computer()
+	{
+		cout << "CPU释放,显卡释放,内存释放" << endl;
+		if (m_cpu != NULL)
+		{
+			delete m_cpu;
+			m_cpu = NULL;
+		}
+		if (m_videoCard != NULL)
+		{
+			delete m_videoCard;
+			m_videoCard = NULL;
+		}
+		if (m_memory != NULL)
+		{
+			delete m_memory;
+			m_memory = NULL;
+		}
+	}
 private:
 #pragma region 定义私有零件的指针变量
 	CPU* m_cpu;//CPU的零件指针
@@ -113,9 +133,9 @@ void test57()
 	//第一台电脑开始工作
 	computer1->work();
 	//1.<<方案1:直接释放
-	delete cpu1;
-	delete videoCard1;
-	delete memory1;
+	//delete cpu1;
+	//delete videoCard1;
+	//delete memory1;
 	//工作完成释放资源
 	delete computer1;
 	//1.?电脑所有的零件资源怎么释放
