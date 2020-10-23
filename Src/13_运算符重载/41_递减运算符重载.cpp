@@ -12,10 +12,16 @@ public:
 		//然后将值存放在堆区,并用m_Age指针来维护(指向)
 		m_Age = new int(age);
 	}
+	~Person()//2.加入析构函数后,堆区内存重复释放,程序崩溃!
+	{
+		if (m_Age != NULL)
+		{
+			delete m_Age;
+			m_Age = NULL;
+		}
+	}
 private:
 	int* m_Age;
-	int* m_abc;
-	int m_PassWord;
 };
 void test01()
 {
