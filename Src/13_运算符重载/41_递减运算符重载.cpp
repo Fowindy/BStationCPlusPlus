@@ -47,7 +47,7 @@ void test01()
 	cout << "p2的年龄为:" << *p2.m_Age << endl;//20//18
 	cout << "p3的年龄为:" << *p3.m_Age << endl;//18
 }
-int main()
+int main41()
 {
 	test01();
 	system("pause");

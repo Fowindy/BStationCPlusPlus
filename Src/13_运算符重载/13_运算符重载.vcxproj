@@ -135,6 +135,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="42_等于or不等运算符重载.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
