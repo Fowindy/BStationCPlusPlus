@@ -28,8 +28,15 @@ void test59()
 	//}
 #pragma endregion
 #pragma region 2.第二种读取方式_getLine
-	char buf[1024] = { 0 };
-	while (ifs.getline(buf, sizeof(buf)))
+	//char buf[1024] = { 0 };
+	//while (ifs.getline(buf, sizeof(buf)))
+	//{
+	//	cout << buf << endl;
+	//}
+#pragma endregion
+#pragma region 3.第三种读取方式_getLine(函数)
+	string buf;
+	while (getline(ifs, buf))
 	{
 		cout << buf << endl;
 	}
