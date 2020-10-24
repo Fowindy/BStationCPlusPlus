@@ -6,5 +6,6 @@ class WorkerManager
 {
 public:
 	WorkerManager();	//构造函数
+	void ShowMenu();	//显示菜单
 	~WorkerManager();	//析构函数
 };
