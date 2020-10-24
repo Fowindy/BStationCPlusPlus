@@ -20,7 +20,7 @@ WorkerManager::WorkerManager()
 	//如果第一个字符为文件结尾符,则为空
 	if (!ifs.is_open() || ifs.eof())
 	{
-		cout << "文件不存在" << endl;//测试输出
+		//cout << "文件不存在" << endl;//测试输出
 		//在WorkerManager构造函数中初始化属性
 		//初始化人数
 		this->m_EmpNum = 0;
@@ -34,7 +34,7 @@ WorkerManager::WorkerManager()
 	else
 	{
 		int num = this->get_EmpNum();
-		cout << "读取到的职工个数为:" << num << endl;//测试代码
+		//cout << "读取到的职工个数为:" << num << endl;//测试代码
 		//更新成员数目属性
 		this->m_EmpNum = num;
 		//根据职工数创建员工数组
@@ -43,15 +43,15 @@ WorkerManager::WorkerManager()
 		this->Init_Emp();
 #pragma region 读取的员工信息输出测试代码
 		//全部输出读取到的员工信息(测试代码)
-		for (int i = 0; i < this->m_EmpNum; i++)
-		{
-			cout << "职工编号:" << this->m_EmpArray[i]->m_Id << "\t"
-				<< "职工名字:" << this->m_EmpArray[i]->m_Name << "\t"
-				<< "职工性别:" << this->m_EmpArray[i]->m_Sex << "\t"
-				<< "职工年龄:" << this->m_EmpArray[i]->m_Age << "\t"
-				<< "职工性别:" << this->m_EmpArray[i]->m_DeptId << "\t"
-				<< endl;
-		}
+		//for (int i = 0; i < this->m_EmpNum; i++)
+		//{
+		//	cout << "职工编号:" << this->m_EmpArray[i]->m_Id << "\t"
+		//		<< "职工名字:" << this->m_EmpArray[i]->m_Name << "\t"
+		//		<< "职工性别:" << this->m_EmpArray[i]->m_Sex << "\t"
+		//		<< "职工年龄:" << this->m_EmpArray[i]->m_Age << "\t"
+		//		<< "职工性别:" << this->m_EmpArray[i]->m_DeptId << "\t"
+		//		<< endl;
+		//}
 #pragma endregion
 
 	}
