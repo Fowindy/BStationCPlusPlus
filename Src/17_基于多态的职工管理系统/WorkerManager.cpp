@@ -20,7 +20,7 @@ WorkerManager::WorkerManager()
 	//如果第一个字符为文件结尾符,则为空
 	if (!ifs.is_open() || ifs.eof())
 	{
-		//cout << "文件不存在" << endl;//测试输出
+		cout << "文件不存在" << endl;//测试输出
 		//在WorkerManager构造函数中初始化属性
 		//初始化人数
 		this->m_EmpNum = 0;
@@ -30,6 +30,13 @@ WorkerManager::WorkerManager()
 		this->m_IsFileEmpty = true;
 		ifs.close();//关闭文件
 		return;
+	}
+	else
+	{
+		int num = this->get_EmpNum();
+		cout << "读取到的职工个数为:" << num << endl;//测试代码
+		//更新成员数目属性
+		this->m_EmpNum = num;
 	}
 }
 //展示菜单
@@ -166,6 +173,29 @@ void WorkerManager::Save()
 			<< endl;
 	}
 	ofs.close();
+}
+//读文件获取人数
+int WorkerManager::get_EmpNum()
+{
+	ifstream ifs;
+	ifs.open(FILENAME, ios::in);
+#pragma region 定义需要的变量
+	int _id;
+	string _name;
+	string _sex;
+	int _age;
+	int _deptId;
+#pragma endregion
+	//定义读取到的人数变量
+	int num = 0;
+	//流提取符>>会跳过输入流里的空格
+	while (ifs >> _id && ifs >> _name && ifs >> _sex && ifs >> _age && ifs >> _deptId)
+	{
+		//记录人数
+		num++;
+	}
+	ifs.close();
+	return num;
 }
 //退出系统
 void WorkerManager::ExitSystem()
