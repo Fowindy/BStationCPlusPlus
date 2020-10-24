@@ -19,6 +19,10 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Employee.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="Worker.cpp">
       <SubType>
       </SubType>
@@ -33,6 +37,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Employee.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Worker.h">
       <SubType>
       </SubType>
