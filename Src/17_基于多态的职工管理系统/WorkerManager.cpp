@@ -317,6 +317,93 @@ void WorkerManager::Del_Emp()
 	system("pause");
 	system("cls");
 }
+void WorkerManager::ModifyEmp()
+{
+	//判断文件是否存在或者记录为空
+	if (this->m_IsFileEmpty || this->m_EmpNum == 0)
+	{
+		cout << "文件不存在或记录为空!" << endl;
+	}
+	else
+	{
+		cout << "请输入要修改职工的编号：" << endl;
+		int id;
+		cin >> id;
+		int ret = this->IsEmpExist(id);
+		if (ret != -1)
+		{
+			//查找到编号的职工
+			delete this->m_EmpArray[ret];
+			int newId = 0;
+			string newName = "";
+			string newSex = "";
+			int newAge = 0;
+			int select = 0;
+			cout << "查到:" << id << "号的职工,请输入新职工号:" << endl;
+			cin >> newId;
+
+			cout << "请输入新姓名:" << endl;
+			cin >> newName;
+
+			cout << "请选择新性别:" << endl;
+			cout << "1、男" << endl;
+			cout << "2、女" << endl;
+		A: cin >> select;
+			switch (select)
+			{
+			case 1:
+				newSex = "男";
+				break;
+			case 2:
+				newSex = "女";
+				break;
+			default:
+				cout << "输入错误!请重新输入!" << endl;
+				goto A;
+			}
+			select = -1;
+
+			cout << "请输入新年龄:" << endl;
+			cin >> newAge;
+
+			cout << "请选择新职位:" << endl;
+			cout << "1、普通员工" << endl;
+			cout << "2、经理" << endl;
+			cout << "0、老板" << endl;
+		B: cin >> select;
+			Worker* worker = NULL;
+			switch (select)
+			{
+			case 1:
+				worker = new Employee(newId, newName, newSex, newAge, select);
+				break;
+			case 2:
+				worker = new Manager(newId, newName, newSex, newAge, select);
+				break;
+			case 0:
+				worker = new Boss(newId, newName, newSex, newAge, select);
+				break;
+			default:
+				cout << "输入错误!请重新输入!" << endl;
+				goto B;
+			}
+			//更改数据 到数组中
+			this->m_EmpArray[ret] = worker;
+
+			cout << "修改成功！" << endl;
+
+			//保存到文件中
+			this->Save();
+		}
+		else
+		{
+			cout << "修改失败，查无此人" << endl;
+		}
+	}
+	//按任意键 清屏
+	system("pause");
+	system("cls");
+}
 //退出系统
 void WorkerManager::ExitSystem()
 {

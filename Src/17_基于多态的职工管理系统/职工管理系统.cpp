@@ -51,6 +51,7 @@ int main()
 			workerManager.Del_Emp();
 			break;
 		case 4:	//修改职工
+			workerManager.ModifyEmp();
 			break;
 		case 5:	//查找职工
 			break;
