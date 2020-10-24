@@ -4,6 +4,8 @@
 #include "Employee.h"
 #include "Boss.h"
 #include "Manager.h"
+#include <fstream>
+#define FILENAME "empFile.txt"
 using namespace std;
 WorkerManager::WorkerManager()
 {
@@ -121,6 +123,8 @@ void WorkerManager::Add_Emp()
 		this->m_EmpNum = _newSize;
 		//提示用户添加成功
 		cout << "成功添加" << _addNum << "名新员工" << endl;
+		//保存数据到文本文件
+		this->Save();
 	}
 	else//否则提示用户输入错误
 	{
@@ -128,6 +132,21 @@ void WorkerManager::Add_Emp()
 	}
 	system("pause");
 	system("cls");//清屏
+}
+void WorkerManager::Save()
+{
+	ofstream ofs;
+	ofs.open(FILENAME, ios::out);
+	for (int i = 0; i < this->m_EmpNum; i++)
+	{
+		ofs << this->m_EmpArray[i]->m_Id << "\t"
+			<< this->m_EmpArray[i]->m_Name << "\t"
+			<< this->m_EmpArray[i]->m_Sex << "\t"
+			<< this->m_EmpArray[i]->m_Age << "\t"
+			<< this->m_EmpArray[i]->m_DeptId << "\t"
+			<< endl;
+	}
+	ofs.close();
 }
 //退出系统
 void WorkerManager::ExitSystem()

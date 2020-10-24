@@ -11,7 +11,7 @@ public:
 	//获取岗位名称
 	virtual string getDeptName() = 0;
 	~Worker();	//析构函数
-protected:
+public:
 	int m_Id;	//职工编号
 	string m_Name;	//职工姓名
 	string m_Sex;	//职工性别
