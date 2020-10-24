@@ -26,6 +26,22 @@ WorkerManager::WorkerManager()
 		ifs.close();//关闭文件
 		return;
 	}
+	//文件存在,并且没有记录
+	char ch;
+	//ifs中读取第一个字符
+	ifs >> ch;
+	//如果第一个字符为文件结尾符,则为空
+	if (ifs.eof())
+	{
+		//初始化人数
+		this->m_EmpNum = 0;
+		//初始化数组指针
+		this->m_EmpArray = NULL;
+		//文件是否为空:是
+		this->m_IsFileEmpty = true;
+		ifs.close();//关闭文件
+		return;
+	}
 }
 //展示菜单
 void WorkerManager::ShowMenu()
@@ -133,6 +149,8 @@ void WorkerManager::Add_Emp()
 		this->m_EmpArray = newSpace;
 		//更新新增员工后的总人数
 		this->m_EmpNum = _newSize;
+		//更新标志文件是否为空:否
+		this->m_IsFileEmpty = false;
 		//提示用户添加成功
 		cout << "成功添加" << _addNum << "名新员工" << endl;
 		//保存数据到文本文件
