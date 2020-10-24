@@ -138,5 +138,10 @@ void WorkerManager::ExitSystem()
 }
 WorkerManager::~WorkerManager()
 {
-
+	//调用完WorkerManager类对象后释放资源
+	if (this->m_EmpArray != NULL)
+	{
+		delete this->m_EmpArray;
+		this->m_EmpArray = NULL;
+	}
 }
