@@ -537,6 +537,50 @@ void WorkerManager::Sort_Emp()
 	//按任意键 清屏
 	system("cls");
 }
+//清空文件
+void WorkerManager::Clean_File()
+{
+	//判断文件是否存在或者记录为空
+	if (this->m_IsFileEmpty)
+	{
+		cout << "文件不存在或记录为空!" << endl;
+	}
+	else
+	{
+		cout << "确认清空？" << endl;
+		cout << "1、确认" << endl;
+		cout << "2、返回" << endl;
+
+		int select = 0;
+		cin >> select;
+		if (select == 1)
+		{
+			//打开模式 ios::trunc 如果存在删除文件并重新创建
+			ofstream ofs(FILENAME, ios::trunc);
+			ofs.close();
+			if (this->m_EmpArray != NULL)
+			{
+				for (int i = 0; i < this->m_EmpNum; i++)
+				{
+					if (this->m_EmpArray[i] != NULL)
+					{
+						delete this->m_EmpArray[i];
+					}
+				}
+			}
+#pragma region 清零
+			this->m_EmpNum = 0;
+			delete[] this->m_EmpArray;
+			this->m_EmpArray = NULL;
+			this->m_IsFileEmpty = true;
+#pragma endregion
+			cout << "清空成功!" << endl;
+		}
+	}
+	//按任意键 清屏
+	system("pause");
+	system("cls");
+}
 //退出系统
 void WorkerManager::ExitSystem()
 {

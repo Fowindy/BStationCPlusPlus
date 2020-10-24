@@ -30,7 +30,7 @@ int main()
 		//调用展示菜单的成员函数
 		workerManager.ShowMenu();
 		//提示用户输入选项
-		cout << "请输入您的选择(0-9):" << endl;
+		cout << "请输入您的选择(0-7):" << endl;
 		//用来存储用户选项
 		int _choice = -1;
 		//接收用户的选项
@@ -60,6 +60,7 @@ int main()
 			workerManager.Sort_Emp();
 			break;
 		case 7:	//清空文档
+			workerManager.Clean_File();
 			break;
 		default:
 			system("cls");	//任何其他选择都清空屏幕再显示(刷新屏幕)
