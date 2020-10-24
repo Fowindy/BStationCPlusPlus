@@ -17,7 +17,7 @@ void test58()
 	//5.关闭写入流
 	ofs.close();
 }
-int main()
+int main58()
 {
 	test58();
 	system("pause");
