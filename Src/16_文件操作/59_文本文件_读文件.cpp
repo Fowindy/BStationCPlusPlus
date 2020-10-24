@@ -35,13 +35,19 @@ void test59()
 	//}
 #pragma endregion
 #pragma region 3.第三种读取方式_getLine(函数)
-	string buf;
-	while (getline(ifs, buf))
+	//string buf;
+	//while (getline(ifs, buf))
+	//{
+	//	cout << buf << endl;
+	//}
+#pragma endregion
+#pragma region 4.第四种读取方式_get(单字符读取,不推荐)
+	char c;
+	while ((c = ifs.get()) != EOF)//EOF end of file
 	{
-		cout << buf << endl;
+		cout << c;
 	}
 #pragma endregion
-
 	//5.关闭文件
 	ifs.close();
 }
