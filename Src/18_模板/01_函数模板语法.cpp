@@ -29,7 +29,11 @@ void test01()
 {
 	int a = 10;
 	int b = 20;
-	swapInt(a, b);
+	//swapInt(a, b);
+	//模板调用方法1:自动类型推导
+	mySwap(a, b);
+	cout << "a = " << a << endl;
+	cout << "b = " << b << endl;
 }
 int main()
 {
