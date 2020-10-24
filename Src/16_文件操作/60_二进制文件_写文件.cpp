@@ -15,9 +15,9 @@ void test60()
 {
 	//1.包含头文件
 	//2.创建流对象
-	ofstream ofs;
+	ofstream ofs("person.txt", ios::out | ios::binary);
 	//3.打开文件
-	ofs.open("person.txt", ios::out | ios::binary);//ios::out | ios::binary---以二进制的方式写
+	//ofs.open("person.txt", ios::out | ios::binary);//ios::out | ios::binary---以二进制的方式写
 	//4.写文件
 
 	//5.关闭文件
