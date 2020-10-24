@@ -25,15 +25,17 @@ void test02()
 template<class T>
 void func()
 {
-	cout << "func调用" < endl;
+	cout << "func调用" << endl;
 }
 void test002()
 {
-	//func();//模板实现中必须含有T
+	//func();/错误!模板实现中必须含有T
+	func<int>();//正确!
 }
 int main()
 {
 	test02();
+	test002();
 	system("pause");
 	return 0;
 }
