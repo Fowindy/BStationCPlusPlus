@@ -6,6 +6,8 @@ using namespace std;
 void test58()
 {
 	//1.包含头文件
+	//2.创建写入流对象
+	ofstream ofs;
 }
 int main()
 {
