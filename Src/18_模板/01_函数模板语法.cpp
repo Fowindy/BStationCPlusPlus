@@ -31,7 +31,9 @@ void test01()
 	int b = 20;
 	//swapInt(a, b);
 	//模板调用方法1:自动类型推导
-	mySwap(a, b);
+	//mySwap(a, b);
+	//模板调用方法2:显示指定类型
+	mySwap<int>(a, b);
 	cout << "a = " << a << endl;
 	cout << "b = " << b << endl;
 }
