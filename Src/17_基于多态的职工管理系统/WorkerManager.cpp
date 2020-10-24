@@ -252,7 +252,7 @@ void WorkerManager::Init_Emp()
 void WorkerManager::show_Emp()
 {
 	//判断文件是否存在或者记录为空
-	if (this->m_IsFileEmpty || this->m_EmpNum == 0)
+	if (this->m_IsFileEmpty)
 	{
 		cout << "文件不存在或记录为空!" << endl;
 	}
@@ -285,7 +285,7 @@ int WorkerManager::IsEmpExist(int _id)
 void WorkerManager::Del_Emp()
 {
 	//判断文件是否存在或者记录为空
-	if (this->m_IsFileEmpty || this->m_EmpNum == 0)
+	if (this->m_IsFileEmpty)
 	{
 		cout << "文件不存在或记录为空!" << endl;
 	}
@@ -305,6 +305,7 @@ void WorkerManager::Del_Emp()
 				this->m_EmpArray[i] = this->m_EmpArray[i + 1];
 			}
 			this->m_EmpNum--;
+			this->m_IsFileEmpty = this->m_EmpNum == 0 ? true : false;
 			//删除后数据同步更新保存到文件中
 			this->Save();
 			cout << "删除成功!" << endl;
@@ -320,7 +321,7 @@ void WorkerManager::Del_Emp()
 void WorkerManager::ModifyEmp()
 {
 	//判断文件是否存在或者记录为空
-	if (this->m_IsFileEmpty || this->m_EmpNum == 0)
+	if (this->m_IsFileEmpty)
 	{
 		cout << "文件不存在或记录为空!" << endl;
 	}
@@ -345,10 +346,10 @@ void WorkerManager::ModifyEmp()
 			cout << "请输入新姓名:" << endl;
 			cin >> newName;
 
-			cout << "请选择新性别:" << endl;
+		A: cout << "请选择新性别:" << endl;
 			cout << "1、男" << endl;
 			cout << "2、女" << endl;
-		A: cin >> select;
+			cin >> select;
 			switch (select)
 			{
 			case 1:
@@ -359,6 +360,7 @@ void WorkerManager::ModifyEmp()
 				break;
 			default:
 				cout << "输入错误!请重新输入!" << endl;
+				system("pause");
 				goto A;
 			}
 			select = -1;
@@ -366,11 +368,11 @@ void WorkerManager::ModifyEmp()
 			cout << "请输入新年龄:" << endl;
 			cin >> newAge;
 
-			cout << "请选择新职位:" << endl;
+		B: cout << "请选择新职位:" << endl;
 			cout << "1、普通员工" << endl;
 			cout << "2、经理" << endl;
 			cout << "0、老板" << endl;
-		B: cin >> select;
+			cin >> select;
 			Worker* worker = NULL;
 			switch (select)
 			{
@@ -385,6 +387,7 @@ void WorkerManager::ModifyEmp()
 				break;
 			default:
 				cout << "输入错误!请重新输入!" << endl;
+				system("pause");
 				goto B;
 			}
 			//更改数据 到数组中
@@ -398,6 +401,74 @@ void WorkerManager::ModifyEmp()
 		else
 		{
 			cout << "修改失败，查无此人" << endl;
+		}
+	}
+	//按任意键 清屏
+	system("pause");
+	system("cls");
+}
+void WorkerManager::FindEmp()
+{
+	//判断文件是否存在或者记录为空
+	if (this->m_IsFileEmpty)
+	{
+		cout << "文件不存在或记录为空!" << endl;
+	}
+	else
+	{
+	C:cout << "请输入查找的方式：" << endl;
+		cout << "1、按职工编号查找" << endl;
+		cout << "2、按姓名查找" << endl;
+		int select = 0;
+		cin >> select;
+		switch (select)
+		{
+		case 1://按职工编号查找
+		{
+			cout << "请输入要查询的职工编号:" << endl;
+			int id = -1;
+			cin >> id;
+			int index = IsEmpExist(id);
+			if (index != -1)
+			{
+				for (int i = 0; i < this->m_EmpNum; i++)
+				{
+					if (this->m_EmpArray[i]->m_Id == id)
+					{
+						this->m_EmpArray[i]->ShowWorkerInfo();
+					}
+				}
+			}
+			else
+			{
+				cout << "查询失败，查无此人" << endl;
+			}
+		}
+		break;
+		case 2:
+		{
+			cout << "请输入要查询的姓名:" << endl;
+			string name;
+			cin >> name;
+			int index = 0;
+			for (int i = 0; i < this->m_EmpNum; i++)
+			{
+				if (this->m_EmpArray[i]->m_Name == name)
+				{
+					this->m_EmpArray[i]->ShowWorkerInfo();
+					index++;
+				}
+			}
+			if (index == 0)
+			{
+				cout << "查询失败，查无此人" << endl;
+			}
+		}
+		break;
+		default:
+			cout << "输入错误!请重新输入!" << endl;
+			system("pause");
+			goto C;
 		}
 	}
 	//按任意键 清屏

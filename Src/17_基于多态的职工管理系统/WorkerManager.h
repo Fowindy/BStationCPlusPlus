@@ -20,5 +20,6 @@ public:
 	int IsEmpExist(int id);//判断员工是否存在,存在返回员工编号,不存在返回-1
 	void Del_Emp();//根据员工id删除离职员工
 	void ModifyEmp();//根据员工id修改员工
+	void FindEmp();//查找员工
 	~WorkerManager();	//析构函数
 };

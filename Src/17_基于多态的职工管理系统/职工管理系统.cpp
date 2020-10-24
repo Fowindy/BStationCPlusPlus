@@ -32,7 +32,7 @@ int main()
 		//提示用户输入选项
 		cout << "请输入您的选择(0-9):" << endl;
 		//用来存储用户选项
-		int _choice = 0;
+		int _choice = -1;
 		//接收用户的选项
 		cin >> _choice;
 		//switch执行选项分支
@@ -54,6 +54,7 @@ int main()
 			workerManager.ModifyEmp();
 			break;
 		case 5:	//查找职工
+			workerManager.FindEmp();
 			break;
 		case 6:	//排序职工
 			break;
