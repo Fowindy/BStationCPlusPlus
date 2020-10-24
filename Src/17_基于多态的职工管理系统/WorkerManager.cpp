@@ -407,6 +407,7 @@ void WorkerManager::ModifyEmp()
 	system("pause");
 	system("cls");
 }
+//查找员工
 void WorkerManager::FindEmp()
 {
 	//判断文件是否存在或者记录为空
@@ -467,12 +468,73 @@ void WorkerManager::FindEmp()
 		break;
 		default:
 			cout << "输入错误!请重新输入!" << endl;
+			select = select == 0 ? 9 : select;
 			system("pause");
 			goto C;
 		}
 	}
 	//按任意键 清屏
 	system("pause");
+	system("cls");
+}
+//按编号排序
+void WorkerManager::Sort_Emp()
+{
+	//判断文件是否存在或者记录为空
+	if (this->m_IsFileEmpty)
+	{
+		cout << "文件不存在或记录为空!" << endl;
+	}
+	else
+	{
+	D:cout << "请选择排序方式： " << endl;
+		cout << "1、按职工号进行升序" << endl;
+		cout << "2、按职工号进行降序" << endl;
+		int select = 0;
+		cin >> select;
+		switch (select)
+		{
+		case 1://按职工号进行升序
+		{
+			for (int i = 0; i < this->m_EmpNum - 1; i++)
+			{
+				for (int j = 0; j < this->m_EmpNum - 1 - i; j++)
+				{
+					if (this->m_EmpArray[j]->m_Id > this->m_EmpArray[j + 1]->m_Id)
+					{
+						Worker* temp = this->m_EmpArray[j];
+						this->m_EmpArray[j] = this->m_EmpArray[j + 1];
+						this->m_EmpArray[j + 1] = temp;
+					}
+				}
+			}
+		}
+		break;
+		case 2://按职工号进行降序
+		{
+			for (int i = 0; i < this->m_EmpNum - 1; i++)
+			{
+				for (int j = 0; j < this->m_EmpNum - 1 - i; j++)
+				{
+					if (this->m_EmpArray[j]->m_Id < this->m_EmpArray[j + 1]->m_Id)
+					{
+						Worker* temp = this->m_EmpArray[j];
+						this->m_EmpArray[j] = this->m_EmpArray[j + 1];
+						this->m_EmpArray[j + 1] = temp;
+					}
+				}
+			}
+		}
+		break;
+		default:
+			cout << "输入错误!请重新输入!" << endl;
+			system("pause");
+			goto D;
+		}
+		this->Save();
+		this->show_Emp();
+	}
+	//按任意键 清屏
 	system("cls");
 }
 //退出系统

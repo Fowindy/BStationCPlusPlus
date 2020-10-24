@@ -21,5 +21,6 @@ public:
 	void Del_Emp();//根据员工id删除离职员工
 	void ModifyEmp();//根据员工id修改员工
 	void FindEmp();//查找员工
+	void Sort_Emp();//按编号排序
 	~WorkerManager();	//析构函数
 };
