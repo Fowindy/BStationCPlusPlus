@@ -8,6 +8,8 @@ void test58()
 	//1.包含头文件
 	//2.创建写入流对象
 	ofstream ofs;
+	//3.指定打开目录,打开方式
+	ofs.open("test.txt", ios::out);
 }
 int main()
 {
