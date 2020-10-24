@@ -21,8 +21,15 @@ void test59()
 	}
 	//4.读数据
 #pragma region 1.第一种读取方式_buf数组
+	//char buf[1024] = { 0 };
+	//while (ifs >> buf)
+	//{
+	//	cout << buf << endl;
+	//}
+#pragma endregion
+#pragma region 2.第二种读取方式_getLine
 	char buf[1024] = { 0 };
-	while (ifs >> buf)
+	while (ifs.getline(buf, sizeof(buf)))
 	{
 		cout << buf << endl;
 	}
