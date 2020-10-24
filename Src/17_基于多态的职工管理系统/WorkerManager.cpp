@@ -37,6 +37,23 @@ WorkerManager::WorkerManager()
 		cout << "读取到的职工个数为:" << num << endl;//测试代码
 		//更新成员数目属性
 		this->m_EmpNum = num;
+		//根据职工数创建员工数组
+		this->m_EmpArray = new Worker*[this->m_EmpNum];
+		//初始化职工
+		this->Init_Emp();
+#pragma region 读取的员工信息输出测试代码
+		//全部输出读取到的员工信息(测试代码)
+		for (int i = 0; i < this->m_EmpNum; i++)
+		{
+			cout << "职工编号:" << this->m_EmpArray[i]->m_Id << "\t"
+				<< "职工名字:" << this->m_EmpArray[i]->m_Name << "\t"
+				<< "职工性别:" << this->m_EmpArray[i]->m_Sex << "\t"
+				<< "职工年龄:" << this->m_EmpArray[i]->m_Age << "\t"
+				<< "职工性别:" << this->m_EmpArray[i]->m_DeptId << "\t"
+				<< endl;
+		}
+#pragma endregion
+
 	}
 }
 //展示菜单
@@ -114,15 +131,13 @@ void WorkerManager::Add_Emp()
 			_select = 0;
 			cout << "请输入第" << i + 1 << "个新职工的年龄:" << endl;
 			cin >> _age;
-			cout << "请输入第" << i + 1 << "个新职工的部门编号:" << endl;
-			cin >> _deptId;
-			cout << "请选择第" << i + 1 << "个新职工的岗位:" << endl;
+			cout << "请选择第" << i + 1 << "个新职工的部门编号:" << endl;
 			cout << "1、普通员工" << endl;
 			cout << "2、经理" << endl;
 			cout << "0、老板" << endl;
-			cin >> _select;
+			cin >> _deptId;
 			Worker* worker = NULL;
-			switch (_select)
+			switch (_deptId)
 			{
 			case 1://普通员工
 				worker = new Employee(_id, _name, _sex, _age, _deptId);
@@ -196,6 +211,42 @@ int WorkerManager::get_EmpNum()
 	}
 	ifs.close();
 	return num;
+}
+//初始化员工
+void WorkerManager::Init_Emp()
+{
+	//读取文件
+	ifstream ifs;
+	ifs.open(FILENAME, ios::in);
+#pragma region 定义需要的变量
+	int _id;
+	string _name;
+	string _sex;
+	int _age;
+	int _deptId;
+#pragma endregion
+	int index = 0;
+	//流提取符>>会跳过输入流里的空格
+	while (ifs >> _id && ifs >> _name && ifs >> _sex && ifs >> _age && ifs >> _deptId)
+	{
+		Worker* worker = NULL;
+		//根据不同的部门Id创建不同类型的员工对象
+		switch (_deptId)
+		{
+		case 1:
+			worker = new Employee(_id, _name, _sex, _age, _deptId);
+			break;
+		case 2:
+			worker = new Manager(_id, _name, _sex, _age, _deptId);
+			break;
+		case 0:
+			worker = new Boss(_id, _name, _sex, _age, _deptId);
+			break;
+		}
+		//存放到员工数组中
+		this->m_EmpArray[index] = worker;
+		index++;
+	}
 }
 //退出系统
 void WorkerManager::ExitSystem()
