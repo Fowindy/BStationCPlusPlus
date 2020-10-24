@@ -24,5 +24,8 @@
     <ClCompile Include="60_二进制文件_写文件.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="61_二进制文件_读文件.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

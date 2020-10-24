@@ -8,7 +8,7 @@ class Person60
 {
 public:
 	char m_Name[64];//姓名
-	string m_sex;//性别
+	char m_sex[4];//性别
 	int m_Age;//年龄
 };
 void test60()
@@ -24,7 +24,7 @@ void test60()
 	//5.关闭文件
 	ofs.close();
 }
-int main()
+int main60()
 {
 	test60();
 	system("pause");
