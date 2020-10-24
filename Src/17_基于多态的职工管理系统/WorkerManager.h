@@ -7,5 +7,6 @@ class WorkerManager
 public:
 	WorkerManager();	//构造函数
 	void ShowMenu();	//显示菜单
+	void ExitSystem();	//退出系统
 	~WorkerManager();	//析构函数
 };
