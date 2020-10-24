@@ -12,27 +12,16 @@ WorkerManager::WorkerManager()
 	//程序运行时，读文件
 	ifstream ifs;
 	ifs.open(FILENAME, ios::in);
-	//文件不存在
-	if (!ifs.is_open())
-	{
-		//cout << "文件不存在" << endl;//测试输出
-		//在WorkerManager构造函数中初始化属性
-		//初始化人数
-		this->m_EmpNum = 0;
-		//初始化数组指针
-		this->m_EmpArray = NULL;
-		//文件是否为空:是
-		this->m_IsFileEmpty = true;
-		ifs.close();//关闭文件
-		return;
-	}
+	//文件不存在---!ifs.is_open();文件存在,并且没有记录---ifs.eof()
 	//文件存在,并且没有记录
 	char ch;
 	//ifs中读取第一个字符
 	ifs >> ch;
 	//如果第一个字符为文件结尾符,则为空
-	if (ifs.eof())
+	if (!ifs.is_open() || ifs.eof())
 	{
+		//cout << "文件不存在" << endl;//测试输出
+		//在WorkerManager构造函数中初始化属性
 		//初始化人数
 		this->m_EmpNum = 0;
 		//初始化数组指针
