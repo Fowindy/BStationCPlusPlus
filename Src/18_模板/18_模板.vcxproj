@@ -119,6 +119,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="02_函数模板的注意事项.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

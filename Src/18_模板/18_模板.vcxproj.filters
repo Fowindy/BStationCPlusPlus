@@ -18,5 +18,8 @@
     <ClCompile Include="01_函数模板语法.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="02_函数模板的注意事项.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

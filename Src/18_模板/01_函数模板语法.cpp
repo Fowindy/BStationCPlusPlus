@@ -37,7 +37,7 @@ void test01()
 	cout << "a = " << a << endl;
 	cout << "b = " << b << endl;
 }
-int main()
+int main01()
 {
 	test01();
 	system("pause");
