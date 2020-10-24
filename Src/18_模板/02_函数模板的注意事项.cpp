@@ -22,6 +22,15 @@ void test02()
 }
 
 //2.模板必须要确定出T的数据类型,才可使用
+template<class T>
+void func()
+{
+	cout << "func调用" < endl;
+}
+void test002()
+{
+	//func();//模板实现中必须含有T
+}
 int main()
 {
 	test02();
