@@ -10,6 +10,10 @@ int main()
 	Worker* worker = new Employee(1001, "张三", "男", 18, 1000);
 	worker->ShowWorkerInfo();
 	delete worker;
+	cout << "------------------经理类测试----------------" << endl;
+	Worker* worker1 = new Employee(0011, "李四", "男", 28, 0000);
+	worker1->ShowWorkerInfo();
+	delete worker1;
 #pragma endregion
 #pragma region 正式代码
 	////实例化管理类的对象

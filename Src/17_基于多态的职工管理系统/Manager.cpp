@@ -1,10 +1,9 @@
 ﻿#include <iostream>
 #include <string>
-#include "Employee.h"
-#include <math.h>
+#include "Manager.h"
 #include <iomanip>
 using namespace std;
-Employee::Employee(int id, string name, string sex, int age, int deptId)
+Manager::Manager(int id, string name, string sex, int age, int deptId)
 {
 	this->m_Id = id;
 	this->m_Name = name;
@@ -12,7 +11,7 @@ Employee::Employee(int id, string name, string sex, int age, int deptId)
 	this->m_Age = age;
 	this->m_DeptId = deptId;
 }
-void Employee::ShowWorkerInfo()
+void Manager::ShowWorkerInfo()
 {
 	cout << "职工编号:" << setw(4) << setfill('0') << this->m_Id
 		<< "\t职工姓名:" << this->m_Name
@@ -20,14 +19,14 @@ void Employee::ShowWorkerInfo()
 		<< "\t职工年龄:" << this->m_Age
 		<< "\t职工部门编号:" << setw(4) << setfill('0') << this->m_DeptId
 		<< "\t职工职位:" << this->getDeptName()
-		<< "\t岗位职责:完成经理交给的任务"
+		<< "\t岗位职责:完成老板交给的任务,并下发任务给员工"
 		<< endl;
 }
-string Employee::getDeptName()
+string Manager::getDeptName()
 {
-	return string("员工");
+	return string("经理");
 }
-Employee::~Employee()
+Manager::~Manager()
 {
 
 }
