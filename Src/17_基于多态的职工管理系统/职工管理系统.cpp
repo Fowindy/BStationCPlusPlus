@@ -2,10 +2,10 @@
 #include <string>
 using namespace std;
 #include "WorkerManager.h"
-#include "Worker.h"
-#include "Employee.h"
-#include "Manager.h"
-#include "Boss.h"
+//#include "Worker.h"
+//#include "Employee.h"
+//#include "Manager.h"
+//#include "Boss.h"
 int main()
 {
 #pragma region 测试代码
@@ -42,6 +42,7 @@ int main()
 			workerManager.ExitSystem();
 			break;
 		case 1:	//增加职工
+			workerManager.Add_Emp();
 			break;
 		case 2:	//显示职工
 			break;
