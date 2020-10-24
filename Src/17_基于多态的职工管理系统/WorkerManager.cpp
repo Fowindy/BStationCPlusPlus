@@ -9,11 +9,23 @@
 using namespace std;
 WorkerManager::WorkerManager()
 {
-	//在WorkerManager构造函数中初始化属性
-	//初始化人数
-	this->m_EmpNum = 0;
-	//初始化数组指针
-	this->m_EmpArray = NULL;
+	//程序运行时，读文件
+	ifstream ifs;
+	ifs.open(FILENAME, ios::in);
+	//文件不存在
+	if (!ifs.is_open())
+	{
+		//cout << "文件不存在" << endl;//测试输出
+		//在WorkerManager构造函数中初始化属性
+		//初始化人数
+		this->m_EmpNum = 0;
+		//初始化数组指针
+		this->m_EmpArray = NULL;
+		//文件是否为空:是
+		this->m_IsFileEmpty = true;
+		ifs.close();//关闭文件
+		return;
+	}
 }
 //展示菜单
 void WorkerManager::ShowMenu()
