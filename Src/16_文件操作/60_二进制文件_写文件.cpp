@@ -19,11 +19,14 @@ void test60()
 	//3.打开文件
 	//ofs.open("person.txt", ios::out | ios::binary);//ios::out | ios::binary---以二进制的方式写
 	//4.写文件
-
+	Person60 p{ "张三","男",23 };
+	ofs.write((const char*)&p, sizeof(p));//二进制写入的方式,打开可能为乱码
 	//5.关闭文件
+	ofs.close();
 }
 int main()
 {
+	test60();
 	system("pause");
 	return 0;
 }
