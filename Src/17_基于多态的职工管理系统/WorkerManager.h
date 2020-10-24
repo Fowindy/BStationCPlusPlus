@@ -15,6 +15,9 @@ public:
 	void Save();	//保存数据到文件函数
 	bool m_IsFileEmpty;//标志文件是否为空
 	int get_EmpNum();//读文件获取人数
+	void show_Emp();//显示职工信息函数
 	void Init_Emp();//初始化员工函数
+	int IsEmpExist(int id);//判断员工是否存在,存在返回员工编号,不存在返回-1
+	void Del_Emp();//根据员工id删除离职员工
 	~WorkerManager();	//析构函数
 };

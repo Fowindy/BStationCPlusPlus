@@ -248,6 +248,75 @@ void WorkerManager::Init_Emp()
 		index++;
 	}
 }
+//显示职工信息函数
+void WorkerManager::show_Emp()
+{
+	//判断文件是否存在或者记录为空
+	if (this->m_IsFileEmpty || this->m_EmpNum == 0)
+	{
+		cout << "文件不存在或记录为空!" << endl;
+	}
+	else
+	{
+		for (int i = 0; i < this->m_EmpNum; i++)
+		{
+			//利用多态调用接口
+			this->m_EmpArray[i]->ShowWorkerInfo();
+		}
+	}
+	system("pause");
+	system("cls");//清屏
+}
+//判断员工是否存在,存在返回员工编号,不存在返回-1
+int WorkerManager::IsEmpExist(int _id)
+{
+	int index = -1;
+	//3.根据职工编号判断职工是否存在
+	for (int i = 0; i < this->m_EmpNum; i++)
+	{
+		if (this->m_EmpArray[i]->m_Id == _id)
+		{
+			index = i;
+			break;
+		}
+	}
+	return index;
+}
+void WorkerManager::Del_Emp()
+{
+	//判断文件是否存在或者记录为空
+	if (this->m_IsFileEmpty || this->m_EmpNum == 0)
+	{
+		cout << "文件不存在或记录为空!" << endl;
+	}
+	else
+	{
+		//1.提示用户输入要删除员工的编号
+		cout << "请输入要删除员工的编号:" << endl;
+		//2.定义记录输入编号的变量
+		int _id;
+		cin >> _id;
+		//3.判断员工是否存在
+		int index = this->IsEmpExist(_id);
+		if (index != -1)
+		{
+			for (int i = index; i < this->m_EmpNum - 1; i++)
+			{
+				this->m_EmpArray[i] = this->m_EmpArray[i + 1];
+			}
+			this->m_EmpNum--;
+			//删除后数据同步更新保存到文件中
+			this->Save();
+			cout << "删除成功!" << endl;
+		}
+		else
+		{
+			cout << "删除失败,查无此人!" << endl;
+		}
+	}
+	system("pause");
+	system("cls");
+}
 //退出系统
 void WorkerManager::ExitSystem()
 {
