@@ -51,7 +51,7 @@ void test59()
 	//5.关闭文件
 	ifs.close();
 }
-int main()
+int main59()
 {
 	test59();
 	system("pause");

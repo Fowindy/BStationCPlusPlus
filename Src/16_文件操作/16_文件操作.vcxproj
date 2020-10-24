@@ -27,6 +27,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="60_二进制文件_写文件.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
