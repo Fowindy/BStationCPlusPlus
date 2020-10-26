@@ -58,6 +58,10 @@ void test05()
 	myPrint<>(a, b);//调用函数模板
 	//函数模板重载
 	myPrint(a, b, 100);//调用函数重载模板
+	//如果函数模板可以产生更好的匹配,优先调用函数模板
+	char c1 = 'a';
+	char c2 = 'b';
+	myPrint(c1, c2); //调用函数模板
 }
 int main()
 {
