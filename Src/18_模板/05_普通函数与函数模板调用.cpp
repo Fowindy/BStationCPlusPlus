@@ -16,10 +16,10 @@ using namespace std;
 // Parameter: int b
 // Created:   2020/10/26 12:48
 //************************************
-void myPrint(int a, int b)
-{
-	cout << "调用普通函数" << endl;
-}
+void myPrint(int a, int b);//如果函数模板和普通函数都可以实现,普通函数只有声明没有实现,则编译报错
+//{
+//	cout << "调用普通函数" << endl;
+//}
 //************************************
 // Method:    myPrint
 // Access:    public 
