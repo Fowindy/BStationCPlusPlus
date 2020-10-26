@@ -24,5 +24,8 @@
     <ClCompile Include="03_函数模板案例_数组排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="04_普通函数与函数模板的区别.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
