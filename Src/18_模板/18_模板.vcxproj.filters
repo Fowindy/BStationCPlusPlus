@@ -21,5 +21,8 @@
     <ClCompile Include="02_函数模板的注意事项.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="03_函数模板案例_数组排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

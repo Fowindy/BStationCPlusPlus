@@ -32,7 +32,7 @@ void test002()
 	//func();/错误!模板实现中必须含有T
 	func<int>();//正确!
 }
-int main()
+int main02()
 {
 	test02();
 	test002();

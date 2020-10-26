@@ -123,6 +123,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="03_函数模板案例_数组排序.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
