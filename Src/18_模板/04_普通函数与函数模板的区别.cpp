@@ -37,13 +37,15 @@ int main()
 	int a = 10;
 	int b = 20;
 	char c = 'c';
-	//1_1.普通函数显示调用
+	//1_1.普通函数显式调用
 	cout << myAdd01(a, b) << endl;//30
 	//1_2.普通函数隐式调用_隐式转换
 	cout << myAdd01(a, c) << endl;//10 + 99 = 109---c(99)
 
-	//1_3.自动类型推导_显示不会报错
+	//1_3.自动类型推导_显式不会报错
 	cout << myAdd02(a, b) << endl;//30
+	//1_4.自动类型推导_隐式会报错
+	//cout << myAdd02(a, c) << endl;
 	system("pause");
 	return 0;
 }
