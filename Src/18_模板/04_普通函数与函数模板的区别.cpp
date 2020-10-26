@@ -32,7 +32,7 @@ T myAdd02(T a, T b)
 {
 	return a + b;
 }
-int main()
+int main04()
 {
 	int a = 10;
 	int b = 20;
