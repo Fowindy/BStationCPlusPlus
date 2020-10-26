@@ -22,8 +22,11 @@ int main()
 {
 	int a = 10;
 	int b = 20;
+	char c = 'c';
 	//1_1.普通函数显示调用
-	cout << myAdd01(a, b) << endl;
+	cout << myAdd01(a, b) << endl;//30
+	//1_2.普通函数隐式调用_隐式转换
+	cout << myAdd01(a, c) << endl;//10 + 99 = 109---c(99)
 	system("pause");
 	return 0;
 }
