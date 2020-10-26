@@ -63,7 +63,7 @@ void test05()
 	char c2 = 'b';
 	myPrint(c1, c2); //调用函数模板
 }
-int main()
+int main05()
 {
 	test05();
 	system("pause");
