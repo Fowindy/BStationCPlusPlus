@@ -132,7 +132,7 @@ void test03()
 	SortSelect(intArr, len, 升序);
 	PrintArray(intArr, len);
 }
-int main()
+int main03()
 {
 	test03();
 	system("pause");
