@@ -41,11 +41,12 @@ int main()
 	cout << myAdd01(a, b) << endl;//30
 	//1_2.普通函数隐式调用_隐式转换
 	cout << myAdd01(a, c) << endl;//10 + 99 = 109---c(99)
-
 	//1_3.自动类型推导_显式不会报错
 	cout << myAdd02(a, b) << endl;//30
 	//1_4.自动类型推导_隐式会报错
 	//cout << myAdd02(a, c) << endl;
+	//1_5.自动类型推导_显式指定类型不报错
+	cout << myAdd02<int>(a, c) << endl;//109
 	system("pause");
 	return 0;
 }
