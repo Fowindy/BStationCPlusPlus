@@ -34,6 +34,21 @@ void myPrint(T a, T b)
 {
 	cout << "调用函数模板" << endl;
 }
+//************************************
+// Method:    myPrint
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Parameter: T a
+// Parameter: T b
+// Parameter: T c
+// Created:   2020/10/26 13:03
+//************************************
+template<typename T>
+void myPrint(T a, T b, T c)
+{
+	cout << "调用函数重载模板" << endl;
+}
 void test05()
 {
 	int a = 10;
@@ -41,6 +56,8 @@ void test05()
 	//myPrint(a, b);//调用普通函数
 	//通过空模板参数列表,强制调用函数模板
 	myPrint<>(a, b);//调用函数模板
+	//函数模板重载
+	myPrint(a, b, 100);//调用函数重载模板
 }
 int main()
 {
