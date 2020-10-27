@@ -30,7 +30,7 @@ void test11()
 	Son s1;
 	Son2<int, char> s2;//char是父类T类型,int是子类T类型
 }
-int main()
+int main11()
 {
 	test11();
 	system("pause");

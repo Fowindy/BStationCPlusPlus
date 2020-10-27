@@ -32,8 +32,15 @@ void Person12<T1, T2>::ShowPerson()
 {
 	cout << "姓名:" << this->m_Name << ";年龄:" << this->m_Age << endl;
 }
+void test12()
+{
+	//构造函数和成员函数类外实现的调用
+	Person12<string, int>p("Tom", 12);//姓名:Tom;年龄:12
+	p.ShowPerson();
+}
 int main()
 {
+	test12();
 	system("pause");
 	return 0;
 }
