@@ -163,6 +163,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="13_类模板分文件编写问题以及解决.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

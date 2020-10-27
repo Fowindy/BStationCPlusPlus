@@ -51,5 +51,8 @@
     <ClCompile Include="12_类模板成员函数类外实现.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="13_类模板分文件编写问题以及解决.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

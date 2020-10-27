@@ -38,7 +38,7 @@ void test12()
 	Person12<string, int>p("Tom", 12);//姓名:Tom;年龄:12
 	p.ShowPerson();
 }
-int main()
+int main12()
 {
 	test12();
 	system("pause");
