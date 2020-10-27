@@ -26,6 +26,12 @@ Person12<T1, T2>::Person12(T1 name, T2 age)
 	this->m_Name = name;
 	this->m_Age = age;
 }
+//类成员函数类外实现
+template<typename T1, typename T2>
+void Person12<T1, T2>::ShowPerson()
+{
+	cout << "姓名:" << this->m_Name << ";年龄:" << this->m_Age << endl;
+}
 int main()
 {
 	system("pause");
