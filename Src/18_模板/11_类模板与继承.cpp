@@ -13,9 +13,22 @@ class Son :public Base<int>//父类为类模板,子类必须要知道父类中�
 {
 
 };
+//如果想灵活指定父类中T的类型,子类也需要变类模板
+template<typename T1, typename T2>
+class Son2 :public Base<T2>
+{
+public:
+	Son2()
+	{
+		cout << "T1的类型为:" << typeid(T1).name() << endl;//int
+		cout << "T2的类型为:" << typeid(T2).name() << endl;//char
+	}
+	T1 obj;
+};
 void test11()
 {
 	Son s1;
+	Son2<int, char> s2;//char是父类T类型,int是子类T类型
 }
 int main()
 {
