@@ -30,7 +30,7 @@ void test08()
 	Person08<> p2("孙悟空", 999);//name:孙悟空;age:999
 	p2.showPerson();
 }
-int main()
+int main08()
 {
 	test08();
 	system("pause");

@@ -147,6 +147,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="09_类模板中成员函数创建时机.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
