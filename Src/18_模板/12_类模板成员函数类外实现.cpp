@@ -7,18 +7,25 @@ class Person12
 {
 public:
 	//构造函数和成员函数的类内实现
-	Person12(T1 name, T2 age)
-	{
-		this->m_Name = name;
-		this->m_Age = age;
-	}
-	void ShowPerson()
-	{
-		cout << "姓名:" << this->m_Name << ";年龄:" << this->m_Age << endl;
-	}
+	Person12(T1 name, T2 age);//类内声明
+	//{
+	//	this->m_Name = name;
+	//	this->m_Age = age;
+	//}
+	void ShowPerson();//类内声明
+	//{
+	//	cout << "姓名:" << this->m_Name << ";年龄:" << this->m_Age << endl;
+	//}
 	T1 m_Name;
 	T2 m_Age;
 };
+//构造函数的类外实现
+template<typename T1, typename T2>
+Person12<T1, T2>::Person12(T1 name, T2 age)
+{
+	this->m_Name = name;
+	this->m_Age = age;
+}
 int main()
 {
 	system("pause");
