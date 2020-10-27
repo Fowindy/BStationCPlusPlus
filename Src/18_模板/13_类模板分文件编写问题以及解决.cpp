@@ -29,7 +29,7 @@ void test13()
 	Person13<string, int>p("Jerry", 23);
 	p.ShowPeron();
 }
-int main()
+int main13()
 {
 	test13();// 姓名:Jerry; 年龄:23
 	system("pause");

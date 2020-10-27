@@ -167,6 +167,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="14_类模板与友元.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="Person13.cpp">
       <SubType>
       </SubType>
