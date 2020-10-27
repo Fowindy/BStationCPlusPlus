@@ -139,6 +139,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="07_类模板.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

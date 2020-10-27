@@ -81,7 +81,7 @@ void test006()
 		cout << "对象p1 != 对象p2" << endl;
 	}
 }
-int main()
+int main06()
 {
 	test06();
 	test006();
