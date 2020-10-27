@@ -36,5 +36,8 @@
     <ClCompile Include="07_类模板.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="08_类模板和函数模板的区别.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

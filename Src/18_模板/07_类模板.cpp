@@ -27,7 +27,7 @@ void test07()
 	Person07<string, double> p1("齐天大圣", 999.999);//姓名:齐天大圣;年龄:999.999
 	p1.ShowPerson();
 }
-int main()
+int main07()
 {
 	test07();
 	system("pause");
