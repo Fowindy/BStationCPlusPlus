@@ -159,6 +159,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="12_类模板成员函数类外实现.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

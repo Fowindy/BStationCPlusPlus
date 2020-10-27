@@ -48,5 +48,8 @@
     <ClCompile Include="11_类模板与继承.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="12_类模板成员函数类外实现.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
