@@ -62,5 +62,8 @@
     <ClInclude Include="Person13.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Person13.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
