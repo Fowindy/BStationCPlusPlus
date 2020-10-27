@@ -59,7 +59,7 @@ void test10()
 	Person10<string, float>p2("唐僧", 234.465);//姓名:唐僧;年龄:234.465
 	PrintPerson2(p2);
 }
-int main()
+int main10()
 {
 	test10();
 	system("pause");
