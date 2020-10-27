@@ -2,7 +2,7 @@
 #include <string>
 using namespace std;
 //类模板和函数模板的区别
-template<class NameType, class AgeType = int>
+template<class NameType = string, class AgeType = int>
 class Person08
 {
 public:
@@ -26,6 +26,9 @@ void test08()
 	//2.类模板在模板参数列表中可以有默认参数_1
 	Person08<string>p1("猪八戒", 356);//name:猪八戒;age:356
 	p1.showPerson();
+	//类模板在模板参数列表中可以有默认参数_全部为默认参数,可以使用但是失去了模板的意义
+	Person08<> p2("孙悟空", 999);//name:孙悟空;age:999
+	p2.showPerson();
 }
 int main()
 {
