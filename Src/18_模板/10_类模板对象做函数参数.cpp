@@ -40,6 +40,8 @@ template<typename T1, typename T2>
 void PrintPerson1(Person10<T1, T2>& p)
 {
 	p.ShowPerson();
+	cout << "T1的类型为:" << typeid(T1).name() << endl;//class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >
+	cout << "T2的类型为:" << typeid(T2).name() << endl;//double
 }
 void test10()
 {
