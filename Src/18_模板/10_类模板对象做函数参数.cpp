@@ -30,7 +30,7 @@ public:
 // Parameter: int> & p
 // Created:   2020/10/27 19:40
 //************************************
-//调类模板的对象做函数的参数
+//调类模板的对象做函数的参数_最常用
 void PrintPerson(Person10<string, int>& p)
 {
 	p.ShowPerson();
@@ -43,12 +43,21 @@ void PrintPerson1(Person10<T1, T2>& p)
 	cout << "T1的类型为:" << typeid(T1).name() << endl;//class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >
 	cout << "T2的类型为:" << typeid(T2).name() << endl;//double
 }
+//整个类模块化
+template<typename T3>
+void PrintPerson2(T3 &p)
+{
+	p.ShowPerson();
+	cout << "T3的类型为:" << typeid(T3).name() << endl;//class Person10<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,float>
+}
 void test10()
 {
 	Person10<string, int>p("孙悟空", 999);
 	PrintPerson(p);//姓名:孙悟空;年龄:999
 	Person10<string, double>p1("猪八戒", 999.999);//姓名:猪八戒;年龄:999.999
 	PrintPerson1(p1);
+	Person10<string, float>p2("唐僧", 234.465);//姓名:唐僧;年龄:234.465
+	PrintPerson2(p2);
 }
 int main()
 {
