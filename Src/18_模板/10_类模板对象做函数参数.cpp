@@ -35,10 +35,18 @@ void PrintPerson(Person10<string, int>& p)
 {
 	p.ShowPerson();
 }
+//调类模板的对象做函数的参数并将参数模板化
+template<typename T1, typename T2>
+void PrintPerson1(Person10<T1, T2>& p)
+{
+	p.ShowPerson();
+}
 void test10()
 {
 	Person10<string, int>p("孙悟空", 999);
 	PrintPerson(p);//姓名:孙悟空;年龄:999
+	Person10<string, double>p1("猪八戒", 999.999);//姓名:猪八戒;年龄:999.999
+	PrintPerson1(p1);
 }
 int main()
 {
