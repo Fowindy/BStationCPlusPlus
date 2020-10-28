@@ -30,5 +30,8 @@
     <ClCompile Include="05_string容器_赋值操作.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="06_string容器_拼接操作.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
