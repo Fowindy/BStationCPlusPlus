@@ -8,6 +8,7 @@ public:
 	//有参构造,参数:容量
 	MyArray(int capacity)
 	{
+		cout << "MyArray的有参构造" << endl;
 		this->m_Capacity = capacity;
 		this->m_size = 0;//开始数组中的元素为0
 		//按照用户申请的容量开辟数组空间
@@ -16,6 +17,7 @@ public:
 	//拷贝构造:防止delete掉申请的堆区内存,那么另一个指针将会变成野指针
 	MyArray(const MyArray& arr)
 	{
+		cout << "MyArray的拷贝构造" << endl;
 		this->m_Capacity = arr.m_Capacity;
 		this->m_size = arr.m_size;
 		//浅拷贝带来的问题:堆区的内存重复释放
@@ -33,6 +35,7 @@ public:
 	//重载operator=,防止浅拷贝问题	a=b=c 如果不做重载b=c返回void,就不能再赋值给a,重载是为了可以延等操作
 	MyArray& operator=(const MyArray& arr)
 	{
+		cout << "MyArray的重载操作符=" << endl;
 		//先判断原来堆区是否有数据,如果有先释放
 		if (this->pArrayAddress != NULL)
 		{
@@ -56,6 +59,7 @@ public:
 	//因为在堆区开辟空间,所以需要提供析构函数手动释放资源
 	~MyArray()
 	{
+		cout << "MyArray的析构函数" << endl;
 		if (this->pArrayAddress != NULL)
 		{
 			delete[] this->pArrayAddress;//释放pArrayAddress指针指向的数组数据
