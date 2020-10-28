@@ -35,6 +35,10 @@ void test15()
 	PrintArray(arr2);
 	cout << "arr2的容量为:" << arr2.GetCapacity() << endl;
 	cout << "arr2的大小为:" << arr2.GetSize() << endl;
+	cout << "------------------再往arr2尾插一个数据----------------" << endl;
+	arr2.Push_Back(9);
+	//打印arr2中的最后插入的数据
+	cout << "arr2中最后插入的元素为:" << arr2[arr2.GetSize() - 1] << endl;
 }
 int main()
 {
