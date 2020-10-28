@@ -21,6 +21,9 @@ void test09()
 	//3.修改单个字符
 	str[0] = 'x';
 	cout << "str = " << str << endl;//str = xello
+	//4.修改单个字符_at方式
+	str.at(1) = 'x';
+	cout << "str = " << str << endl;//str = xxllo
 }
 int main()
 {
