@@ -41,7 +41,7 @@ void test05()
 	str7.assign(10, 'f');
 	cout << "str7 = " << str7 << endl;//str7 = ffffffffff
 }
-int main06()
+int main05()
 {
 	test05();
 	system("pause");

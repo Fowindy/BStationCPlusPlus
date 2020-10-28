@@ -36,7 +36,7 @@ void test06()
 #pragma endregion
 
 }
-int main()
+int main06()
 {
 	test06();
 	system("pause");
