@@ -21,9 +21,16 @@ void test07()
 	cout << "position = " << position << endl;//position = 7
 }
 //2.替换
+void test007()
+{
+	string str1 = "abcdefg";
+	str1.replace(1, 3, "1111");//参数1:替换起始位;参数2:使用目标字符替代的位数
+	cout << "str1 = " << str1 << endl;//str1 = a1111efg
+}
 int main()
 {
 	test07();
+	test007();
 	system("pause");
 	return 0;
 }
