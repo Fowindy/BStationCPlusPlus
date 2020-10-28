@@ -131,6 +131,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="05_string容器_赋值操作.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

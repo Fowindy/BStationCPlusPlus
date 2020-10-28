@@ -27,5 +27,8 @@
     <ClCompile Include="04_string容器_构造函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="05_string容器_赋值操作.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
