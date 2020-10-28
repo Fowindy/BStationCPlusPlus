@@ -6,6 +6,7 @@ using namespace std;
 class Person01
 {
 	friend void test02();
+	friend void test002();
 public:
 	Person01(string name, int age)
 	{
@@ -42,9 +43,34 @@ void test02()
 		cout << "姓名:" << it->m_Name << ";年龄:" << it->m_Age << endl;
 	}
 }
-int main()
+//存放自定义类型的指针
+void test002()
+{
+	//定义存放对象地址的容器
+	vector<Person01*> v;
+	//定义自定义数据变量
+	Person01 p1("aaa", 10);
+	Person01 p2("bbb", 20);
+	Person01 p3("ccc", 30);
+	Person01 p4("ddd", 40);
+	Person01 p5("eee", 50);
+	//向容器中插入数据
+	v.push_back(&p1);
+	v.push_back(&p2);
+	v.push_back(&p3);
+	v.push_back(&p4);
+	v.push_back(&p5);
+	//遍历数据
+	for (vector<Person01*>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		cout << "姓名:" << (*it)->m_Name << ";年龄:" << (*it)->m_Age << endl;
+	}
+}
+int main02()
 {
 	test02();
+	cout << "------------------容器存放自定义类型的指针----------------" << endl;
+	test002();
 	system("pause");
 	return 0;
 }
