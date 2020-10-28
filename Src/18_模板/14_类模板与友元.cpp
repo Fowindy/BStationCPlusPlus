@@ -41,7 +41,7 @@ void test014()
 	Person14<string, int>p1("Jerry", 23);
 	PrintPerson2(p1);
 }
-int main()
+int main14()
 {
 	test14();//全局函数类内友元实现:name = Tom;age = 18
 	test014();//全局函数类外实现_类内声明:name = Jerry;age = 23

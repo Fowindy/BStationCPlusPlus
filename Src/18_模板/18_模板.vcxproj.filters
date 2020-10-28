@@ -60,12 +60,18 @@
     <ClCompile Include="14_类模板与友元.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="15_类模板案例_数组类封装.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Person13.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Person13.hpp">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MyArray.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

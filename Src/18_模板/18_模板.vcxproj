@@ -171,12 +171,17 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="15_类模板案例_数组类封装.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="Person13.cpp">
       <SubType>
       </SubType>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="MyArray.hpp" />
     <ClInclude Include="Person13.h">
       <SubType>
       </SubType>
