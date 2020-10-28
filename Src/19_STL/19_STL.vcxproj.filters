@@ -48,5 +48,8 @@
     <ClCompile Include="11_string容器_string截取字符串.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="12_vector容器_构造函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

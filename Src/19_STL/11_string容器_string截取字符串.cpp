@@ -16,7 +16,7 @@ void test011()
 	string userName = email.substr(0, pos);
 	cout << "userName = " << userName << endl;//userName = lisi
 }
-int main()
+int main11()
 {
 	test11();
 	test011();
