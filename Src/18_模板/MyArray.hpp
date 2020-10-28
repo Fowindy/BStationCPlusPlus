@@ -30,6 +30,29 @@ public:
 			this->pArrayAddress[i] = arr.pArrayAddress[i];
 		}
 	}
+	//重载operator=,防止浅拷贝问题	a=b=c 如果不做重载b=c返回void,就不能再赋值给a,重载是为了可以延等操作
+	MyArray& operator=(const MyArray& arr)
+	{
+		//先判断原来堆区是否有数据,如果有先释放
+		if (this->pArrayAddress != NULL)
+		{
+			delete[] this->pArrayAddress;//释放pArrayAddress指针指向的数组数据
+			this->pArrayAddress = NULL;//防止野指针
+			this->m_Capacity = 0;
+			this->m_size = 0;
+
+			//深拷贝
+			this->m_Capacity = arr.m_Capacity;
+			this->m_size = arr.m_size;
+			this->pArrayAddress = new T[arr.m_Capacity];
+			for (int i = 0; i < this->m_size; i++)
+			{
+				this->pArrayAddress[i] = arr.pArrayAddress[i];
+			}
+			return *this;
+		}
+
+	}
 	//因为在堆区开辟空间,所以需要提供析构函数手动释放资源
 	~MyArray()
 	{
