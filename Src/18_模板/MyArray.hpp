@@ -73,6 +73,21 @@ public:
 			this->m_size++;
 		}
 	}
+	//尾删法
+	void Pop_Back(const T& val)
+	{
+		//首先判断是做真实大小是否为0
+		if (this->m_size == 0)
+		{
+			cout << "数组中没有元素,尾删失败!" << endl;
+			return;
+		}
+		else
+		{
+			//让用户访问不到最后一个元素,即为尾删
+			this->m_size--;
+		}
+	}
 	//因为在堆区开辟空间,所以需要提供析构函数手动释放资源
 	~MyArray()
 	{
