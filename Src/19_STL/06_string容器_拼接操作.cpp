@@ -23,6 +23,17 @@ void test06()
 	str1 += str2;
 	cout << "str1 = " << str1 << endl;//str1 = 我爱玩游戏:LOL DNF
 #pragma endregion
+#pragma region append的字符串拼接
+	string str3 = "I ";
+	str3.append("Love ");
+	cout << "str3 = " << str3 << endl;//str3 = I Love
+	str3.append("game aaddd", 5);
+	cout << "str3 = " << str3 << endl;//str3 = I Love game
+	str3.append(str2, 4, 3);//只截取DNF, 参数2从哪个位置开始截取,参数3截取字符个数
+	cout << "str3 = " << str3 << endl;//str3 = I Love game DNF
+	str3.append(str2, 0, 3);
+	cout << "str3 = " << str3 << endl;//str3 = I Love game DNFLOL
+#pragma endregion
 
 }
 int main()
