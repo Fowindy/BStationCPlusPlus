@@ -22,6 +22,9 @@ void test12()
 	}
 	//打印容器
 	PrintVector(v1);//0 1 2 3 4 5 6 7 8 9
+	//2.通过区间方式进行构造
+	vector<int>v2(v1.begin(), v1.end());
+	PrintVector(v2);//0 1 2 3 4 5 6 7 8 9
 }
 int main()
 {
