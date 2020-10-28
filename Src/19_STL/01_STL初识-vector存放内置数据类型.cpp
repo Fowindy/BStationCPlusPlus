@@ -16,9 +16,16 @@ void test01()
 	//通过迭代器访问容器中的数据
 	vector<int>::iterator itBegin = v.begin();//起始迭代器 指向容器中第一个元素的地址
 	vector<int>::iterator itEnd = v.end();//结束迭代器 指向容器中最后一个元素的下一个位置
+	//第一种遍历方式
+	while (itBegin != itEnd)
+	{
+		cout << *itBegin << endl;//接引用获取迭代器指针中的内容
+		itBegin++;//迭代器指针右移
+	}
 }
 int main()
 {
+	test01();
 	system("pause");
 	return 0;
 }
