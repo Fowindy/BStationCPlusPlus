@@ -93,6 +93,28 @@ public:
 	{
 		return this->pArrayAddress[index];
 	}
+	//************************************
+	// Method:    GetCapacity(返回数组的容量)
+	// Access:    public 
+	// Returns:   int
+	// Author: 	  Fowindy
+	// Created:   2020/10/28 10:33
+	//************************************
+	int GetCapacity()
+	{
+		return this->m_Capacity;
+	}
+	//************************************
+	// Method:    GetSize(返回数组的真实大小)
+	// Access:    public 
+	// Returns:   int
+	// Author: 	  Fowindy
+	// Created:   2020/10/28 10:34
+	//************************************
+	int GetSize()
+	{
+		return this->m_size;
+	}
 	//因为在堆区开辟空间,所以需要提供析构函数手动释放资源
 	~MyArray()
 	{
