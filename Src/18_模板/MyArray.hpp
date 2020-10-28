@@ -13,6 +13,15 @@ public:
 		//按照用户申请的容量开辟数组空间
 		this->pArrayAddress = new T[this->m_Capacity];
 	}
+	//因为在堆区开辟空间,所以需要提供析构函数手动释放资源
+	~MyArray()
+	{
+		if (this->pArrayAddress != NULL)
+		{
+			delete[] this->pArrayAddress;//释放pArrayAddress指针指向的数组数据
+			this->pArrayAddress = NULL;//防止野指针
+		}
+	}
 #pragma region 私有属性定义
 private:
 	T* pArrayAddress;//指针指向堆区开辟的真实数组的首地址
