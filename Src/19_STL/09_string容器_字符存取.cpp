@@ -12,6 +12,12 @@ void test09()
 		cout << str[i] << " ";
 	}
 	cout << endl;
+	//2.通过at方式访问单个字符
+	for (int i = 0; i < str.size(); i++)
+	{
+		cout << str.at(i) << " ";
+	}
+	cout << endl;
 }
 int main()
 {
