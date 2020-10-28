@@ -74,7 +74,7 @@ public:
 		}
 	}
 	//尾删法
-	void Pop_Back(const T& val)
+	void Pop_Back()
 	{
 		//首先判断是做真实大小是否为0
 		if (this->m_size == 0)
