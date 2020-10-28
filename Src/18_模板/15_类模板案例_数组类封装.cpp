@@ -26,6 +26,15 @@ void test15()
 	cout << "arr1的容量为:" << arr1.GetCapacity() << endl;
 	cout << "arr1的大小为:" << arr1.GetSize() << endl;
 	MyArray<int> arr2(arr1);
+	//调用尾删删除数据
+	arr2.Pop_Back();
+	cout << "arr2尾删后:" << endl;
+	cout << "------------------arr1打印----------------" << endl;
+	PrintArray(arr1);
+	cout << "------------------arr2打印----------------" << endl;
+	PrintArray(arr2);
+	cout << "arr2的容量为:" << arr2.GetCapacity() << endl;
+	cout << "arr2的大小为:" << arr2.GetSize() << endl;
 }
 int main()
 {
