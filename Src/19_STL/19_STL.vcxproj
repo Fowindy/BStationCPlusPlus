@@ -151,6 +151,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="10_string容器_字符串的插入和删除.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

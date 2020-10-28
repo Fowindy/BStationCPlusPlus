@@ -42,5 +42,8 @@
     <ClCompile Include="09_string容器_字符存取.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="10_string容器_字符串的插入和删除.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

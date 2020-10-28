@@ -25,7 +25,7 @@ void test09()
 	str.at(1) = 'x';
 	cout << "str = " << str << endl;//str = xxllo
 }
-int main()
+int main09()
 {
 	test09();
 	system("pause");
