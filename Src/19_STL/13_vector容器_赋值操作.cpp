@@ -32,7 +32,7 @@ void test13()
 	v4.assign(10, 100);
 	PrintVector1(v4);//100 100 100 100 100 100 100 100 100 100
 }
-int main()
+int main13()
 {
 	test13();
 	system("pause");

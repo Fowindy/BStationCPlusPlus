@@ -167,6 +167,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="14_vector容器_vector容器的容量.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
