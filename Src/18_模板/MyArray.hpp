@@ -56,6 +56,23 @@ public:
 		}
 
 	}
+	//尾插法
+	void Push_Back(const T& val)
+	{
+		//判断数组容量是否已满
+		if (this->m_Capacity == this->m_size)
+		{
+			cout << "数组容量已满,尾插失败!" << endl;
+			return;
+		}
+		else
+		{
+			//数组中的最后元素插入尾插元素
+			this->pArrayAddress[this->m_size] = val;
+			//更新数组的真实大小
+			this->m_size++;
+		}
+	}
 	//因为在堆区开辟空间,所以需要提供析构函数手动释放资源
 	~MyArray()
 	{
