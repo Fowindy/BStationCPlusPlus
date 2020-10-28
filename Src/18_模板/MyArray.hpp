@@ -88,6 +88,11 @@ public:
 			this->m_size--;
 		}
 	}
+	//重载[]来实现让用户可以通过下标的方式访问数组中的元素
+	T& operator[](int index)//返回T<=>arr[index],但如果想arr[index] = 100即arr[index]作为左值存在,则需要返回T&
+	{
+		return this->pArrayAddress[index];
+	}
 	//因为在堆区开辟空间,所以需要提供析构函数手动释放资源
 	~MyArray()
 	{
