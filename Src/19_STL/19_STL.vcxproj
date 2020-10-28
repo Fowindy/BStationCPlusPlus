@@ -119,6 +119,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="02_容器存放自定义数据类型.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

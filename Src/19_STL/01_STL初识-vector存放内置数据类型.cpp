@@ -35,7 +35,7 @@ void test01()
 	//第三种遍历方式:利用STL提供的for_each遍历算法 头文件 algorithm
 	for_each(v.begin(), v.end(), myPrint);
 }
-int main()
+int main01()
 {
 	test01();
 	system("pause");
