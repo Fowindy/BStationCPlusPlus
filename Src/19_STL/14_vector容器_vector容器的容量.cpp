@@ -39,7 +39,7 @@ void test14()
 	cout << "v1的容量为:" << v1.capacity() << endl;//19
 	cout << "v1的大小为:" << v1.size() << endl;//5
 }
-int main()
+int main14()
 {
 	test14();
 	system("pause");

@@ -57,5 +57,8 @@
     <ClCompile Include="14_vector容器_vector容器的容量.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="15_vector容器_vector插入和删除.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
