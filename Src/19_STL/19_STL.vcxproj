@@ -143,6 +143,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="08_string容器_字符串比较.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

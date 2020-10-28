@@ -27,7 +27,7 @@ void test007()
 	str1.replace(1, 3, "1111");//参数1:替换起始位;参数2:使用目标字符替代的位数
 	cout << "str1 = " << str1 << endl;//str1 = a1111efg
 }
-int main()
+int main07()
 {
 	test07();
 	test007();
