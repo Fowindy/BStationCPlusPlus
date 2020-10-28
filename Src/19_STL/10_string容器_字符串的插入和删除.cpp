@@ -12,7 +12,7 @@ void test10()
 	str.erase(1, 3);
 	cout << "str = " << str << endl;//str = hello
 }
-int main()
+int main10()
 {
 	test10();
 	system("pause");
