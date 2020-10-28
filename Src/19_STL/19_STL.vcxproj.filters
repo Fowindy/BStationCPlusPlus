@@ -24,5 +24,8 @@
     <ClCompile Include="03_容器的嵌套容器.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="04_string容器_构造函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
