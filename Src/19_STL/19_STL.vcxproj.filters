@@ -39,5 +39,8 @@
     <ClCompile Include="08_string容器_字符串比较.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="09_string容器_字符存取.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
