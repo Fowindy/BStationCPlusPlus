@@ -28,8 +28,11 @@ void test12()
 	//3.n个element方式构造
 	vector<int>v3(10, 100);//100 100 100 100 100 100 100 100 100 100
 	PrintVector(v3);
+	//4.拷贝构造
+	vector<int>v4(v3);//100 100 100 100 100 100 100 100 100 100
+	PrintVector(v4);
 }
-int main()
+int main12()
 {
 	test12();
 	system("pause");

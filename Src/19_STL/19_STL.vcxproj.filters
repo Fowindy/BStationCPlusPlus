@@ -51,5 +51,8 @@
     <ClCompile Include="12_vector容器_构造函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="13_vector容器_赋值操作.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
