@@ -23,6 +23,14 @@ void test13()
 	vector<int> v2;
 	v2 = v1;
 	PrintVector1(v2);//0 1 2 3 4 5 6 7 8 9
+	//赋值 assign
+	vector<int> v3;
+	v3.assign(v2.begin(), v2.end());
+	PrintVector1(v3);//0 1 2 3 4 5 6 7 8 9
+	//n个element方式赋值
+	vector<int> v4;
+	v4.assign(10, 100);
+	PrintVector1(v4);//100 100 100 100 100 100 100 100 100 100
 }
 int main()
 {
