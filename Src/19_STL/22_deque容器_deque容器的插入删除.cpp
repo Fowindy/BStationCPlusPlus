@@ -23,6 +23,9 @@ void test22()
 	d1.push_front(30);
 	d1.push_front(40);
 	PrintDeque22(d1);//40 30 10 20
+	//尾删
+	d1.pop_back();
+	PrintDeque22(d1);//40 30 10
 }
 int main()
 {
