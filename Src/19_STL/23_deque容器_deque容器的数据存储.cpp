@@ -25,6 +25,8 @@ void test23()
 	cout << endl;
 	//访问第一个元素
 	cout << "第一个元素:" << d1.front() << endl;//40
+	//访问最后一个元素
+	cout << "最后的元素:" << d1.back() << endl;//20
 }
 int main()
 {
