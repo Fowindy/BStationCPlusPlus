@@ -56,10 +56,26 @@ void test022()
 	d1.insert(d1.begin(), d2.begin(), d2.end());
 	PrintDeque22(d1);//1 2 3 666 666 666 100 40 30 10 20
 }
+void test0022()
+{
+	deque<int> d1;
+	//尾插
+	d1.push_back(10);
+	d1.push_back(20);
+	//头插
+	d1.push_front(30);
+	d1.push_front(40);
+	//删除第二个元素
+	deque<int>::iterator it = d1.begin();
+	it++;
+	d1.erase(it);
+	PrintDeque22(d1);//40 10 20
+}
 int main()
 {
 	test22();
 	test022();
+	test0022();
 	system("pause");
 	return 0;
 }
