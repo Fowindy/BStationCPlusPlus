@@ -267,6 +267,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="39_set容器_set和multiset的区别.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

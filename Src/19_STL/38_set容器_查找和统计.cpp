@@ -32,7 +32,7 @@ void test38()
 	int num = s1.count(30);
 	cout << "num = " << num << endl;//1
 }
-int main()
+int main38()
 {
 	test38();
 	system("pause");

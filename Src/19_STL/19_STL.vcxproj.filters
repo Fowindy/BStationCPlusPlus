@@ -129,5 +129,8 @@
     <ClCompile Include="38_set容器_查找和统计.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="39_set容器_set和multiset的区别.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
