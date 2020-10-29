@@ -32,7 +32,7 @@ void test18()
 	cout << "v1的容量:" << v1.capacity() << endl;//v1的容量:100000
 	cout << "v1的大小:" << v1.size() << endl;//v1的大小:100000
 }
-int main()
+int main18()
 {
 	test18();
 	system("pause");

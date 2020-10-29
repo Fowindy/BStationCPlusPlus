@@ -69,5 +69,8 @@
     <ClCompile Include="18_vector容器_vector容器的预留空间.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="19_deque容器_deque容器的构造函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
