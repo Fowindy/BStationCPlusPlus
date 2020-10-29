@@ -156,5 +156,8 @@
     <ClCompile Include="47_map容器_排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="48_STL案例2_员工分组.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

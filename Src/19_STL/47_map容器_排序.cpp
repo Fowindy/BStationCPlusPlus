@@ -31,7 +31,7 @@ void test47()
 	//改变map的默认排序为降序(仿函数)
 	PrintMap47(m);
 }
-int main()
+int main47()
 {
 	test47();
 	system("pause");
