@@ -41,7 +41,7 @@ void test45()
 	PrintMap45(m);
 
 }
-int main()
+int main45()
 {
 	test45();
 	system("pause");
