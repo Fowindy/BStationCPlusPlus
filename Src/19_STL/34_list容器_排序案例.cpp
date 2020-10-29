@@ -73,7 +73,7 @@ void test34()
 	cout << "------------------排序后:----------------" << endl;
 	PrintHero(L);
 }
-int main()
+int main34()
 {
 	test34();
 	system("pause");

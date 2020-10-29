@@ -117,5 +117,8 @@
     <ClCompile Include="34_list容器_排序案例.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="35_set容器_构造和赋值.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
