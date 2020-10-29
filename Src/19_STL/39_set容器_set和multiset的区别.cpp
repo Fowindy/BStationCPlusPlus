@@ -29,6 +29,16 @@ void test39()
 	{
 		cout << "第二次插入失败!" << endl;//第二次插入失败!
 	}
+
+	multiset<int>ms;
+	//multiset允许重复插入,会显示重复的值
+	multiset<int>::iterator ret1 = ms.insert(10);
+	ms.insert(10);
+	for (multiset<int>::iterator it = ms.begin(); it != ms.end(); it++)
+	{
+		cout << *it << " ";//10 10
+	}
+	cout << endl;
 }
 int main()
 {
