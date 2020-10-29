@@ -11,6 +11,24 @@ void PrintVector17(vector<int>& v)
 	}
 	cout << endl;
 }
+//交换的实际用途:巧用swap可以收缩空间
+void test017()
+{
+	vector<int>v;
+	for (int i = 0; i < 100000; i++)
+	{
+		v.push_back(i);
+	}
+	cout << "v的容量为:" << v.capacity() << endl;//138255
+	cout << "v的大小为:" << v.size() << endl;//100000
+	v.resize(999);
+	cout << "v的容量为:" << v.capacity() << endl;//138255
+	cout << "v的大小为:" << v.size() << endl;//999
+	//巧用swap可以收缩空间
+	vector<int>(v).swap(v);
+	cout << "v的容量为:" << v.capacity() << endl;//999
+	cout << "v的大小为:" << v.size() << endl;//999
+}
 void test17()
 {
 	vector<int>v1;
@@ -37,6 +55,7 @@ void test17()
 int main()
 {
 	test17();
+	test017();
 	system("pause");
 	return 0;
 }
