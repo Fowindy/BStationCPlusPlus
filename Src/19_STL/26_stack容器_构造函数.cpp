@@ -26,7 +26,7 @@ void test26()
 	}
 	cout << "栈的大小为:" << s.size() << endl;//0
 }
-int main()
+int main26()
 {
 	test26();
 	system("pause");
