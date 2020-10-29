@@ -36,6 +36,9 @@ void test45()
 	//按照区间删除
 	m.erase(m.begin(), m.end());
 	PrintMap45(m);
+	//清空
+	m.clear();
+	PrintMap45(m);
 
 }
 int main()
