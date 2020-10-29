@@ -26,10 +26,28 @@ void test22()
 	//尾删
 	d1.pop_back();
 	PrintDeque22(d1);//40 30 10
+	//头删
+	d1.pop_front();
+	PrintDeque22(d1);//30 10
+}
+void test022()
+{
+	deque<int> d1;
+	//尾插
+	d1.push_back(10);
+	d1.push_back(20);
+	//头插
+	d1.push_front(30);
+	d1.push_front(40);
+	PrintDeque22(d1);//40 30 10 20
+	//insert方式:头插
+	d1.insert(d1.begin(), 100);
+	PrintDeque22(d1);//100 40 30 10 20
 }
 int main()
 {
 	test22();
+	test022();
 	system("pause");
 	return 0;
 }
