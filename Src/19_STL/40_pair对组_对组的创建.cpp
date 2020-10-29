@@ -15,7 +15,7 @@ void test40()
 	pair<string, int> p2 = make_pair("Jerry", 30);
 	cout << "姓名:" << p2.first << "  年龄:" << p2.second << endl;//姓名:Jerry  年龄:30
 }
-int main()
+int main40()
 {
 	test40();
 	system("pause");
