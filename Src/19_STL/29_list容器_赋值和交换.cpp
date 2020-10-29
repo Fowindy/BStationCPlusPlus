@@ -23,6 +23,9 @@ void test29()
 	L1.push_back(30);
 	L1.push_back(40);
 	PrintList29(L1);//10 20 30 40
+	list<int>L2;
+	L2 = L1;//operator= 赋值
+	PrintList29(L2);//10 20 30 40
 }
 int main()
 {
