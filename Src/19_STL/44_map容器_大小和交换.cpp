@@ -28,9 +28,33 @@ void test44()
 		cout << "m的大小为:" << m.size() << endl;//4
 	}
 }
+//交换
+void test044()
+{
+	map<int, int>m;
+	m.insert(pair<int, int>(1, 10));
+	m.insert(pair<int, int>(2, 20));
+	m.insert(pair<int, int>(3, 30));
+	m.insert(pair<int, int>(4, 40));
+
+	map<int, int>m1;
+	m1.insert(pair<int, int>(5, 50));
+	m1.insert(pair<int, int>(6, 60));
+	m1.insert(pair<int, int>(7, 70));
+	m1.insert(pair<int, int>(8, 80));
+	cout << "------------------交换前:----------------" << endl;
+	PrintMap44(m);
+	PrintMap44(m1);
+	//交换
+	m.swap(m1);
+	cout << "------------------交换后:----------------" << endl;
+	PrintMap44(m);
+	PrintMap44(m1);
+}
 int main()
 {
 	test44();
+	test044();
 	system("pause");
 	return 0;
 }
