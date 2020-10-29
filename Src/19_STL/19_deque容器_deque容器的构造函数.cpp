@@ -23,6 +23,9 @@ void test19()
 	}
 	//deque容器赋值和打印基本操作
 	PrintDeque(d1);//0 1 2 3 4 5 6 7 8 9
+	//区间的方式赋值
+	deque<int> d2(d1.begin(), d1.end());
+	PrintDeque(d2);//0 1 2 3 4 5 6 7 8 9
 }
 int main()
 {
