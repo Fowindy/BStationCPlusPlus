@@ -78,5 +78,8 @@
     <ClCompile Include="21_deque容器_deque容器的大小操作.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="22_deque容器_deque容器的插入删除.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

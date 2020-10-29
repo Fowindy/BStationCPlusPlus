@@ -199,6 +199,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="22_deque容器_deque容器的插入删除.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

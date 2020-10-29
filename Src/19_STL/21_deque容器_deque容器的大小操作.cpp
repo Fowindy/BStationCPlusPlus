@@ -42,7 +42,7 @@ void test21()
 	d1.resize(5);//0 1 2 3 4
 	PrintDeque21(d1);
 }
-int main()
+int main21()
 {
 	test21();
 	system("pause");
