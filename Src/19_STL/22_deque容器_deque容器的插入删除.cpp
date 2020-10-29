@@ -73,6 +73,9 @@ void test0022()
 	//按区间方式删除
 	d1.erase(d1.begin(), d1.end());//相当于清空
 	PrintDeque22(d1);
+	//清空
+	d1.clear();
+	PrintDeque22(d1);
 }
 int main()
 {
