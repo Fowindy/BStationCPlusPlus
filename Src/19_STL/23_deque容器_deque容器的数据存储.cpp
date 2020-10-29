@@ -17,6 +17,12 @@ void test23()
 		cout << d1[i] << " ";//40 30 10 20
 	}
 	cout << endl;
+	//使用at方式获取元素
+	for (int i = 0; i < d1.size(); i++)
+	{
+		cout << d1.at(i) << " ";//40 30 10 20
+	}
+	cout << endl;
 }
 int main()
 {
