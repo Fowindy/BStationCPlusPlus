@@ -28,6 +28,9 @@ void test37()
 	//删除头元素
 	s1.erase(s1.begin());
 	PrintSet37(s1);//20 30 40
+	//删除指定元素
+	s1.erase(30);//20 40
+	PrintSet37(s1);
 }
 int main()
 {
