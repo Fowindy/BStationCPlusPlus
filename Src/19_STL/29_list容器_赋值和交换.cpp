@@ -26,6 +26,11 @@ void test29()
 	list<int>L2;
 	L2 = L1;//operator= 赋值
 	PrintList29(L2);//10 20 30 40
+
+	//assign(区间赋值)
+	list<int>L3;
+	L3.assign(L2.begin(), L2.end());
+	PrintList29(L3);//10 20 30 40
 }
 int main()
 {
