@@ -4,6 +4,9 @@
 #include <ctime>
 #include <map>
 using namespace std;
+#define 策划 0
+#define 美术 1
+#define 研发 2
 /*
 - 公司今天招聘了10个员工（ABCDEFGHIJ），10名员工进入公司之后，需要指派员工在那个部门工作
 - 员工信息有: 姓名  工资组成；部门分为：策划、美术、研发
@@ -40,6 +43,36 @@ void SetGroup(vector<Worker>& v, multimap<int, Worker>& m)
 		m.insert(make_pair(deptId, *it));
 	}
 }
+void ShowWorkerByGroup(multimap<int, Worker>& m)
+{
+	//0 A B C 1 D E 2 F G...
+	cout << "策划部员工:" << endl;
+	multimap<int, Worker>::iterator pos = m.find(策划);
+	int count = m.count(策划);//统计策划部门具体人数
+	int index = 0;
+	for (; pos != m.end() && index < count; pos++, index++)
+	{
+		cout << "姓名:" << pos->second.m_Name << "  工资:" << pos->second.m_Salary << endl;
+	}
+	cout << "----------------------------------" << endl;
+	cout << "美术部员工:" << endl;
+	pos = m.find(美术);
+	count = m.count(美术);//统计策划部门具体人数
+	index = 0;
+	for (; pos != m.end() && index < count; pos++, index++)
+	{
+		cout << "姓名:" << pos->second.m_Name << "  工资:" << pos->second.m_Salary << endl;
+	}
+	cout << "----------------------------------" << endl;
+	cout << "研发部员工:" << endl;
+	pos = m.find(研发);
+	count = m.count(研发);//统计策划部门具体人数
+	index = 0;
+	for (; pos != m.end() && index < count; pos++, index++)
+	{
+		cout << "姓名:" << pos->second.m_Name << "  工资:" << pos->second.m_Salary << endl;
+	}
+}
 int main()
 {
 	//随机数种子
@@ -58,7 +91,8 @@ int main()
 	multimap<int, Worker>mWorker;
 	SetGroup(vWorker, mWorker);
 
-	//3.显示
+	//3.分组显示员工
+	ShowWorkerByGroup(mWorker);
 	system("pause");
 	return 0;
 }
