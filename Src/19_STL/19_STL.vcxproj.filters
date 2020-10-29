@@ -147,5 +147,8 @@
     <ClCompile Include="44_map容器_大小和交换.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="45_map容器_插入和删除.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
