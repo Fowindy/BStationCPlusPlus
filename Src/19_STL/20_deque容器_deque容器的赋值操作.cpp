@@ -23,7 +23,11 @@ void test20()
 	//operator= 赋值
 	deque<int> d2;
 	d2 = d1;
-	PrintDeque20(d2);
+	PrintDeque20(d2);//0 1 2 3 4 5 6 7 8 9
+	//assign赋值(区间)
+	deque<int> d3;
+	d3.assign(d2.begin(), d2.end());
+	PrintDeque20(d3);//0 1 2 3 4 5 6 7 8 9
 }
 int main()
 {
