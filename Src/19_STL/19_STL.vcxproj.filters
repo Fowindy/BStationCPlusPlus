@@ -126,5 +126,8 @@
     <ClCompile Include="36_set容器_大小和交换.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="38_set容器_查找和统计.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -37,7 +37,7 @@ void test37()
 	//清空
 	s1.clear();
 }
-int main()
+int main37()
 {
 	test37();
 	system("pause");
