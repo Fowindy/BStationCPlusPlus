@@ -29,6 +29,9 @@ void test19()
 	//n个element方式赋值
 	deque<int> d3(10, 100);//100 100 100 100 100 100 100 100 100 100
 	PrintDeque(d3);
+	//拷贝构造方式赋值
+	deque<int> d4(d3);
+	PrintDeque(d4);//100 100 100 100 100 100 100 100 100 100
 }
 int main()
 {
