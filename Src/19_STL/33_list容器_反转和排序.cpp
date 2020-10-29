@@ -14,6 +14,10 @@ void PrintList33(const list<int>& L)
 	}
 	cout << endl;
 }
+bool myCompare(int v1, int v2)
+{
+	return v1 > v2;//v1>v2就是降序
+}
 void test33()
 {
 	list<int>L1;
@@ -42,6 +46,19 @@ void test33()
 	cout << "------------------降序后:----------------" << endl;
 	L1.reverse();
 	PrintList33(L1);//50 40 30 20 10
+
+	//降序方法2.写判断函数参数
+	list<int>L2;
+	L2.push_back(30);
+	L2.push_back(10);
+	L2.push_back(50);
+	L2.push_back(20);
+	L2.push_back(40);
+	cout << "------------------降序前:----------------" << endl;
+	PrintList33(L2);//30 10 50 20 40
+	L2.sort(myCompare);
+	cout << "------------------降序后:----------------" << endl;
+	PrintList33(L2);//50 40 30 20 10
 }
 int main()
 {
