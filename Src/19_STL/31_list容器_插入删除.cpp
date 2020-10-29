@@ -73,7 +73,7 @@ void test31()
 	L1.clear();
 	PrintList31(L1);
 }
-int main()
+int main31()
 {
 	test31();
 	system("pause");
