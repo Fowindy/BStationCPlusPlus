@@ -21,6 +21,10 @@ void test43()
 	m.insert(pair<int, int>(4, 20));
 	m.insert(pair<int, int>(3, 30));
 	PrintMap43(m);
+	cout << "------------------拷贝构造----------------" << endl;
+	//拷贝构造
+	map<int, int>m1(m);
+	PrintMap43(m1);
 }
 int main()
 {
