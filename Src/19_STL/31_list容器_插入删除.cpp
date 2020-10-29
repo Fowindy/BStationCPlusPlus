@@ -48,6 +48,10 @@ void test31()
 	//头删
 	L1.pop_front();
 	PrintList31(L1);//300 200 100 10 20 30
+
+	//insert插入_头插
+	L1.insert(L1.begin(), 999);//999 300 200 100 10 20 30
+	PrintList31(L1);
 }
 int main()
 {
