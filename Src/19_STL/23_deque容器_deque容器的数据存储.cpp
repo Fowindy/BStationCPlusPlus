@@ -23,6 +23,8 @@ void test23()
 		cout << d1.at(i) << " ";//40 30 10 20
 	}
 	cout << endl;
+	//访问第一个元素
+	cout << "第一个元素:" << d1.front() << endl;//40
 }
 int main()
 {
