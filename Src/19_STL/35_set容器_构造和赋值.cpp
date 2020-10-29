@@ -36,7 +36,7 @@ void test35()
 	s3 = s2;
 	PrintSet35(s3);//10 20 30 40
 }
-int main()
+int main35()
 {
 	test35();
 	system("pause");
