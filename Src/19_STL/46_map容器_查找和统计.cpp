@@ -21,7 +21,9 @@ void test46()
 	{
 		cout << "没有找到元素" << endl;
 	}
-	//2.统计
+	//2.统计:map不允许插入重复key值,返回值为0或者为1;multimap的count统计可以大于1
+	int num = m.count(3);
+	cout << "num = " << num << endl;
 }
 int main()
 {
