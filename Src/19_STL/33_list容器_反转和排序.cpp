@@ -60,7 +60,7 @@ void test33()
 	cout << "------------------降序后:----------------" << endl;
 	PrintList33(L2);//50 40 30 20 10
 }
-int main31()
+int main33()
 {
 	test33();
 	system("pause");
