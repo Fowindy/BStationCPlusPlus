@@ -287,6 +287,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="44_map容器_大小和交换.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

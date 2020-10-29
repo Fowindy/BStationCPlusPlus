@@ -31,7 +31,7 @@ void test43()
 	m2 = m1;
 	PrintMap43(m2);
 }
-int main()
+int main43()
 {
 	test43();
 	system("pause");
