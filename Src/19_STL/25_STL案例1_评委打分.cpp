@@ -69,6 +69,14 @@ void SetScore(vector<Player>& v)
 		(*it).m_Score = sum / score.size();
 	}
 }
+void ShowScore(vector<Player>& v)
+{
+	cout << "选手平均分如下:" << endl;
+	for (vector<Player>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		cout << "姓名:" << (*it).m_Name << "\t分数:" << (*it).m_Score << endl;
+	}
+}
 void test25()
 {
 	//1.创建5名选手
@@ -85,14 +93,15 @@ void test25()
 	//2.给5名选手打分
 	SetScore(v);
 #pragma region 打分测试
-	cout << "选手平均分如下:" << endl;
-	for (int i = 0; i < v.size(); i++)
-	{
-		cout << "姓名:" << v[i].m_Name << "\t分数:" << v[i].m_Score << endl;
-	}
+	//cout << "选手平均分如下:" << endl;
+	//for (int i = 0; i < v.size(); i++)
+	//{
+	//	cout << "姓名:" << v[i].m_Name << "\t分数:" << v[i].m_Score << endl;
+	//}
 #pragma endregion
 
 	//3.显示最后得分
+	ShowScore(v);
 }
 int main()
 {
