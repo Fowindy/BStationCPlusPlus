@@ -103,7 +103,7 @@ void test25()
 	//3.显示最后得分
 	ShowScore(v);
 }
-int main()
+int main25()
 {
 	//随机数种子
 	srand((unsigned int)time(NULL));

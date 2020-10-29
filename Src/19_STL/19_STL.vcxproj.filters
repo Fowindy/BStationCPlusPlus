@@ -90,5 +90,8 @@
     <ClCompile Include="25_STL案例1_评委打分.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="26_stack容器_构造函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
