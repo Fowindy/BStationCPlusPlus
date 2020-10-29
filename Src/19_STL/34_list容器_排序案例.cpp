@@ -28,6 +28,28 @@ void PrintHero(const list<Hero>& L)
 		cout << "姓名:" << (*it).m_Name << "  年龄:" << it->m_Age << "  身高:" << it->m_Height << endl;
 	}
 }
+//************************************
+// Method:    HeroCompare(回调函数)
+// Access:    public 
+// Returns:   bool
+// Author: 	  Fowindy
+// Parameter: Hero & h1
+// Parameter: Hero & h2
+// Created:   2020/10/29 18:51
+//************************************
+bool HeroCompare(Hero& h1, Hero& h2)
+{
+	if (h1.m_Age == h2.m_Age)//年龄相同
+	{
+		//按照身高降序
+		return h1.m_Height > h2.m_Height;
+	}
+	else
+	{
+		//按照年龄升序
+		return h1.m_Age < h2.m_Age;
+	}
+}
 void test34()
 {
 	list<Hero> L;
@@ -45,6 +67,10 @@ void test34()
 	L.push_back(h4);
 	L.push_back(h5);
 	L.push_back(h6);
+	cout << "------------------排序前:----------------" << endl;
+	PrintHero(L);
+	L.sort(HeroCompare);//传入排序规则的回调函数
+	cout << "------------------排序后:----------------" << endl;
 	PrintHero(L);
 }
 int main()
