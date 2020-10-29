@@ -87,5 +87,8 @@
     <ClCompile Include="24_deque容器_deque容器的排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="25_STL案例1_评委打分.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

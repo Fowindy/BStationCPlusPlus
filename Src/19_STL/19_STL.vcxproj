@@ -211,6 +211,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="25_STL案例1_评委打分.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

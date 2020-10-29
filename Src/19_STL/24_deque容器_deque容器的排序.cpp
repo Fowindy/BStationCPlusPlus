@@ -34,7 +34,7 @@ void test24()
 	reverse(d1.begin(), d1.end());
 	PrintDeque24(d1);//300 200 100 30 20 10
 }
-int main()
+int main24()
 {
 	test24();
 	system("pause");
