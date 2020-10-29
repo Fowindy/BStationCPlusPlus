@@ -203,6 +203,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="23_deque容器_deque容器的数据存储.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

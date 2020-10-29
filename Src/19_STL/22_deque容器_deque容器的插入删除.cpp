@@ -77,7 +77,7 @@ void test0022()
 	d1.clear();
 	PrintDeque22(d1);
 }
-int main()
+int main22()
 {
 	test22();
 	test022();
