@@ -25,7 +25,7 @@ void test32()
 	it--;
 	//it += 1;//不支持随机
 }
-int main()
+int main32()
 {
 	test32();
 	system("pause");
