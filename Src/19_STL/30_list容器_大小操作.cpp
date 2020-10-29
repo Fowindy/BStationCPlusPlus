@@ -43,7 +43,7 @@ void test30()
 	L1.resize(2);
 	PrintList30(L1);//10 20
 }
-int main()
+int main30()
 {
 	test30();
 	system("pause");

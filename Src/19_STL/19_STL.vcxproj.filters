@@ -105,5 +105,8 @@
     <ClCompile Include="30_list容器_大小操作.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="31_list容器_插入删除.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
