@@ -70,6 +70,9 @@ void test0022()
 	it++;
 	d1.erase(it);
 	PrintDeque22(d1);//40 10 20
+	//按区间方式删除
+	d1.erase(d1.begin(), d1.end());//相当于清空
+	PrintDeque22(d1);
 }
 int main()
 {
