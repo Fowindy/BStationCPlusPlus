@@ -28,7 +28,7 @@ void test16()
 	//获取最后一个元素
 	cout << "v1的最后一个元素为:" << v1.back() << endl;//v1的最后一个元素为:9
 }
-int main()
+int main16()
 {
 	test16();
 	system("pause");
