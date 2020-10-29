@@ -58,6 +58,11 @@ void test31()
 	it++;
 	L1.insert(++it, 1888);//在第三个位置插入1888
 	PrintList31(L1);//999 300 1888 200 100 10 20 30
+
+	//删除
+	it = L1.begin();
+	L1.erase(it);
+	PrintList31(L1);//300 1888 200 100 10 20 30
 }
 int main()
 {
