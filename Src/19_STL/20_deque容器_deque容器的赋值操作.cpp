@@ -28,6 +28,10 @@ void test20()
 	deque<int> d3;
 	d3.assign(d2.begin(), d2.end());
 	PrintDeque20(d3);//0 1 2 3 4 5 6 7 8 9
+	//assign赋值(n个element)
+	deque<int> d4;
+	d4.assign(10, 100);
+	PrintDeque20(d4);//100 100 100 100 100 100 100 100 100 100
 }
 int main()
 {
