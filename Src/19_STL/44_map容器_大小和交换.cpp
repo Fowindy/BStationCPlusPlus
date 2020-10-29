@@ -51,7 +51,7 @@ void test044()
 	PrintMap44(m);
 	PrintMap44(m1);
 }
-int main()
+int main44()
 {
 	test44();
 	test044();
