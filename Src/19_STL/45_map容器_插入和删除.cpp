@@ -29,6 +29,14 @@ void test45()
 	//删除
 	m.erase(m.begin());
 	PrintMap45(m);
+	cout << "------------------按照key删除----------------" << endl;
+	//按照key删除
+	m.erase(3);
+	PrintMap45(m);
+	//按照区间删除
+	m.erase(m.begin(), m.end());
+	PrintMap45(m);
+
 }
 int main()
 {
