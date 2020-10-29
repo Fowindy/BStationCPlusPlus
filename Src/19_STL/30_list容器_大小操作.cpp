@@ -33,7 +33,11 @@ void test30()
 	}
 	//重新指定大小(长,默认填充0)
 	L1.resize(10);
-	PrintList30(L1);
+	PrintList30(L1);//10 20 30 40 0 0 0 0 0 0
+
+	//重新指定大小(长,指定填充99)
+	L1.resize(12, 99);
+	PrintList30(L1);//10 20 30 40 0 0 0 0 0 0 99 99
 }
 int main()
 {
