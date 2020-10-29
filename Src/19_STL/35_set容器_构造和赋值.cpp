@@ -30,6 +30,11 @@ void test35()
 	//拷贝构造
 	set<int>s2(s1);
 	PrintSet35(s2);//10 20 30 40
+
+	//赋值构造
+	set<int>s3;
+	s3 = s2;
+	PrintSet35(s3);//10 20 30 40
 }
 int main()
 {
