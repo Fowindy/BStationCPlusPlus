@@ -271,6 +271,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="40_pair对组_对组的创建.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

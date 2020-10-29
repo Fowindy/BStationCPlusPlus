@@ -132,5 +132,8 @@
     <ClCompile Include="39_set容器_set和multiset的区别.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="40_pair对组_对组的创建.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

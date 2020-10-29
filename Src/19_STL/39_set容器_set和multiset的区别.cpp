@@ -40,7 +40,7 @@ void test39()
 	}
 	cout << endl;
 }
-int main()
+int main39()
 {
 	test39();
 	system("pause");
