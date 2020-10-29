@@ -120,6 +120,9 @@
     <ClCompile Include="35_set容器_构造和赋值.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="37_set容器_插入和删除.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="36_set容器_大小和交换.cpp">
       <Filter>源文件</Filter>
     </ClCompile>

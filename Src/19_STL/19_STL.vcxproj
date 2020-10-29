@@ -259,6 +259,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="37_set容器_插入和删除.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

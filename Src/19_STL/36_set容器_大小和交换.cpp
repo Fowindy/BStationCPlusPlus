@@ -56,7 +56,7 @@ void test36()
 	PrintSet36(s1);//100 200 300 400
 	PrintSet36(s2);//10 20 30 40
 }
-int main()
+int main36()
 {
 	test36();
 	system("pause");
