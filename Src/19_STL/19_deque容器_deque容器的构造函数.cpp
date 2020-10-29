@@ -4,10 +4,12 @@
 #include <deque>
 using namespace std;
 //19_deque容器_deque容器的构造函数
-void PrintDeque(deque<int> d)
+void PrintDeque(const deque<int> d)
 {
-	for (deque<int>::iterator it = d.begin(); it != d.end(); it++)
+	for (deque<int>::const_iterator it = d.begin(); it != d.end(); it++)
 	{
+		//防止误操作修改数据,可以使用const
+		//*it = 1000;
 		cout << *it << " ";
 	}
 	cout << endl;
