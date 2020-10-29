@@ -51,7 +51,7 @@ void test15()
 	//清空
 	v1.clear();
 }
-int main()
+int main15()
 {
 	test15();
 	system("pause");
