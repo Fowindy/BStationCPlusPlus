@@ -27,10 +27,14 @@ void test21()
 	}
 	else
 	{
+		cout << "容器不为空!" << endl;
 		//获取deque容器的大小
 		cout << "d1的大小为:" << d1.size() << endl;//10
 		//deque容器没有容量的概念
 	}
+	//重新指定容器大小(长,默认填0)
+	d1.resize(15);
+	PrintDeque21(d1);//0 1 2 3 4 5 6 7 8 9 0 0 0 0 0
 }
 int main()
 {
