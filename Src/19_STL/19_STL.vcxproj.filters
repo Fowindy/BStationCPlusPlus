@@ -102,5 +102,8 @@
     <ClCompile Include="29_list容器_赋值和交换.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="30_list容器_大小操作.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

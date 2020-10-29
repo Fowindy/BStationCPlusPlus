@@ -57,7 +57,7 @@ void test029()
 	PrintList29(L1);//100 100 100 100 100 100 100 100 100 100
 	PrintList29(L2);//10 20 30 40
 }
-int main()
+int main29()
 {
 	test29();
 	test029();
