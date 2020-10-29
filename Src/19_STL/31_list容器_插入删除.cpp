@@ -63,6 +63,11 @@ void test31()
 	it = L1.begin();
 	L1.erase(it);
 	PrintList31(L1);//300 1888 200 100 10 20 30
+
+	//移除所有指定元素
+	L1.push_back(1888);
+	L1.remove(1888);
+	PrintList31(L1);//300 200 100 10 20 30
 }
 int main()
 {
