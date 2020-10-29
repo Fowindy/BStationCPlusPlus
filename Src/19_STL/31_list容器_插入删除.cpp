@@ -44,6 +44,10 @@ void test31()
 	//尾删
 	L1.pop_back();
 	PrintList31(L1);//400 300 200 100 10 20 30
+
+	//头删
+	L1.pop_front();
+	PrintList31(L1);//300 200 100 10 20 30
 }
 int main()
 {
