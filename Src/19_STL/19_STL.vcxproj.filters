@@ -153,5 +153,8 @@
     <ClCompile Include="46_map容器_查找和统计.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="47_map容器_排序.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

@@ -25,7 +25,7 @@ void test46()
 	int num = m.count(3);
 	cout << "num = " << num << endl;
 }
-int main()
+int main46()
 {
 	test46();
 	system("pause");
