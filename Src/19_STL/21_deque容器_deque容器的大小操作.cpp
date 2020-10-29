@@ -29,6 +29,7 @@ void test21()
 	{
 		//获取deque容器的大小
 		cout << "d1的大小为:" << d1.size() << endl;//10
+		//deque容器没有容量的概念
 	}
 }
 int main()
