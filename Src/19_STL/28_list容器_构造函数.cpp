@@ -9,9 +9,9 @@ void PrintList28(const list<int>& L)
 {
 	for (list<int>::const_iterator it = L.begin(); it != L.end(); it++)
 	{
-		cout<<*it<<" ";
+		cout << *it << " ";
 	}
-	cout<<endl;
+	cout << endl;
 }
 void test28()
 {
@@ -27,6 +27,9 @@ void test28()
 	//按照区间方式构造
 	list<int> L2(L1.begin(), L1.end());
 	PrintList28(L2);//10 20 30 40
+	//拷贝构造
+	list<int>L3(L2);
+	PrintList28(L3);//10 20 30 40
 }
 int main()
 {
