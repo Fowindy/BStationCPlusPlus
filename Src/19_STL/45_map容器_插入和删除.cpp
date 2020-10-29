@@ -24,6 +24,11 @@ void test45()
 	//原因:原本没创建5,结果会自己创建默认值为0的
 	cout << m[5] << endl;//0
 	PrintMap45(m);
+
+	cout << "------------------删除:----------------" << endl;
+	//删除
+	m.erase(m.begin());
+	PrintMap45(m);
 }
 int main()
 {
