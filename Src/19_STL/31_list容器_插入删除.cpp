@@ -68,6 +68,10 @@ void test31()
 	L1.push_back(1888);
 	L1.remove(1888);
 	PrintList31(L1);//300 200 100 10 20 30
+
+	//清空
+	L1.clear();
+	PrintList31(L1);
 }
 int main()
 {
