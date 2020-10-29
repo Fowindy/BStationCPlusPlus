@@ -41,7 +41,7 @@ void test27()
 	}
 	cout << "队列的大小为:" << q.size() << endl;
 }
-int main()
+int main27()
 {
 	test27();
 	system("pause");
