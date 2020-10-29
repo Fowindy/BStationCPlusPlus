@@ -43,6 +43,9 @@ void test022()
 	//insert方式:头插
 	d1.insert(d1.begin(), 100);
 	PrintDeque22(d1);//100 40 30 10 20
+	//insert方式:头插n个元素
+	d1.insert(d1.begin(), 3, 666);
+	PrintDeque22(d1);//666 666 666 100 40 30 10 20
 }
 int main()
 {
