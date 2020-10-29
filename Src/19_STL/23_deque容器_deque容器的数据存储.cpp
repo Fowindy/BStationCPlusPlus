@@ -28,7 +28,7 @@ void test23()
 	//访问最后一个元素
 	cout << "最后的元素:" << d1.back() << endl;//20
 }
-int main()
+int main23()
 {
 	test23();
 	system("pause");
