@@ -20,6 +20,15 @@ void test21()
 		d1.push_back(i);
 	}
 	PrintDeque21(d1);//0 1 2 3 4 5 6 7 8 9
+	//判断deque容器是否为空
+	if (d1.empty())
+	{
+		cout << "容器为空!" << endl;
+	}
+	else
+	{
+
+	}
 }
 int main()
 {
