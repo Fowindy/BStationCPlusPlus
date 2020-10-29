@@ -17,6 +17,12 @@ void test16()
 		cout << v1[i] << " ";//0 1 2 3 4 5 6 7 8 9
 	}
 	cout << endl;
+	//利用at访问数组中的元素
+	for (int i = 0; i < v1.size(); i++)
+	{
+		cout << v1.at(i) << " ";//0 1 2 3 4 5 6 7 8 9
+	}
+	cout << endl;
 }
 int main()
 {
