@@ -19,6 +19,11 @@ void test32()
 	//访问第一个和最后元素
 	cout << "第一个元素为:" << L1.front() << endl;//10
 	cout << "最后一个元素为:" << L1.back() << endl;//40
+	//验证迭代器是不支持随机访问
+	list<int>::iterator it = L1.begin();
+	it++;//支持双向
+	it--;
+	//it += 1;//不支持随机
 }
 int main()
 {
