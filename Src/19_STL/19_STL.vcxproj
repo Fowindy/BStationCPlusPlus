@@ -183,6 +183,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="18_vector容器_vector容器的预留空间.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

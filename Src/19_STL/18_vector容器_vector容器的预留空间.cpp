@@ -1,0 +1,32 @@
+﻿#include <iostream>
+#include <string>
+#include <vector>
+using namespace std;
+//18_vector容器_vector容器的预留空间
+void test18()
+{
+	vector<int>v1;
+	//统计开辟空间的次数
+	int num = 0;
+	int *p = NULL;
+	for (int i = 0; i < 100000; i++)
+	{
+		v1.push_back(i);
+		//如果p指针指向的不是首地址
+		if (p != &v1[0])
+		{
+			//则把首地址给p
+			p = &v1[0];
+			//开辟次数+1
+			num++;
+		}
+	}
+	//利用系统开辟空间的次数:30
+	cout << "v1开辟空间的次数为:" << num << endl;
+}
+int main()
+{
+	test18();
+	system("pause");
+	return 0;
+}

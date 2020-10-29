@@ -66,5 +66,8 @@
     <ClCompile Include="17_vector容器_vector容器的互换.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="18_vector容器_vector容器的预留空间.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
