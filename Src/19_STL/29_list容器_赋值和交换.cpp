@@ -31,6 +31,11 @@ void test29()
 	list<int>L3;
 	L3.assign(L2.begin(), L2.end());
 	PrintList29(L3);//10 20 30 40
+
+	//assign(n个element赋值)
+	list<int>L4;
+	L4.assign(10, 100);
+	PrintList29(L4);//100 100 100 100 100 100 100 100 100 100
 }
 int main()
 {
