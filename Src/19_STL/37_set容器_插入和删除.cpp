@@ -31,6 +31,11 @@ void test37()
 	//删除指定元素
 	s1.erase(30);//20 40
 	PrintSet37(s1);
+	//删除所有元素erase
+	s1.erase(s1.begin(), s1.end());
+	PrintSet37(s1);
+	//清空
+	s1.clear();
 }
 int main()
 {
