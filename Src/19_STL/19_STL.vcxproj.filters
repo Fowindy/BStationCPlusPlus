@@ -138,5 +138,8 @@
     <ClCompile Include="41_set容器_set容器的排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="42_set容器_排序(自定义类型).cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
