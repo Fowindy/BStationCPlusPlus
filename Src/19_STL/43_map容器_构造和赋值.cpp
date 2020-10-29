@@ -25,6 +25,11 @@ void test43()
 	//拷贝构造
 	map<int, int>m1(m);
 	PrintMap43(m1);
+	cout << "------------------赋值构造----------------" << endl;
+	//赋值构造
+	map<int, int>m2;
+	m2 = m1;
+	PrintMap43(m2);
 }
 int main()
 {
