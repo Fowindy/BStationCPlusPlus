@@ -34,7 +34,7 @@ void test28()
 	list<int>L4(10, 100);
 	PrintList28(L4);//100 100 100 100 100 100 100 100 100 100
 }
-int main()
+int main28()
 {
 	test28();
 	system("pause");

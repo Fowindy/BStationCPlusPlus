@@ -227,6 +227,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="29_list容器_赋值和交换.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

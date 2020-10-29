@@ -99,5 +99,8 @@
     <ClCompile Include="28_list容器_构造函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="29_list容器_赋值和交换.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
