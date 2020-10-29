@@ -52,6 +52,12 @@ void test31()
 	//insert插入_头插
 	L1.insert(L1.begin(), 999);//999 300 200 100 10 20 30
 	PrintList31(L1);
+
+	//insert插入指定位置
+	list<int>::iterator it = L1.begin();
+	it++;
+	L1.insert(++it, 1888);//在第三个位置插入1888
+	PrintList31(L1);//999 300 1888 200 100 10 20 30
 }
 int main()
 {
