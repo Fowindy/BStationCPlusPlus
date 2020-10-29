@@ -114,5 +114,8 @@
     <ClCompile Include="33_list容器_反转和排序.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="34_list容器_排序案例.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

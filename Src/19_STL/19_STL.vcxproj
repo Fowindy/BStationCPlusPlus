@@ -247,6 +247,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="34_list容器_排序案例.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

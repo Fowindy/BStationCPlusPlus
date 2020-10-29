@@ -47,7 +47,7 @@ void test33()
 	L1.reverse();
 	PrintList33(L1);//50 40 30 20 10
 
-	//降序方法2.写判断函数参数
+	//降序方法2.写判断函数的回调函数
 	list<int>L2;
 	L2.push_back(30);
 	L2.push_back(10);
@@ -60,7 +60,7 @@ void test33()
 	cout << "------------------降序后:----------------" << endl;
 	PrintList33(L2);//50 40 30 20 10
 }
-int main()
+int main31()
 {
 	test33();
 	system("pause");
