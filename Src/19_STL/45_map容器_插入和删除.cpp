@@ -10,6 +10,8 @@ void test45()
 	m.insert(pair<int, int>(1, 10));
 	//插入_第二种
 	m.insert(make_pair(2, 20));
+	//插入_第三种
+	m.insert(map<int, int>::value_type(3, 30));
 }
 int main()
 {
