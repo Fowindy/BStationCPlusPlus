@@ -14,6 +14,8 @@ void test32()
 	L1.push_back(30);
 	L1.push_back(40);
 	//L1[0] 不可用[]访问list容器中的元素
+	//L1.at(0) 不可用at方式访问list容器中的元素
+	//原因是list本质上是链表,不是用连续线性空间存储数据,迭代器是不支持随机访问的
 }
 int main()
 {
