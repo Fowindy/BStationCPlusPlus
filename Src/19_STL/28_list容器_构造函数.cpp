@@ -24,6 +24,9 @@ void test28()
 	L1.push_back(40);
 	//遍历容器
 	PrintList28(L1);//10 20 30 40
+	//按照区间方式构造
+	list<int> L2(L1.begin(), L1.end());
+	PrintList28(L2);//10 20 30 40
 }
 int main()
 {
