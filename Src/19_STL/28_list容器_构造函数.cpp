@@ -30,6 +30,9 @@ void test28()
 	//拷贝构造
 	list<int>L3(L2);
 	PrintList28(L3);//10 20 30 40
+	//n个element构造
+	list<int>L4(10, 100);
+	PrintList28(L4);//100 100 100 100 100 100 100 100 100 100
 }
 int main()
 {
