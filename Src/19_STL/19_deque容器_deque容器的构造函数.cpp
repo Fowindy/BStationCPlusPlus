@@ -4,7 +4,7 @@
 #include <deque>
 using namespace std;
 //19_deque容器_deque容器的构造函数
-void PrintDeque(const deque<int> d)
+void PrintDeque(const deque<int>& d)
 {
 	for (deque<int>::const_iterator it = d.begin(); it != d.end(); it++)
 	{
@@ -33,7 +33,7 @@ void test19()
 	deque<int> d4(d3);
 	PrintDeque(d4);//100 100 100 100 100 100 100 100 100 100
 }
-int main()
+int main19()
 {
 	test19();
 	system("pause");
