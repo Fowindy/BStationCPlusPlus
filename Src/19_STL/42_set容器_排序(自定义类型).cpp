@@ -47,7 +47,7 @@ void test42()
 		cout << "姓名:" << it->m_Name << "\t年龄:" << it->m_Age << endl;
 	}
 }
-int main()
+int main42()
 {
 	test42();
 	system("pause");
