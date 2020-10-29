@@ -31,6 +31,9 @@ void test30()
 		cout << "L1不为空!" << endl;
 		cout << "L1元素个数为:" << L1.size() << endl;//4
 	}
+	//重新指定大小(长,默认填充0)
+	L1.resize(10);
+	PrintList30(L1);
 }
 int main()
 {
