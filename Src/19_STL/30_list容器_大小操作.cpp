@@ -21,6 +21,16 @@ void test30()
 	L1.push_back(30);
 	L1.push_back(40);
 	PrintList30(L1);//10 20 30 40
+	//判断list容器是否为空,不为空输出元素个数
+	if (L1.empty())
+	{
+		cout << "L1为空!" << endl;
+	}
+	else
+	{
+		cout << "L1不为空!" << endl;
+		cout << "L1元素个数为:" << L1.size() << endl;//4
+	}
 }
 int main()
 {
