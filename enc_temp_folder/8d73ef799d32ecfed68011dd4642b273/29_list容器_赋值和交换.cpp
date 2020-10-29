@@ -50,12 +50,12 @@ void test029()
 
 	list<int>L2;
 	L2.assign(10, 100);
-	PrintList29(L2);//100 100 100 100 100 100 100 100 100 100
+	PrintList29(L2);
 
-	//2.交换
+	//交换
 	L1.swap(L2);
-	PrintList29(L1);//100 100 100 100 100 100 100 100 100 100
-	PrintList29(L2);//10 20 30 40
+	PrintList29(L1);//10 20 30 40
+	PrintList29(L2);
 }
 int main()
 {
