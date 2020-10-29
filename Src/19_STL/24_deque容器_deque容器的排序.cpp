@@ -30,6 +30,9 @@ void test24()
 	sort(d1.begin(), d1.end());
 	cout << "------------------升序后:----------------" << endl;
 	PrintDeque24(d1);//10 20 30 100 200 300
+	cout << "------------------升序后再降序:----------------" << endl;
+	reverse(d1.begin(), d1.end());
+	PrintDeque24(d1);//300 200 100 30 20 10
 }
 int main()
 {
