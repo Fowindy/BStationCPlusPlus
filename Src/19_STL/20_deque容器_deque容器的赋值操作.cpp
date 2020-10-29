@@ -33,7 +33,7 @@ void test20()
 	d4.assign(10, 100);
 	PrintDeque20(d4);//100 100 100 100 100 100 100 100 100 100
 }
-int main()
+int main20()
 {
 	test20();
 	system("pause");

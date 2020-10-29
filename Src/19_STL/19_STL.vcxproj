@@ -195,6 +195,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="21_deque容器_deque容器的大小操作.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
