@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <ctime>
+#include <map>
 using namespace std;
 /*
 - 公司今天招聘了10个员工（ABCDEFGHIJ），10名员工进入公司之后，需要指派员工在那个部门工作
@@ -28,6 +29,17 @@ void CreateWorker(vector<Worker>& v)
 		v.push_back(worker);
 	}
 }
+void SetGroup(vector<Worker>& v, multimap<int, Worker>& m)
+{
+	for (vector<Worker>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		//产生随机部门编号
+		int deptId = rand() % 3;//0~2
+		//将员工插入到分组中
+		//key代表部门的编号,value代表员工
+		m.insert(make_pair(deptId, *it));
+	}
+}
 int main()
 {
 	//随机数种子
@@ -36,11 +48,17 @@ int main()
 	vector<Worker>vWorker;
 	CreateWorker(vWorker);
 #pragma region 创建员工测试
-	for (vector<Worker>::iterator it = vWorker.begin(); it != vWorker.end(); it++)
-	{
-		cout << "姓名:" << it->m_Name << "  工资:" << it->m_Salary << endl;
-	}
+	//for (vector<Worker>::iterator it = vWorker.begin(); it != vWorker.end(); it++)
+	//{
+	//	cout << "姓名:" << it->m_Name << "  工资:" << it->m_Salary << endl;
+	//}
 #pragma endregion
+
+	//2.员工分组
+	multimap<int, Worker>mWorker;
+	SetGroup(vWorker, mWorker);
+
+	//3.显示
 	system("pause");
 	return 0;
 }
