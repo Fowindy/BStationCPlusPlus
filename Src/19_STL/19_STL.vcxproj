@@ -315,6 +315,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="51_谓词_二元谓词.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

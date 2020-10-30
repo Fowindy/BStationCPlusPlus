@@ -165,5 +165,8 @@
     <ClCompile Include="50_谓词_一元谓词.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="51_谓词_二元谓词.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

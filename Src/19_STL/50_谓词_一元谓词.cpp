@@ -34,7 +34,7 @@ void test50()
 		cout << "找到大于5的数字为:" << *it << endl;//找到大于5的数字为:6
 	}
 }
-int main()
+int main50()
 {
 	test50();
 	system("pause");
