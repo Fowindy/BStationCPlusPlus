@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Administrator.cpp" />
     <ClCompile Include="Identity.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Teacher.cpp" />
@@ -125,6 +126,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Identity.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Administrator.h">
       <SubType>
       </SubType>
     </ClInclude>
