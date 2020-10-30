@@ -2,12 +2,22 @@
 #include <string>
 #include <vector>
 #include <algorithm>
-#include "speechManager.h"
+#include "SpeechManager.h"
 using namespace std;
 int main()
 {
 	//创建管理类的对象
-	speechManager sm;
+	SpeechManager sm;
+#pragma region 测试代码
+#pragma region 测试创建选手
+	for (map<int, Speaker>::iterator it = sm.m_Speaker.begin(); it != sm.m_Speaker.end(); it++)
+	{
+		cout << "选手ID:" << it->first << "\t选手姓名:" << it->second.m_Name << "\t选手成绩:" << it->second.m_Score[0] << endl;
+	}
+#pragma endregion
+
+#pragma endregion
+
 	//显示菜单
 	sm.show_Menu();
 	//用于存储用户的输入

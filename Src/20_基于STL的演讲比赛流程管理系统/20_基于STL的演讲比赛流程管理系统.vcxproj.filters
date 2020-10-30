@@ -18,18 +18,18 @@
     <ClCompile Include="演讲比赛流程管理系统.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="speechManager.cpp">
+    <ClCompile Include="Speaker.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="speaker.cpp">
+    <ClCompile Include="SpeechManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="speechManager.h">
+    <ClInclude Include="Speaker.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="speaker.h">
+    <ClInclude Include="SpeechManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

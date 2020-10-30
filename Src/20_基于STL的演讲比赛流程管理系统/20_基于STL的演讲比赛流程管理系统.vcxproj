@@ -115,25 +115,16 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="speaker.cpp" />
-    <ClCompile Include="speechManager.cpp">
-      <SubType>
-      </SubType>
-    </ClCompile>
+    <ClCompile Include="Speaker.cpp" />
+    <ClCompile Include="SpeechManager.cpp" />
     <ClCompile Include="演讲比赛流程管理系统.cpp">
       <SubType>
       </SubType>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="speaker.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
-    <ClInclude Include="speechManager.h">
-      <SubType>
-      </SubType>
-    </ClInclude>
+    <ClInclude Include="Speaker.h" />
+    <ClInclude Include="SpeechManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
