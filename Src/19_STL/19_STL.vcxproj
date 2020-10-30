@@ -408,6 +408,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="75_常用集合算法_set_difference.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
