@@ -23,6 +23,8 @@ public:
 	int m_Index;
 	//记录文件是否存在
 	bool fileIsEmpty;
+	//存放往届记录的容器
+	map<int, vector<string>>m_Record;
 #pragma endregion
 #pragma region 成员函数
 	void show_Menu();	//菜单功能

@@ -307,11 +307,38 @@ void SpeechManager::loadRecord()
 	this->fileIsEmpty = false;
 	ifs.putback(ch);//将上面读取到的单个字符放回来
 	string data;
+	int index = 0;//默认第一届
 	while (ifs >> data)
 	{
-		cout << data << endl;
+		//cout << data << endl;
+		//10010,选手J,86.8625,10012,选手L,86.8375,10007,选手G,81.4125,
+		vector<string>v;
+		int pos = -1;//查到","号位置的变量
+		int start = 0;//起始位置
+		while (true)
+		{
+			pos = data.find(",", start);
+			if (pos == -1)
+			{
+				//没有找到情况
+				break;
+			}
+			string temp = data.substr(start, pos - start);
+			//cout << temp << endl;
+			v.push_back(temp);
+			start = pos + 1;
+		}
+		this->m_Record.insert(make_pair(index, v));
+		index++;
 	}
 	ifs.close();
+	for (map<int, vector<string>>::iterator it = m_Record.begin(); it != m_Record.end(); it++)
+	{
+		cout << "第" << it->first + 1 << "届" << endl;
+		cout << "冠军编号:" << it->second[0] << "\t选手姓名:" << it->second[1] << "\t选手平均分:" << it->second[2] << endl;
+		cout << "亚军编号:" << it->second[3] << "\t选手姓名:" << it->second[4] << "\t选手平均分:" << it->second[5] << endl;
+		cout << "季军编号:" << it->second[6] << "\t选手姓名:" << it->second[7] << "\t选手平均分:" << it->second[8] << endl;
+	}
 }
 
 //************************************
