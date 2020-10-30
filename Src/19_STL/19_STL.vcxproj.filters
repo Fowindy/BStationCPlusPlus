@@ -186,5 +186,8 @@
     <ClCompile Include="57_常用查找算法_find.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="58_常用查找算法_find_if.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

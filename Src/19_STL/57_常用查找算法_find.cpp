@@ -76,7 +76,7 @@ void test057()
 		cout << "未找到元素!" << endl;
 	}
 }
-int main()
+int main57()
 {
 	test57();
 	test057();
