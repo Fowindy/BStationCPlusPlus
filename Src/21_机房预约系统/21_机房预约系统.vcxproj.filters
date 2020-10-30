@@ -44,5 +44,8 @@
     <ClInclude Include="Administrator.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="GlobalFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -125,6 +125,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="GlobalFile.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="Identity.h">
       <SubType>
       </SubType>

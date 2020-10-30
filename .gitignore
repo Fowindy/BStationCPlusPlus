@@ -261,3 +261,8 @@ __pycache__/
 *.pyc
 /Src/17_基于多态的职工管理系统/empFile.txt
 /Src/20_基于STL的演讲比赛流程管理系统/speech.csv
+/Src/21_机房预约系统/teacher.txt
+/Src/21_机房预约系统/student.txt
+/Src/21_机房预约系统/order.txt
+/Src/21_机房预约系统/computerRoom.txt
+/Src/21_机房预约系统/admin.txt
