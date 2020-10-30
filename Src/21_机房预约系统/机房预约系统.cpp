@@ -2,7 +2,17 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include "Identity.h"
+#include "GlobalFile.h"
+#include <fstream>
 using namespace std;
+//************************************
+// Method:    Show_Menu(显示菜单)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/31 0:12
+//************************************
 void Show_Menu()
 {
 	cout << "======================  欢迎来到传智播客机房预约系统  ====================="
@@ -21,6 +31,67 @@ void Show_Menu()
 	cout << "\t\t -------------------------------\n";
 	cout << "输入您的选择(0~3): ";
 }
+//************************************
+// Method:    LoginIn(登录功能)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Parameter: string fileName(操作者文件名)
+// Parameter: int type(操作者身份类型)
+// Created:   2020/10/31 0:13
+//************************************
+void LoginIn(string fileName, int type)
+{
+	//创建父类指针,用于指向子类对象
+	Identity* person = NULL;
+
+	//读文件
+	ifstream ifs;
+	//打开文件
+	ifs.open(fileName, ios::in);
+	//判断文件是否存在
+	if (!ifs.is_open())
+	{
+		cout << "文件不存在!" << endl;
+		ifs.close();
+		return;
+	}
+	//文件存在,准备接受用户信息
+	int id = 0;
+	string name;
+	string pwd;
+	//判断身份
+	if (type == 1)//学生身份
+	{
+		cout << "请输入你的学号:" << endl;
+		cin >> id;
+	}
+	else if (type == 2)//教师身份
+	{
+		cout << "请输入您的职工号:" << endl;
+		cin >> id;
+	}
+	cout << "请输入用户名:" << endl;
+	cin >> name;
+	cout << "请输入密码:" << endl;
+	cin >> pwd;
+	if (type == 1)
+	{
+		//学生身份验证
+	}
+	else if (type == 2)
+	{
+		//教师身份验证
+	}
+	else if (type == 3)
+	{
+		//管理员身份验证
+	}
+	cout << "验证身份失败!" << endl;
+	system("pause");
+	system("cls");
+	return;
+}
 int main()
 {
 	int select = 0;//用于接收用户的选择
@@ -31,10 +102,13 @@ int main()
 		switch (select)
 		{
 		case 1://学生身份
+			LoginIn(STUDENT_FILE, 1);
 			break;
 		case 2://老师身份
+			LoginIn(TEACHER_FILE, 2);
 			break;
 		case 3://管理员身份
+			LoginIn(ADMIN_FILE, 3);
 			break;
 		case 0://退出系统
 			cout << "欢迎下次使用!" << endl;
