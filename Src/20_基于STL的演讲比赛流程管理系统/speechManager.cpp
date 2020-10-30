@@ -9,7 +9,7 @@ speechManager::speechManager()
 }
 
 //************************************
-// Method:    show_Menu
+// Method:    show_Menu(显示菜单)
 // Access:    public 
 // Returns:   void
 // Author: 	  Fowindy
@@ -25,6 +25,20 @@ void speechManager::show_Menu()
 	cout << "*************  0.退出比赛程序  *************" << endl;
 	cout << "********************************************" << endl;
 	cout << endl;
+}
+
+//************************************
+// Method:    exit_System(退出系统)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/30 15:28
+//************************************
+void speechManager::exit_System()
+{
+	cout << "欢迎下次使用!" << endl;
+	system("pause");
+	exit(0);
 }
 
 //析构函数

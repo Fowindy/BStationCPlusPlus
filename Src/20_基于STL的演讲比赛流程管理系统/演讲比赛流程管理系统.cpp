@@ -12,11 +12,11 @@ int main()
 	sm.show_Menu();
 	//用于存储用户的输入
 	int choice = 0;
-	cout << "请输入您的选择:" << endl;
-	cin >> choice;
 	while (true)
 	{
 		sm.show_Menu();
+		cout << "请输入您的选择(0~3):" << endl;
+		cin >> choice;
 		switch (choice)
 		{
 		case 1://开始比赛
@@ -26,6 +26,7 @@ int main()
 		case 3://清空比赛记录
 			break;
 		case 0://退出系统
+			sm.exit_System();
 			break;
 		default:
 			system("cls");//清屏
