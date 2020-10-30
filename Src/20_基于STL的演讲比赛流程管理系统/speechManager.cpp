@@ -82,7 +82,7 @@ void SpeechManager::startSpeech()
 	//2、比赛
 	this->speechContest();
 	//3、显示晋级结果
-
+	this->showScore();
 	//第二轮比赛
 
 	//1、抽签
@@ -174,8 +174,8 @@ void SpeechManager::speechContest()
 	}
 	cout << "------------------第" << this->m_Index << "轮比赛完毕----------------" << endl;
 	system("pause");
-	system("cls");
-	this->show_Menu();
+	//system("cls");
+	//this->show_Menu();
 }
 
 //************************************
@@ -215,6 +215,34 @@ void SpeechManager::speechDraw()
 	cout << "----------------------------------" << endl;
 	system("pause");
 	cout << endl;
+}
+
+//************************************
+// Method:    showScore(显示得分)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/30 18:14
+//************************************
+void SpeechManager::showScore()
+{
+	cout << "------------------第" << this->m_Index << "轮晋级名单如下:----------------" << endl;
+	vector<int>v;
+	if (this->m_Index == 1)
+	{
+		v = v2;
+	}
+	else
+	{
+		v = vVictory;
+	}
+	for (vector<int>::iterator it = v.begin(); it != v.end(); it++)
+	{
+		cout << "选手编号:" << *it << "\t选手姓名:" << this->m_Speaker[*it].m_Name << "\t选手平均分:" << this->m_Speaker[*it].m_Score[this->m_Index - 1] << endl;
+	}
+	system("pause");
+	system("cls");
+	this->show_Menu();
 }
 
 //************************************
