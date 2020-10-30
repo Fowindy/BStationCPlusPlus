@@ -4,6 +4,7 @@
 #include <algorithm>
 #include "Identity.h"
 #include "GlobalFile.h"
+#include "Student.h"
 #include <fstream>
 using namespace std;
 //************************************
@@ -78,6 +79,22 @@ void LoginIn(string fileName, int type)
 	if (type == 1)
 	{
 		//学生身份验证
+		int fId;//从文件中读取的id
+		string fName;//从文件中读取的name
+		string fPwd;//从文件中读取的pwd
+		while (ifs >> fId && ifs >> fName && ifs >> fPwd)
+		{
+			//与用户输入的信息做对比
+			if (fId == id && fName == name && fPwd == pwd)
+			{
+				cout << "学生验证登录成功!" << endl;
+				system("pause");
+				system("cls");
+				person = new Student(id, name, pwd);
+				//进入到学生身份的子菜单
+				return;
+			}
+		}
 	}
 	else if (type == 2)
 	{
