@@ -3,6 +3,9 @@
 #include "SpeechManager.h"
 #include <ctime>
 #include <algorithm>
+#include <deque>
+#include <functional>
+#include <numeric>
 using namespace std;
 //构造函数
 SpeechManager::SpeechManager()
@@ -77,7 +80,7 @@ void SpeechManager::startSpeech()
 	//1、抽签
 	this->speechDraw();
 	//2、比赛
-
+	this->speechContest();
 	//3、显示晋级结果
 
 	//第二轮比赛
@@ -89,6 +92,90 @@ void SpeechManager::startSpeech()
 	//3、显示最终结果
 
 	//4、保存分数
+}
+
+//************************************
+// Method:    speechContest(比赛)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/30 17:11
+//************************************
+void SpeechManager::speechContest()
+{
+	cout << "------------------第" << this->m_Index << "轮比赛正式开始----------------" << endl;
+	//准备临时容器,存放小组成绩
+	multimap<double, int, greater<double>> groupScore;
+	int num = 0;//记录人员个数 6人一组
+	vector<int>v_Src;//比赛选手容器
+	if (this->m_Index == 1)
+	{
+		v_Src = v1;
+	}
+	else
+	{
+		v_Src = v2;
+	}
+	//遍历所有选手进行比赛
+	for (vector<int>::iterator it = v_Src.begin(); it != v_Src.end(); it++)
+	{
+		num++;
+		//评委打分容器
+		deque<double>d;
+		//cout << "------------------选手" << *it << "得分如下:----------------" << endl;
+		for (int i = 0; i < 10; i++)
+		{
+			double score = (rand() % 401 + 600) / 10.f;//60.0~100.0
+			//显示该选手10个分数
+			//cout << score << "\t";
+			//将该选手10个分数存入容器
+			d.push_back(score);
+		}
+		//cout << endl;
+		//将该选手10个分数进行降序排列
+		sort(d.begin(), d.end(), greater<double>());
+		//去除最高分
+		d.pop_front();
+		//去除最低分
+		d.pop_back();
+		//该选手累加总分
+		double sum = accumulate(d.begin(), d.end(), 0.0f);
+		//该选手的平均分
+		double avg = sum / (double)d.size();
+		//将平均分放入到map容器中
+		this->m_Speaker[*it].m_Score[this->m_Index - 1] = avg;
+		//打印平均分
+		//cout << "选手编号:" << *it << "\t选手姓名:" << this->m_Speaker[*it].m_Name << "\t选手平均分:" << this->m_Speaker[*it].m_Score[this->m_Index - 1] << endl;
+		//将打分数据,放到临时小组容器中
+		groupScore.insert(make_pair(avg, *it));//key是得分,value是具体选手编号
+		//每6人取出前三名
+		if (num % 6 == 0)
+		{
+			cout << "第" << num / 6 << "小组比赛名次如下:" << endl;
+			for (multimap<double, int, greater<double>>::iterator it = groupScore.begin(); it != groupScore.end(); it++)
+			{
+				cout << "选手编号:" << it->second << "\t选手姓名:" << this->m_Speaker[it->second].m_Name << "\t选手平均分:" << this->m_Speaker[it->second].m_Score[this->m_Index - 1] << endl;
+			}
+			//取出前三名
+			int count = 0;
+			for (multimap<double, int, greater<double>>::iterator it = groupScore.begin(); it != groupScore.end() && count < 3; it++, count++)
+			{
+				if (this->m_Index == 1)
+				{
+					v2.push_back((*it).second);
+				}
+				else
+				{
+					vVictory.push_back((*it).second);
+				}
+			}
+			groupScore.clear();
+		}
+	}
+	cout << "------------------第" << this->m_Index << "轮比赛完毕----------------" << endl;
+	system("pause");
+	system("cls");
+	this->show_Menu();
 }
 
 //************************************
