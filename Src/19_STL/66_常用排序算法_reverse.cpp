@@ -25,7 +25,7 @@ void test66()
 	for_each(v.begin(), v.end(), myPrint66);//60 40 20 50 30 10
 	cout << endl;
 }
-int main()
+int main66()
 {
 	test66();
 	system("pause");

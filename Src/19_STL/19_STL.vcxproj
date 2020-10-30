@@ -376,6 +376,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="67_常用拷贝替换算法_copy.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
