@@ -15,7 +15,7 @@ void test052()
 	plus<int>p;
 	cout << p(10, 45) << endl;//55
 }
-int main()
+int main52()
 {
 	test52();
 	test052();
