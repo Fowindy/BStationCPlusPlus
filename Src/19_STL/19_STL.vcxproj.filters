@@ -225,5 +225,8 @@
     <ClCompile Include="70_常用拷贝替换算法_swap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="71_常用算术生成算法_accumulate.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
