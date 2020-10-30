@@ -210,5 +210,8 @@
     <ClCompile Include="65_常用排序算法_merge.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="66_常用排序算法_reverse.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

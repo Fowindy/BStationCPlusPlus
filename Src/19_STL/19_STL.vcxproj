@@ -372,6 +372,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="66_常用排序算法_reverse.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -32,7 +32,7 @@ void test65()
 	for_each(vTarget.begin(), vTarget.end(), myPrint65);
 	cout << endl;
 }
-int main()
+int main65()
 {
 	test65();
 	system("pause");
