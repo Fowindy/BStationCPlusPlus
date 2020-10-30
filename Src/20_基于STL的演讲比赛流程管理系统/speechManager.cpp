@@ -382,6 +382,38 @@ void SpeechManager::loadRecord()
 }
 
 //************************************
+// Method:    clearRecord(清空记录)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/30 19:37
+//************************************
+void SpeechManager::clearRecord()
+{
+	cout << "是否确定清空文件?" << endl;
+	cout << "1.是" << endl;
+	cout << "2.否" << endl;
+	int select = 0;
+	cin >> select;
+	if (select == 1)
+	{
+		//确认清空
+		ofstream ofs("speech.csv", ios::trunc);
+		ofs.close();
+		//初始化容器属性
+		this->InitSpeech();
+		//创建12名选手
+		this->creatSpeaker();
+		//加载往届记录
+		this->loadRecord();
+		cout << "清空成功!" << endl;
+	}
+	system("pause");
+	system("cls");
+}
+
+
+//************************************
 // Method:    exit_System(退出系统)
 // Access:    public 
 // Returns:   void
