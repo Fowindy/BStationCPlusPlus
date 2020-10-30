@@ -40,7 +40,7 @@ void test69()
 	for_each(v.begin(), v.end(), MyPrint69());//20 3000 20 3000 3000 10 20
 	cout << endl;
 }
-int main()
+int main69()
 {
 	test69();
 	system("pause");

@@ -388,6 +388,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="70_常用拷贝替换算法_swap.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
