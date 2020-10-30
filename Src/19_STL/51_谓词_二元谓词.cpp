@@ -40,7 +40,7 @@ void test51()
 	cout << "------------------降序之后:----------------" << endl;
 	PrintVector51(v);//50 40 30 20 10
 }
-int main()
+int main51()
 {
 	test51();
 	system("pause");

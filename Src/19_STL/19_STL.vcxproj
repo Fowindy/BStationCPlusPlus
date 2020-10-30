@@ -319,6 +319,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="52_内建函数对象_算术仿函数.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
