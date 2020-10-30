@@ -307,6 +307,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="49_函数对象(仿函数)的基本使用.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

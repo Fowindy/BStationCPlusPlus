@@ -73,7 +73,7 @@ void ShowWorkerByGroup(multimap<int, Worker>& m)
 		cout << "姓名:" << pos->second.m_Name << "  工资:" << pos->second.m_Salary << endl;
 	}
 }
-int main()
+int main48()
 {
 	//随机数种子
 	srand((unsigned int)time(NULL));
