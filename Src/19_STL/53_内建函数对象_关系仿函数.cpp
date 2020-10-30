@@ -43,7 +43,7 @@ void test53()
 	sort(v.begin(), v.end(), greater<int>());
 	PrintVector53(v);//50 40 30 20 10
 }
-int main()
+int main53()
 {
 	test53();
 	system("pause");

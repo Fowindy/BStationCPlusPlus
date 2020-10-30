@@ -174,5 +174,8 @@
     <ClCompile Include="53_内建函数对象_关系仿函数.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="54_内建函数对象_逻辑仿函数.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
