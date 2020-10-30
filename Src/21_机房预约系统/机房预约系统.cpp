@@ -9,6 +9,8 @@
 #include "Teacher.h"
 #include "Administrator.h"
 using namespace std;
+
+void administartorMenu(Identity* &identity);//全局菜单函数声明;
 //************************************
 // Method:    Show_Menu(显示菜单)
 // Access:    public 
@@ -132,6 +134,7 @@ void LoginIn(string fileName, int type)
 				system("cls");
 				person = new Administrator(name, pwd);
 				//进入管理员子菜单
+				administartorMenu(person);
 				return;
 			}
 		}
@@ -140,6 +143,75 @@ void LoginIn(string fileName, int type)
 	system("pause");
 	system("cls");
 	return;
+}
+//进入管理员子菜单界面
+//************************************
+// Method:    administartorMenu
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Parameter: Identity *  & identity
+// Created:   2020/10/31 5:32
+//************************************
+void administartorMenu(Identity* &identity)//父类指针传管理员进来
+{
+	while (true)
+	{
+		//调用管理员子菜单
+		identity->operMenu();//多态,父类指针创建子类对象,调用共同的接口(子类重写的纯虚函数)
+
+		//目前父类的指针只能调用公共的接口,要想调用子类的接口,
+		//需将父类指针转为子类指针,可以调用子类里其他接口
+		Administrator* admin = (Administrator*)identity;
+		//定义选择变量接受用户选择
+		int select = 0;
+		//接收用户的选择
+	A:
+		//判断用户输入的是否为数字,不为数字则提示
+		while (!(cin >> select))
+		{
+			cin.clear();
+			while (cin.get() != '\n')
+			{
+				continue;
+			}//跳过错误输入
+			cout << "输入错误,请输入数字(0~4)：";
+		}
+		//采用if---else if结构代替switch(但最好用switch,这里只是复习的需要)
+		if (select == 1)//添加账号
+		{
+			cout << "添加账号" << endl;
+			admin->addAccount();
+		}
+		else if (select == 2)//查看账号
+		{
+			cout << "查看账号" << endl;
+			admin->showAccount();
+		}
+		else if (select == 3)//查看机房
+		{
+			cout << "查看机房" << endl;
+			admin->showComputerRoom();
+		}
+		else if (select == 4)//清空预约
+		{
+			cout << "清空预约" << endl;
+			admin->cleanFile();
+		}
+		else if (select == 0)//注销登录
+		{
+			delete identity;//销毁掉堆区对象
+			cout << "注销成功!" << endl;
+			system("pause");
+			system("cls");//清屏
+			return;
+		}
+		else
+		{
+			cout << "输入错误,请重新输入(0~4):";
+			goto A;
+		}
+	}
 }
 int main()
 {
