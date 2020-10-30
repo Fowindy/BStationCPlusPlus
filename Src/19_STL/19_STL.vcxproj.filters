@@ -162,5 +162,8 @@
     <ClCompile Include="49_函数对象(仿函数)的基本使用.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="50_谓词_一元谓词.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

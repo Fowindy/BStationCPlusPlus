@@ -56,7 +56,7 @@ void test0049()
 	//函数对象作为参数
 	doPrint(myPrint, "Hello C++");//Hello C++
 }
-int main()
+int main49()
 {
 	test49();
 	test049();
