@@ -34,6 +34,7 @@ public:
 	void speechDraw();	//抽签
 	void showScore();	//显示得分
 	void saveRecord();	//保存记录
+	void showRecord();	//显示往届记录
 	void loadRecord();	//加载记录
 	void exit_System();	//退出系统 
 	void InitSpeech();	//初始化容器和属性

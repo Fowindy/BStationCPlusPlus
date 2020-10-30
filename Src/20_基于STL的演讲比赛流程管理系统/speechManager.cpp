@@ -275,6 +275,26 @@ void SpeechManager::saveRecord()
 }
 
 //************************************
+// Method:    showRecord(显示往届记录)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/30 19:18
+//************************************
+void SpeechManager::showRecord()
+{
+	for (int i = 0; i < this->m_Record.size(); i++)
+	{
+		cout << "第" << i + 1 << "届" << endl;
+		cout << "冠军编号:" << this->m_Record[i][0] << "\t选手姓名:" << this->m_Record[i][1] << "\t选手平均分:" << this->m_Record[i][2] << endl;
+		cout << "亚军编号:" << this->m_Record[i][3] << "\t选手姓名:" << this->m_Record[i][4] << "\t选手平均分:" << this->m_Record[i][5] << endl;
+		cout << "季军编号:" << this->m_Record[i][6] << "\t选手姓名:" << this->m_Record[i][7] << "\t选手平均分:" << this->m_Record[i][8] << endl;
+	}
+	system("pause");
+	system("cls");
+}
+
+//************************************
 // Method:    loadRecord(加载记录)
 // Access:    public 
 // Returns:   void
@@ -332,13 +352,16 @@ void SpeechManager::loadRecord()
 		index++;
 	}
 	ifs.close();
-	for (map<int, vector<string>>::iterator it = m_Record.begin(); it != m_Record.end(); it++)
-	{
-		cout << "第" << it->first + 1 << "届" << endl;
-		cout << "冠军编号:" << it->second[0] << "\t选手姓名:" << it->second[1] << "\t选手平均分:" << it->second[2] << endl;
-		cout << "亚军编号:" << it->second[3] << "\t选手姓名:" << it->second[4] << "\t选手平均分:" << it->second[5] << endl;
-		cout << "季军编号:" << it->second[6] << "\t选手姓名:" << it->second[7] << "\t选手平均分:" << it->second[8] << endl;
-	}
+#pragma region 测试代码
+	//for (map<int, vector<string>>::iterator it = m_Record.begin(); it != m_Record.end(); it++)
+//{
+//	cout << "第" << it->first + 1 << "届" << endl;
+//	cout << "冠军编号:" << it->second[0] << "\t选手姓名:" << it->second[1] << "\t选手平均分:" << it->second[2] << endl;
+//	cout << "亚军编号:" << it->second[3] << "\t选手姓名:" << it->second[4] << "\t选手平均分:" << it->second[5] << endl;
+//	cout << "季军编号:" << it->second[6] << "\t选手姓名:" << it->second[7] << "\t选手平均分:" << it->second[8] << endl;
+//}  
+#pragma endregion
+
 }
 
 //************************************
