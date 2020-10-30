@@ -228,5 +228,8 @@
     <ClCompile Include="71_常用算术生成算法_accumulate.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="72_常用算术生成算法_fill.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

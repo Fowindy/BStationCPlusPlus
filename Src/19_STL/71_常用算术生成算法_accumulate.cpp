@@ -16,7 +16,7 @@ void test71()
 	int total = accumulate(v.begin(), v.end(), 1000);
 	cout << "total = " << total << endl;//total = 6050
 }
-int main()
+int main71()
 {
 	test71();
 	system("pause");

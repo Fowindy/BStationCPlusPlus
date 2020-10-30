@@ -396,6 +396,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="72_常用算术生成算法_fill.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
