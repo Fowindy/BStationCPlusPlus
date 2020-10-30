@@ -339,6 +339,7 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="57_常用查找算法_find.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
