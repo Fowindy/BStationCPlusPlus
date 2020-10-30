@@ -29,7 +29,7 @@ void test59()
 		cout << "未找到相邻重复元素!" << endl;
 	}
 }
-int main()
+int main59()
 {
 	test59();
 	system("pause");
