@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Identity.cpp" />
+    <ClCompile Include="Student.cpp" />
     <ClCompile Include="机房预约系统.cpp">
       <SubType>
       </SubType>
@@ -123,6 +124,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Identity.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="Student.h">
       <SubType>
       </SubType>
     </ClInclude>
