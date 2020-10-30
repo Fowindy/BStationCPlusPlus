@@ -29,7 +29,7 @@ void test63()
 	for_each(v.begin(), v.end(), myPrint63);
 	cout << endl;
 }
-int main()
+int main63()
 {
 	test63();
 	system("pause");
