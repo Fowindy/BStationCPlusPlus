@@ -45,10 +45,22 @@ void test049()
 	myPrint("hello world");
 	cout << "myPrint调用的次数为:" << myPrint.count << endl;//4
 }
+//3.函数对象可以作为参数传递
+void doPrint(MyPrint& mp, string text)
+{
+	mp(text);
+}
+void test0049()
+{
+	MyPrint myPrint;
+	//函数对象作为参数
+	doPrint(myPrint, "Hello C++");//Hello C++
+}
 int main()
 {
 	test49();
 	test049();
+	test0049();
 	system("pause");
 	return 0;
 }
