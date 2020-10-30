@@ -180,5 +180,8 @@
     <ClCompile Include="55_常用遍历算法_for_each.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="56_常用遍历算法_transform.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
