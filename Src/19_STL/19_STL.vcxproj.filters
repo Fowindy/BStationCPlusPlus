@@ -195,5 +195,8 @@
     <ClCompile Include="60_常用查找算法_binary_search.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="61_常用查找算法_count.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

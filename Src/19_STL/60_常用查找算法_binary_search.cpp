@@ -25,7 +25,7 @@ void test60()
 		//**无须序列则会报未找到
 	}
 }
-int main()
+int main60()
 {
 	test60();
 	system("pause");
