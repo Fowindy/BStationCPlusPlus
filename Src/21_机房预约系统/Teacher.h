@@ -10,7 +10,7 @@ public:
 	//有参构造
 	Teacher(int empId, string name, string pwd);
 	//菜单界面
-	virtual void operMenu() = 0;
+	virtual void operMenu() override;
 	//查看所有预约
 	void showAllOrder();
 	//审核预约

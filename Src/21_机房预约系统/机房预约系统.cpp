@@ -6,6 +6,7 @@
 #include "GlobalFile.h"
 #include "Student.h"
 #include <fstream>
+#include "Teacher.h"
 using namespace std;
 //************************************
 // Method:    Show_Menu(显示菜单)
@@ -99,6 +100,22 @@ void LoginIn(string fileName, int type)
 	else if (type == 2)
 	{
 		//教师身份验证
+		int fId;//从文件中读取的id
+		string fName;//从文件中读取的name
+		string fPwd;//从文件中读取的pwd
+		while (ifs >> fId && ifs >> fName && ifs >> fPwd)
+		{
+			//与老师输入的信息作对比
+			if (fId == id && fName == name && fPwd == pwd)
+			{
+				cout << "老师验证登录成功!" << endl;
+				system("pause");
+				system("cls");
+				person = new Teacher(id, name, pwd);
+				//进入到教师身份子菜单
+				return;
+			}
+		}
 	}
 	else if (type == 3)
 	{
