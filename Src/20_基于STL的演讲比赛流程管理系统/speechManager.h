@@ -29,6 +29,7 @@ public:
 	void speechContest();	//比赛
 	void speechDraw();	//抽签
 	void showScore();	//显示得分
+	void saveRecord();	//保存记录
 	void exit_System();	//退出系统 
 	void InitSpeech();	//初始化容器和属性
 #pragma endregion

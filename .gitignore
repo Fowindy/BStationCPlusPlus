@@ -260,3 +260,4 @@ paket-files/
 __pycache__/
 *.pyc
 /Src/17_基于多态的职工管理系统/empFile.txt
+/Src/20_基于STL的演讲比赛流程管理系统/speech.csv
