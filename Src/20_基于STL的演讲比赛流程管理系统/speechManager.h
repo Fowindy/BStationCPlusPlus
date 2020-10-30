@@ -21,6 +21,8 @@ public:
 	map<int, Speaker> m_Speaker;
 	//记录比赛轮数
 	int m_Index;
+	//记录文件是否存在
+	bool fileIsEmpty;
 #pragma endregion
 #pragma region 成员函数
 	void show_Menu();	//菜单功能
@@ -30,6 +32,7 @@ public:
 	void speechDraw();	//抽签
 	void showScore();	//显示得分
 	void saveRecord();	//保存记录
+	void loadRecord();	//加载记录
 	void exit_System();	//退出系统 
 	void InitSpeech();	//初始化容器和属性
 #pragma endregion

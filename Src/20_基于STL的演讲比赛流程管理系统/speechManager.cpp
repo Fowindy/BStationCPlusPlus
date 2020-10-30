@@ -15,6 +15,8 @@ SpeechManager::SpeechManager()
 	this->InitSpeech();
 	//在构造函数中调用创建选手
 	this->creatSpeaker();
+	//在构造函数中加载往届记录
+	this->loadRecord();
 }
 
 //************************************
@@ -270,6 +272,46 @@ void SpeechManager::saveRecord()
 	//关闭
 	ofs.close();
 	cout << "记录已保存!" << endl;
+}
+
+//************************************
+// Method:    loadRecord(加载记录)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/30 18:42
+//************************************
+void SpeechManager::loadRecord()
+{
+	ifstream ifs("speech.csv", ios::in);//读文件
+	//文件是否存在
+	if (!ifs.is_open())
+	{
+		//打开失败
+		this->fileIsEmpty = true;
+		cout << "文件不存在!" << endl;
+		ifs.close();
+		return;
+	}
+	//文件为空的情况
+	char ch;
+	ifs >> ch;
+	if (ifs.eof())
+	{
+		cout << "文件为空!" << endl;
+		this->fileIsEmpty = true;
+		ifs.close();
+		return;
+	}
+	//文件不为空
+	this->fileIsEmpty = false;
+	ifs.putback(ch);//将上面读取到的单个字符放回来
+	string data;
+	while (ifs >> data)
+	{
+		cout << data << endl;
+	}
+	ifs.close();
 }
 
 //************************************
