@@ -25,7 +25,7 @@ void test72()
 	for_each(v.begin(), v.end(), MyPrint72());//100 100 100 100 100 100 100 100 100 100
 	cout << endl;
 }
-int main()
+int main72()
 {
 	test72();
 	system("pause");
