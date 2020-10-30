@@ -219,5 +219,8 @@
     <ClCompile Include="68_常用拷贝替换算法_replace.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="69_常用拷贝替换算法_replace_if.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

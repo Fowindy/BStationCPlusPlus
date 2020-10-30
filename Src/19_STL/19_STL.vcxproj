@@ -384,6 +384,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="69_常用拷贝替换算法_replace_if.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
