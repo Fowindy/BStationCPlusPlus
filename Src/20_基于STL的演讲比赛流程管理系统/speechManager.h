@@ -25,6 +25,8 @@ public:
 #pragma region 成员函数
 	void show_Menu();	//菜单功能
 	void creatSpeaker();	//创建12名选手
+	void startSpeech();	//比赛流程
+	void speechDraw();	//抽签
 	void exit_System();	//退出系统 
 	void InitSpeech();	//初始化容器和属性
 #pragma endregion

@@ -10,26 +10,25 @@ int main()
 	SpeechManager sm;
 #pragma region 测试代码
 #pragma region 测试创建选手
-	for (map<int, Speaker>::iterator it = sm.m_Speaker.begin(); it != sm.m_Speaker.end(); it++)
-	{
-		cout << "选手ID:" << it->first << "\t选手姓名:" << it->second.m_Name << "\t选手成绩:" << it->second.m_Score[0] << endl;
-	}
+	//for (map<int, Speaker>::iterator it = sm.m_Speaker.begin(); it != sm.m_Speaker.end(); it++)
+	//{
+	//	cout << "选手ID:" << it->first << "\t选手姓名:" << it->second.m_Name << "\t选手成绩:" << it->second.m_Score[0] << endl;
+	//}
 #pragma endregion
 
 #pragma endregion
-
-	//显示菜单
-	sm.show_Menu();
 	//用于存储用户的输入
 	int choice = 0;
 	while (true)
 	{
+		//显示菜单
 		sm.show_Menu();
 		cout << "请输入您的选择(0~3):" << endl;
 		cin >> choice;
 		switch (choice)
 		{
 		case 1://开始比赛
+			sm.startSpeech();
 			break;
 		case 2://查看往届比赛记录
 			break;

@@ -1,6 +1,8 @@
 ﻿#include <iostream>
 #include <string>
 #include "SpeechManager.h"
+#include <ctime>
+#include <algorithm>
 using namespace std;
 //构造函数
 SpeechManager::SpeechManager()
@@ -61,6 +63,73 @@ void SpeechManager::creatSpeaker()
 		this->m_Speaker.insert(make_pair(id, sp));
 	}
 }
+
+//************************************
+// Method:    startSpeech(比赛流程)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/30 16:51
+//************************************
+void SpeechManager::startSpeech()
+{
+	//第一轮比赛
+	//1、抽签
+	this->speechDraw();
+	//2、比赛
+
+	//3、显示晋级结果
+
+	//第二轮比赛
+
+	//1、抽签
+
+	//2、比赛
+
+	//3、显示最终结果
+
+	//4、保存分数
+}
+
+//************************************
+// Method:    speechDraw(抽签)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/30 16:53
+//************************************
+void SpeechManager::speechDraw()
+{
+	//随机数种子
+	srand((unsigned int)time(NULL));
+	cout << "第<< " << this->m_Index << " >>轮选手正在抽签" << endl;
+	cout << "----------------------------------" << endl;
+	cout << "抽签后演讲顺序如下:" << endl;
+	if (this->m_Index == 1)
+	{
+		//第一轮比赛
+		random_shuffle(this->v1.begin(), this->v1.end());
+		for (vector<int>::iterator it = v1.begin(); it != v1.end(); it++)
+		{
+			cout << *it << " ";
+		}
+		cout << endl;
+	}
+	else
+	{
+		//第二轮比赛
+		random_shuffle(this->v2.begin(), this->v2.end());
+		for (vector<int>::iterator it = v2.begin(); it != v2.end(); it++)
+		{
+			cout << *it << " ";
+		}
+		cout << endl;
+	}
+	cout << "----------------------------------" << endl;
+	system("pause");
+	cout << endl;
+}
+
 //************************************
 // Method:    exit_System(退出系统)
 // Access:    public 
