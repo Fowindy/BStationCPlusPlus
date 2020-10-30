@@ -115,6 +115,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="speaker.cpp" />
     <ClCompile Include="speechManager.cpp">
       <SubType>
       </SubType>
@@ -125,6 +126,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="speaker.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="speechManager.h">
       <SubType>
       </SubType>
