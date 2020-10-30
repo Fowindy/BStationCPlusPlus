@@ -36,8 +36,11 @@ void test53()
 	cout << "------------------升序后:----------------" << endl;
 	PrintVector53(v);//10 20 30 40 50
 	//自定义仿函数降序
-	cout << "-----------------自定义仿函数降序-----------------" << endl;
-	sort(v.begin(), v.end(), MyCompare53());
+	//cout << "-----------------自定义仿函数降序-----------------" << endl;
+	//sort(v.begin(), v.end(), MyCompare53());
+	//PrintVector53(v);//50 40 30 20 10
+	cout << "------------------内建仿函数降序----------------" << endl;
+	sort(v.begin(), v.end(), greater<int>());
 	PrintVector53(v);//50 40 30 20 10
 }
 int main()
