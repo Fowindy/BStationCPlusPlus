@@ -68,7 +68,7 @@ void test062()
 	int num = count_if(v.begin(), v.end(), CountPerson());
 	cout << "小于35岁的人个数为:" << num << endl;//小于35岁的人个数为:2
 }
-int main()
+int main62()
 {
 	test62();
 	test062();

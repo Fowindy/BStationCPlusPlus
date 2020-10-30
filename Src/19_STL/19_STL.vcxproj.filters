@@ -201,5 +201,8 @@
     <ClCompile Include="62_常用查找算法_count_if.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="63_常用排序算法_sort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
