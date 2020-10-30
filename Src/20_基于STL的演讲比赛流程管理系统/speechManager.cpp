@@ -272,6 +272,16 @@ void SpeechManager::saveRecord()
 	//关闭
 	ofs.close();
 	cout << "记录已保存!" << endl;
+	this->fileIsEmpty = false;
+#pragma region 重置比赛获取记录
+	//在构造函数中调用初始化容器和属性
+	this->InitSpeech();
+	//在构造函数中调用创建选手
+	this->creatSpeaker();
+	//在构造函数中加载往届记录
+	this->loadRecord();
+#pragma endregion
+
 }
 
 //************************************
@@ -283,12 +293,19 @@ void SpeechManager::saveRecord()
 //************************************
 void SpeechManager::showRecord()
 {
-	for (int i = 0; i < this->m_Record.size(); i++)
+	if (this->fileIsEmpty)
 	{
-		cout << "第" << i + 1 << "届" << endl;
-		cout << "冠军编号:" << this->m_Record[i][0] << "\t选手姓名:" << this->m_Record[i][1] << "\t选手平均分:" << this->m_Record[i][2] << endl;
-		cout << "亚军编号:" << this->m_Record[i][3] << "\t选手姓名:" << this->m_Record[i][4] << "\t选手平均分:" << this->m_Record[i][5] << endl;
-		cout << "季军编号:" << this->m_Record[i][6] << "\t选手姓名:" << this->m_Record[i][7] << "\t选手平均分:" << this->m_Record[i][8] << endl;
+		cout << "文件为空或者文件不存在!" << endl;
+	}
+	else
+	{
+		for (int i = 0; i < this->m_Record.size(); i++)
+		{
+			cout << "第" << i + 1 << "届" << endl;
+			cout << "冠军编号:" << this->m_Record[i][0] << "\t选手姓名:" << this->m_Record[i][1] << "\t选手平均分:" << this->m_Record[i][2] << endl;
+			cout << "亚军编号:" << this->m_Record[i][3] << "\t选手姓名:" << this->m_Record[i][4] << "\t选手平均分:" << this->m_Record[i][5] << endl;
+			cout << "季军编号:" << this->m_Record[i][6] << "\t选手姓名:" << this->m_Record[i][7] << "\t选手平均分:" << this->m_Record[i][8] << endl;
+		}
 	}
 	system("pause");
 	system("cls");
@@ -309,7 +326,7 @@ void SpeechManager::loadRecord()
 	{
 		//打开失败
 		this->fileIsEmpty = true;
-		cout << "文件不存在!" << endl;
+		//cout << "文件不存在!" << endl;
 		ifs.close();
 		return;
 	}
@@ -318,7 +335,7 @@ void SpeechManager::loadRecord()
 	ifs >> ch;
 	if (ifs.eof())
 	{
-		cout << "文件为空!" << endl;
+		//cout << "文件为空!" << endl;
 		this->fileIsEmpty = true;
 		ifs.close();
 		return;
@@ -387,6 +404,8 @@ void SpeechManager::InitSpeech()
 	this->m_Speaker.clear();
 	//初始化比赛轮数为1
 	this->m_Index = 1;
+	//将记录的容器清空
+	this->m_Record.clear();
 }
 
 //析构函数
