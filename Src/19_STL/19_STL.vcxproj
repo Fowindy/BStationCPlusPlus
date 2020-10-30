@@ -356,6 +356,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="62_常用查找算法_count_if.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

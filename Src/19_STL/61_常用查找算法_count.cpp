@@ -58,7 +58,7 @@ void test061()
 	cout << "和诸葛亮同岁的人员个数为:" << num << endl;
 	//和诸葛亮同岁的人员个数为:3
 }
-int main()
+int main61()
 {
 	test61();
 	test061();
