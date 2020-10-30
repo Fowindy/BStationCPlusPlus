@@ -2,6 +2,7 @@
 #include "Administrator.h"
 #include <iostream>
 #include <string>
+#include "GlobalFile.h"
 //构造函数
 Administrator::Administrator()
 {
@@ -15,9 +16,14 @@ Administrator::Administrator(string name, string pwd)
 	this->m_Pwd = pwd;
 }
 
+//添加账号
 void Administrator::addAccount()
 {
-
+	cout << "请输入添加账号的类型:" << endl;
+	cout << "1、添加学生" << endl;
+	cout << "2、添加老师" << endl;
+	int select = 0;
+	GlobalFile::LimitedInputNumber(select, 1, 2);
 }
 
 void Administrator::showAccount()
@@ -41,6 +47,7 @@ Administrator::~Administrator()
 
 }
 
+//菜单界面
 void Administrator::operMenu()
 {
 	cout << "欢迎管理员：" << this->m_Name << "登录！" << endl;

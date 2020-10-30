@@ -166,17 +166,8 @@ void administartorMenu(Identity* &identity)//父类指针传管理员进来
 		//定义选择变量接受用户选择
 		int select = 0;
 		//接收用户的选择
-	A:
 		//判断用户输入的是否为数字,不为数字则提示
-		while (!(cin >> select))
-		{
-			cin.clear();
-			while (cin.get() != '\n')
-			{
-				continue;
-			}//跳过错误输入
-			cout << "输入错误,请输入数字(0~4)：";
-		}
+	A:	GlobalFile::LimitedInputNumber(select, 0, 4);
 		//采用if---else if结构代替switch(但最好用switch,这里只是复习的需要)
 		if (select == 1)//添加账号
 		{

@@ -30,6 +30,9 @@
     <ClCompile Include="Administrator.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="GlobalFile.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Identity.h">

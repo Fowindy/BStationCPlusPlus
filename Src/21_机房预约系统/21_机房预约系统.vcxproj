@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Administrator.cpp" />
+    <ClCompile Include="GlobalFile.cpp" />
     <ClCompile Include="Identity.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Teacher.cpp" />

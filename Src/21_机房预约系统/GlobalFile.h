@@ -1,4 +1,6 @@
 ﻿#pragma once	//防止头文件重复包含
+#include <iostream>	//包含输入输出流的头文件
+using namespace std;	//使用标准命名空间
 
 //管理员文件
 #define ADMIN_FILE "admin.txt"
@@ -10,3 +12,11 @@
 #define	COMPUTER_FILE "computerRoom.txt"
 //订单文件
 #define ORDER_FILE "order.txt"
+
+class GlobalFile
+{
+public:
+	GlobalFile();	//构造函数
+	~GlobalFile();	//析构函数
+	static void LimitedInputNumber(int& select, int numStart, int numEnd);	//限定输入数字
+};
