@@ -404,6 +404,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="74_常用集合算法_set_union.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

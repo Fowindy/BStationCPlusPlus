@@ -33,7 +33,7 @@ void test73()
 	for_each(vTarget.begin(), it, MyPrint73);//5 6 7 8 9
 	cout << endl;
 }
-int main()
+int main73()
 {
 	test73();
 	system("pause");
