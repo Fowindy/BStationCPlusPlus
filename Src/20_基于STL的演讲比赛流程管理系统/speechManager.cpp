@@ -5,7 +5,8 @@ using namespace std;
 //构造函数
 speechManager::speechManager()
 {
-
+	//在构造函数中调用初始化容器和属性
+	this->InitSpeech();
 }
 
 //************************************
@@ -39,6 +40,17 @@ void speechManager::exit_System()
 	cout << "欢迎下次使用!" << endl;
 	system("pause");
 	exit(0);
+}
+
+void speechManager::InitSpeech()
+{
+	//容器都置空
+	this->v1.clear();
+	this->v2.clear();
+	this->vVictory.clear();
+	this->m_Speaker.clear();
+	//初始化比赛轮数为1
+	this->m_Index = 1;
 }
 
 //析构函数
