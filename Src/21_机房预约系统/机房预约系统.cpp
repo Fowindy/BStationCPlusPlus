@@ -7,6 +7,7 @@
 #include "Student.h"
 #include <fstream>
 #include "Teacher.h"
+#include "Administrator.h"
 using namespace std;
 //************************************
 // Method:    Show_Menu(显示菜单)
@@ -120,6 +121,20 @@ void LoginIn(string fileName, int type)
 	else if (type == 3)
 	{
 		//管理员身份验证
+		string fName;//从文件中读取name
+		string fpwd;//从文件中读取pwd
+		while (ifs >> fName && ifs >> fpwd)
+		{
+			if (fName == name && fpwd == pwd)
+			{
+				cout << "管理员验证登录成功!" << endl;
+				system("pause");
+				system("cls");
+				person = new Administrator(name, pwd);
+				//进入管理员子菜单
+				return;
+			}
+		}
 	}
 	cout << "验证身份失败!" << endl;
 	system("pause");
