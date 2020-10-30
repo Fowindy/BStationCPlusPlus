@@ -331,6 +331,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="55_常用遍历算法_for_each.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

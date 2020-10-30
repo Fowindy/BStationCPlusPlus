@@ -29,7 +29,7 @@ void test54()
 	transform(v.begin(), v.end(), v2.begin(), logical_not<bool>());
 	PrintVector54(v2);//0 1 1 0
 }
-int main()
+int main54()
 {
 	test54();
 	system("pause");
