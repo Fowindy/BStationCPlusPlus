@@ -38,7 +38,7 @@ void GlobalFile::LimitedInputNumber(int& select, int numStart, int numEnd)
 		}
 		if (select < numStart || select > numEnd)
 		{
-			cout << "指令错误,请输入正确数字(" << numStart << "~" << numEnd << ")：";
+			cout << "格式错误,请输入正确数字(" << numStart << "~" << numEnd << ")：";
 		}
 		else
 		{

@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include "GlobalFile.h"
+#include <fstream>
 //构造函数
 Administrator::Administrator()
 {
@@ -22,8 +23,43 @@ void Administrator::addAccount()
 	cout << "请输入添加账号的类型:" << endl;
 	cout << "1、添加学生" << endl;
 	cout << "2、添加老师" << endl;
+	string fileName;//操作文件名
+	string tip;//提示id号
+	ofstream ofs;//文件写入对象
 	int select = 0;
-	GlobalFile::LimitedInputNumber(select, 1, 2);
+	GlobalFile::LimitedInputNumber(select, 1, 2);//接收用户选项
+	switch (select)
+	{
+	case 1://添加的是学生
+		fileName = STUDENT_FILE;
+		tip = "请输入你的学号:";
+		break;
+	case 2://添加的是老师
+		fileName = TEACHER_FILE;
+		tip = "请输入您的职工号:";
+		break;
+	}
+	//准备写入的内容
+	int id;//学号或职工号
+	string name;//姓名
+	string pwd;//密码
+	cout << tip;
+	GlobalFile::LimitedInputNumber(id, 0, 99999999);
+	cout << "请输入姓名:";
+	cin >> name;
+	cout << "请输入密码:";
+	cin >> pwd;
+
+	//以追加的方式写入文件
+	ofs.open(fileName, ios::app | ios::out);
+	//写入的格式
+	ofs << id << " " << name << " " << pwd << " " << endl;
+	//写完释放资源
+	ofs.close();
+	//按任意键继续
+	system("pause");
+	//清屏
+	system("cls");
 }
 
 void Administrator::showAccount()
