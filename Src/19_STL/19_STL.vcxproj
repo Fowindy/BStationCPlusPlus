@@ -344,6 +344,10 @@
       <SubType>
       </SubType>
     </ClCompile>
+    <ClCompile Include="59_常用查找算法_adjacent_find.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
