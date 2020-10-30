@@ -26,7 +26,7 @@ void test64()
 	for_each(v.begin(), v.end(), myPrint64);//0 5 3 2 7 9 6 8 1 4
 	cout << endl;
 }
-int main()
+int main64()
 {
 	test64();
 	system("pause");
