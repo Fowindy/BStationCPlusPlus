@@ -2,6 +2,8 @@
 #include "Student.h"
 #include <iostream>
 #include <string>
+#include "GlobalFile.h"
+#include "computerRoom.h"
 //构造函数
 Student::Student()
 {
@@ -11,9 +13,25 @@ Student::Student()
 //有参构造 参数:学号,姓名,密码
 Student::Student(int id, string name, string pwd)
 {
+#pragma region 初始化属性
 	this->m_id = id;
 	this->m_Name = name;
 	this->m_Pwd = pwd;
+#pragma endregion
+
+#pragma region 获取机房信息
+	ifstream ifs;
+	ifs.open(COMPUTER_FILE, ios::in);
+	//创建机房对象
+	ComputerRoom com;
+	while (ifs >> com.m_RoomId && ifs >> com.m_MaxNum)
+	{
+		//将读取的机房对象加载到机房容器中
+		vCom.push_back(com);
+	}
+	//读取完毕,关闭资源
+	ifs.close();
+#pragma endregion
 }
 
 //菜单界面

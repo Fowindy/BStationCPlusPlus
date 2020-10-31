@@ -1,6 +1,7 @@
 ﻿#pragma once	//防止头文件重复包含
 #include <iostream>	//包含输入输出流的头文件
 #include "Identity.h"
+#include <fstream>
 using namespace std;	//使用标准命名空间
 
 class Student :public Identity
@@ -35,8 +36,7 @@ public:
 #pragma region 成员属性
 	//学生学号
 	int m_id;
+	//机房容器---用于学生获取机房信息
+	vector<ComputerRoom>vCom;
 #pragma endregion
-
-
-
 };
