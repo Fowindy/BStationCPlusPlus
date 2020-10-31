@@ -33,6 +33,18 @@ public:
 
 	//初始化容器
 	void initVector();
+
+	//检查重复
+	//************************************
+	// Method:    checkRepeat
+	// Access:    public 
+	// Returns:   bool
+	// Author: 	  Fowindy
+	// Parameter: int id(对象id号)
+	// Parameter: int type(对象类型)
+	// Created:   2020/10/31 9:13
+	//************************************
+	bool checkRepeat(int id, int type);
 #pragma endregion
 #pragma region 成员属性
 	//学生容器

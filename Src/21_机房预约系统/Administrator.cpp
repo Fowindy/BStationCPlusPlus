@@ -27,6 +27,7 @@ void Administrator::addAccount()
 	cout << "2、添加老师" << endl;
 	string fileName;//操作文件名
 	string tip;//提示id号
+	string checkStr;//检测提示语句
 	ofstream ofs;//文件写入对象
 	int select = 0;
 	GlobalFile::LimitedInputNumber(select, 1, 2);//接收用户选项
@@ -35,10 +36,14 @@ void Administrator::addAccount()
 	case 1://添加的是学生
 		fileName = STUDENT_FILE;
 		tip = "请输入你的学号:";
+		//初始化检测语句
+		checkStr = "添加失败:学号重复!请重新输入:";
 		break;
 	case 2://添加的是老师
 		fileName = TEACHER_FILE;
 		tip = "请输入您的职工号:";
+		//初始化检测语句
+		checkStr = "添加失败:职工号重复!请重新输入:";
 		break;
 	}
 	//准备写入的内容
@@ -46,12 +51,25 @@ void Administrator::addAccount()
 	string name;//姓名
 	string pwd;//密码
 	cout << tip;
-	GlobalFile::LimitedInputNumber(id, 0, 99999999);
+	//限定用户输入id区间
+A:GlobalFile::LimitedInputNumber(id, 0, 99999999);
+	while (true)
+	{
+		//拿到id先查重
+		if (this->checkRepeat(id, select))
+		{
+			cout << checkStr;
+			goto A;
+		}
+		else
+		{
+			break;
+		}
+	}
 	cout << "请输入姓名:";
 	cin >> name;
 	cout << "请输入密码:";
 	cin >> pwd;
-
 	//以追加的方式写入文件
 	ofs.open(fileName, ios::app | ios::out);
 	//写入的格式
@@ -79,6 +97,13 @@ void Administrator::cleanFile()
 
 }
 
+//************************************
+// Method:    initVector
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/31 9:45
+//************************************
 void Administrator::initVector()
 {
 	//创建读取流对象
@@ -129,6 +154,40 @@ void Administrator::initVector()
 	//读取完毕关闭资源
 	ifs.close();
 #pragma endregion
+}
+
+//************************************
+// Method:    checkRepeat
+// Access:    public 
+// Returns:   bool
+// Author: 	  Fowindy
+// Parameter: int id
+// Parameter: int type
+// Created:   2020/10/31 9:38
+//************************************
+bool Administrator::checkRepeat(int id, int type)
+{
+	if (type == 1)//检测学生
+	{
+		for (vector<Student>::iterator it = vStu.begin(); it != vStu.end(); it++)
+		{
+			if (it->m_id == id)
+			{
+				return true;//有重复:返回true
+			}
+		}
+	}
+	else if (type == 2)//检测教师
+	{
+		for (vector<Teacher>::iterator it = vTea.begin(); it != vTea.end(); it++)
+		{
+			if (it->m_EmpId == id)
+			{
+				return true;//有重复:返回true
+			}
+		}
+	}
+	return false;//没有重复:返回false
 }
 
 //析构函数
