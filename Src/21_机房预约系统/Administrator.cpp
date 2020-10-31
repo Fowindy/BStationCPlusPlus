@@ -159,8 +159,21 @@ void Administrator::showComputerRoom()
 	cout << "显示完毕!" << endl;
 }
 
+//************************************
+// Method:    cleanFile(清空预约)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/31 11:34
+//************************************
 void Administrator::cleanFile()
 {
+	//ios::trunc  覆盖存在的文件 即如果原来文件中有数据原来的数据就被清空
+	ofstream ofs(ORDER_FILE, ios::trunc);
+	ofs.close();
+	cout << "预约清空完毕!" << endl;
+	system("pause");
+	system("cls");
 }
 
 //************************************
