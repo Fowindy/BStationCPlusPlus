@@ -74,8 +74,12 @@ A:GlobalFile::LimitedInputNumber(id, 0, 99999999);
 	ofs.open(fileName, ios::app | ios::out);
 	//写入的格式
 	ofs << id << " " << name << " " << pwd << " " << endl;
+	//添加成功提示
+	cout << "添加成功" << endl;
 	//写完释放资源
 	ofs.close();
+	//调用初始化容器接口,重新获取文件中的数据
+	this->initVector();
 	//按任意键继续
 	system("pause");
 	//清屏
