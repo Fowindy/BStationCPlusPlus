@@ -3,6 +3,7 @@
 #include <iostream>
 #include <string>
 #include "GlobalFile.h"
+#include "OrderFile.h"
 //构造函数
 Student::Student()
 {
@@ -116,7 +117,7 @@ void Student::applyOrder()
 //查看我的预约
 void Student::showMyOrder()
 {
-
+	OrderFile of;
 }
 
 //查看所有预约

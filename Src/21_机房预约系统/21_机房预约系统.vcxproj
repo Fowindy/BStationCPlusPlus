@@ -119,6 +119,7 @@
     <ClCompile Include="ComputerRoom.cpp" />
     <ClCompile Include="GlobalFile.cpp" />
     <ClCompile Include="Identity.cpp" />
+    <ClCompile Include="OrderFile.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Teacher.cpp" />
     <ClCompile Include="机房预约系统.cpp">
@@ -140,6 +141,10 @@
       </SubType>
     </ClInclude>
     <ClInclude Include="Administrator.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
+    <ClInclude Include="OrderFile.h">
       <SubType>
       </SubType>
     </ClInclude>
