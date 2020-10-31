@@ -171,22 +171,22 @@ void administartorMenu(Identity* &identity)//父类指针传管理员进来
 		//采用if---else if结构代替switch(但最好用switch,这里只是复习的需要)
 		if (select == 1)//添加账号
 		{
-			cout << "添加账号" << endl;
+			//cout << "添加账号" << endl;
 			admin->addAccount();
 		}
 		else if (select == 2)//查看账号
 		{
-			cout << "查看账号" << endl;
+			//cout << "查看账号" << endl;
 			admin->showAccount();
 		}
 		else if (select == 3)//查看机房
 		{
-			cout << "查看机房" << endl;
+			//cout << "查看机房" << endl;
 			admin->showComputerRoom();
 		}
 		else if (select == 4)//清空预约
 		{
-			cout << "清空预约" << endl;
+			//cout << "清空预约" << endl;
 			admin->cleanFile();
 		}
 		else if (select == 0)//注销登录

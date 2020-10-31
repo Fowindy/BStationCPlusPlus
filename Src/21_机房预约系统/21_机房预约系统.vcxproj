@@ -116,6 +116,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Administrator.cpp" />
+    <ClCompile Include="ComputerRoom.cpp" />
     <ClCompile Include="GlobalFile.cpp" />
     <ClCompile Include="Identity.cpp" />
     <ClCompile Include="Student.cpp" />
@@ -126,6 +127,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ComputerRoom.h">
+      <SubType>
+      </SubType>
+    </ClInclude>
     <ClInclude Include="GlobalFile.h">
       <SubType>
       </SubType>

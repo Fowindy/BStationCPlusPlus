@@ -139,15 +139,28 @@ void Administrator::showAccount()
 	cout << "显示完毕!" << endl;
 	system("pause");
 }
-
+void printComputerRoom(ComputerRoom& com)
+{
+	cout << "机房号:" << com.m_RoomId << "\t机房容量:" << com.m_MaxNum << endl;
+}
+//************************************
+// Method:    showComputerRoom(查看机房信息)
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/31 11:27
+//************************************
 void Administrator::showComputerRoom()
 {
-
+	//查看机房
+	cout << "所有机房信息如下:" << endl;
+	//采用for_each循环_函数
+	for_each(vCom.begin(), vCom.end(), printComputerRoom);
+	cout << "显示完毕!" << endl;
 }
 
 void Administrator::cleanFile()
 {
-
 }
 
 //************************************
@@ -164,6 +177,7 @@ void Administrator::initVector()
 	//清空容器
 	vStu.clear();
 	vTea.clear();
+	vCom.clear();
 #pragma region 读取学生文件信息
 	//以读取的方式打开学生文件
 	ifs.open(STUDENT_FILE, ios::in);
@@ -204,6 +218,28 @@ void Administrator::initVector()
 	}
 	//输出教师数
 	cout << "当前教师数量为:" << vTea.size() << endl;
+	//读取完毕关闭资源
+	ifs.close();
+#pragma endregion
+#pragma region 读取机房信息
+	//以读取方式打开机房文件
+	ifs.open(COMPUTER_FILE, ios::in);
+	//判断文件是否存在
+	if (!ifs.is_open())
+	{
+		cout << "机房文件读取失败:文件不存在!" << endl;
+		return;
+	}
+	//创建机房对象
+	ComputerRoom com;
+	//读取机房文件中的信息赋值给机房对象
+	while (ifs >> com.m_RoomId && ifs >> com.m_MaxNum)
+	{
+		//将读取到的机房对象加载到机房容器
+		vCom.push_back(com);
+	}
+	//输出机房数
+	cout << "当前机房数量为:" << vCom.size() << endl;
 	//读取完毕关闭资源
 	ifs.close();
 #pragma endregion

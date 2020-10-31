@@ -4,6 +4,7 @@
 #include <vector>
 #include "Student.h"
 #include "Teacher.h"
+#include "computerRoom.h"
 using namespace std;	//使用标准命名空间
 
 class Administrator :public Identity
@@ -51,6 +52,8 @@ public:
 	vector<Student>vStu;
 	//教师容器
 	vector<Teacher>vTea;
+	//机房容器
+	vector<ComputerRoom>vCom;
 #pragma endregion
 
 };
