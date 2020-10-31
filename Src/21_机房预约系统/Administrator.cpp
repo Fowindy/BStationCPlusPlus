@@ -4,6 +4,7 @@
 #include <string>
 #include "GlobalFile.h"
 #include <fstream>
+#include <algorithm>
 //构造函数
 Administrator::Administrator()
 {
@@ -85,10 +86,58 @@ A:GlobalFile::LimitedInputNumber(id, 0, 99999999);
 	//清屏
 	system("cls");
 }
-
+//学生打印函数_仿函数
+class printStudent
+{
+public:
+	bool operator()(Student& stu)
+	{
+		cout << "学号:" << stu.m_id << "\t姓名:" << stu.m_Name << "\t密码:" << stu.m_Pwd << endl;
+		return true;
+	}
+};
+//教师打印函数
+void printTeacher(Teacher& tea)
+{
+	cout << "职工号:" << tea.m_EmpId << "\t姓名:" << tea.m_Name << "\t密码:" << tea.m_Pwd << endl;
+}
+//查看账号
+//************************************
+// Method:    showAccount
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Created:   2020/10/31 10:32
+//************************************
 void Administrator::showAccount()
 {
-
+	cout << "请选择查看内容:" << endl;
+	cout << "1、查看所有学生" << endl;
+	cout << "2、查看所有老师" << endl;
+	//接收用户选择
+	int select = 0;
+	GlobalFile::LimitedInputNumber(select, 1, 2);
+	switch (select)
+	{
+	case 1:
+	{
+		//查看学生
+		cout << "所有学生信息如下:" << endl;
+		//采用for_each循环_仿函数
+		for_each(vStu.begin(), vStu.end(), printStudent());
+	}
+	break;
+	case 2:
+	{
+		//查看教师
+		cout << "所有老师信息如下:" << endl;
+		//采用for_each循环_函数
+		for_each(vTea.begin(), vTea.end(), printTeacher);
+	}
+	break;
+	}
+	cout << "显示完毕!" << endl;
+	system("pause");
 }
 
 void Administrator::showComputerRoom()
