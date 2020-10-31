@@ -2,6 +2,8 @@
 #include <iostream>	//包含输入输出流的头文件
 #include "Identity.h"
 #include <fstream>
+#include <vector>
+#include "computerRoom.h"
 using namespace std;	//使用标准命名空间
 
 class Student :public Identity
