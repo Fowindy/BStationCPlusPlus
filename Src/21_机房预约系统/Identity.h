@@ -13,6 +13,8 @@ public:
 #pragma region 成员函数
 	//操作菜单纯虚函数
 	virtual void operMenu() = 0;
+	//注销登录
+	void SignOut(Identity* identity);
 #pragma endregion
 
 	~Identity();	//析构函数

@@ -10,7 +10,8 @@
 #include "Administrator.h"
 using namespace std;
 
-void administartorMenu(Identity* &identity);//全局菜单函数声明;
+void administartorMenu(Identity* &identity);//管理员菜单函数声明;
+void studentMenu(Identity* identity);//学生菜单函数声明
 //************************************
 // Method:    Show_Menu(显示菜单)
 // Access:    public 
@@ -96,6 +97,7 @@ void LoginIn(string fileName, int type)
 				system("cls");
 				person = new Student(id, name, pwd);
 				//进入到学生身份的子菜单
+				studentMenu(person);
 				return;
 			}
 		}
@@ -191,21 +193,61 @@ void administartorMenu(Identity* &identity)//父类指针传管理员进来
 		}
 		else if (select == 0)//注销登录
 		{
-			delete identity;//销毁掉堆区对象
-			cout << "注销成功!" << endl;
-			system("pause");
-			system("cls");//清屏
+			admin->SignOut(identity);
 			return;
 		}
 	}
 }
+//************************************
+// Method:    studentMenu
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Parameter: Identity * identity
+// Created:   2020/10/31 11:45
+//************************************
+void studentMenu(Identity* identity)//父类指针传学生进来
+{
+	while (true)
+	{
+		//1.调用学生菜单
+		identity->operMenu();//多态,父类指针创建子类对象,调用共同的接口(子类重写的纯虚函数)
+		//2.父类指针强转子类指针
+		Student* stu = (Student*)identity;
+		//用于接收用户输入的变量
+		int select = 0;
+		//限定用户范围输入
+		GlobalFile::LimitedInputNumber(select, 0, 4);
+		//根据用户选择子流程
+		switch (select)
+		{
+		case 1://申请预约
+			stu->applyOrder();
+			break;
+		case 2://查看我的预约
+			stu->showMyOrder();
+			break;
+		case 3://查看所有预约
+			stu->showAllOrder();
+			break;
+		case 4://取消预约
+			stu->cancelOrder();
+			break;
+		case 0://注销登录
+			stu->SignOut(identity);
+			return;
+		}
+	}
+}
+
 int main()
 {
 	int select = 0;//用于接收用户的选择
 	while (true)
 	{
 		Show_Menu();
-		cin >> select;//接收用户选择
+		//接收用户选择
+		GlobalFile::LimitedInputNumber(select, 0, 3);
 		switch (select)
 		{
 		case 1://学生身份

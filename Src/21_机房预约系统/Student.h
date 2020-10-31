@@ -28,9 +28,6 @@ public:
 	//取消预约
 	void cancelOrder();
 
-	//注销登录
-	void signOut();
-
 	//析构函数
 	~Student();
 #pragma endregion
