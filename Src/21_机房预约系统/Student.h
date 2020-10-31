@@ -36,7 +36,8 @@ public:
 #pragma endregion
 
 #pragma region 成员属性
-
+	//学生学号
+	int m_id;
 #pragma endregion
 
 
