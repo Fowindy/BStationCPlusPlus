@@ -101,13 +101,16 @@ void Student::applyOrder()
 	status = 1;
 	//上传预约信息
 	ofstream ofs(ORDER_FILE, ios::app | ios::out);
+#pragma region txt方式写入
 	ofs << "date:" << date << " "
 		<< "interval:" << interval << " "
 		<< "roomId:" << room << " "
 		<< "stuId:" << this->m_id << " "
-		<< "stuName" << this->m_Name << " "
+		<< "stuName:" << this->m_Name << " "
 		<< "status:" << status
 		<< endl;
+#pragma endregion
+
 	//写入完毕关闭文件流
 	ofs.close();
 	system("pause");

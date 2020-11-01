@@ -20,11 +20,10 @@ OrderFile::OrderFile()
 #pragma endregion
 
 	this->m_Size = 0;//预约条数初始化为0
-	//读取文件
+#pragma region 读取文件_txt方式
+	//读取文件_txt方式
 	while (ifs >> date && ifs >> interval && ifs >> room && ifs >> stuId && ifs >> stuName && ifs >> status)
 	{
-		//循环一次预约条数加一条
-		this->m_Size++;
 #pragma region 测试代码
 		//cout << date << endl;
 		//cout << interval << endl;
@@ -42,12 +41,27 @@ OrderFile::OrderFile()
 		SnapStr(stuName, m);
 		SnapStr(status, m);
 #pragma endregion
-		//将每一笔预约信息加载进预约容器
+		//将每一笔预约信息map小容器加载进预约大容器中
 		m_OrderData.insert(make_pair(this->m_Size, m));
-		m.clear();
+		//循环一次预约条数加一条
+		this->m_Size++;
 	}
+#pragma endregion
+#pragma region 测试代码_读取大容器中所有信息
+	for (map<int, map<string, string>>::iterator mit = m_OrderData.begin(); mit != m_OrderData.end(); mit++)
+	{
+		cout << "第" << mit->first + 1 << "条预定信息如下:" << endl;
+		for (map<string, string>::iterator it = mit->second.begin(); it != mit->second.end(); it++)
+		{
+			cout << "key = " << it->first
+				<< "\tvalue = " << it->second << "\t";
+		}
+		cout << endl;
+	}
+#pragma endregion
+	//读取完毕,关闭流
+	ifs.close();
 }
-
 void OrderFile::SnapStr(string str, map<string, string>& m)
 {
 	//date:1

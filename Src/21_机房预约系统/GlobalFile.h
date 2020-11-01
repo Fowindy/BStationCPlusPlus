@@ -11,7 +11,10 @@ using namespace std;	//使用标准命名空间
 //机房文件
 #define	COMPUTER_FILE "computerRoom.txt"
 //订单文件
-#define ORDER_FILE "order.txt"
+#pragma region txt方式
+#define ORDER_FILE "order.txt"  
+#pragma endregion
+
 
 class GlobalFile
 {

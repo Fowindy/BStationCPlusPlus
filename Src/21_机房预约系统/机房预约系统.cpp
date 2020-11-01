@@ -70,12 +70,14 @@ void LoginIn(string fileName, int type)
 	if (type == 1)//学生身份
 	{
 		cout << "请输入你的学号:" << endl;
-		cin >> id;
+		GlobalFile::LimitedInputNumber(id, 0, 9999);
+		//cin >> id;
 	}
 	else if (type == 2)//教师身份
 	{
 		cout << "请输入您的职工号:" << endl;
-		cin >> id;
+		GlobalFile::LimitedInputNumber(id, 0, 9999);
+		//cin >> id;
 	}
 	cout << "请输入用户名:" << endl;
 	cin >> name;
