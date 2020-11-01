@@ -121,6 +121,8 @@ void Student::applyOrder()
 #pragma endregion
 	//写入完毕关闭文件流
 	ofs.close();
+	//新增预约立即更新
+
 	system("pause");
 	system("cls");//清屏
 }

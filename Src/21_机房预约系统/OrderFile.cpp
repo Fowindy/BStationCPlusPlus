@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include<sstream>
+#include <sstream>
 //构造函数
 OrderFile::OrderFile()
 {
@@ -65,18 +65,19 @@ OrderFile::OrderFile()
 		m_OrderData.insert(make_pair(this->m_Size, m));
 		//循环一次预约条数加一条
 		this->m_Size++;
+		//每一条预约进大容器后,清空小容器
+		m.clear();
 	}
-
 #pragma endregion
 
 #pragma region 测试代码_读取大容器中所有信息
-	for (map<int, map<string, string>>::iterator mit = m_OrderData.begin(); mit != m_OrderData.end(); mit++)
+	for (map<int, map<string, string>>::iterator it = m_OrderData.begin(); it != m_OrderData.end(); it++)
 	{
-		cout << "第" << mit->first + 1 << "条预定信息如下:" << endl;
-		for (map<string, string>::iterator it = mit->second.begin(); it != mit->second.end(); it++)
+		cout << "第" << it->first + 1 << "条预定信息如下:" << endl;
+		for (map<string, string>::iterator mit = it->second.begin(); mit != it->second.end(); mit++)
 		{
-			cout << "key = " << it->first
-				<< "\tvalue = " << it->second << "\t";
+			cout << "key = " << mit->first
+				<< "\tvalue = " << mit->second << "\t";
 		}
 		cout << endl;
 	}
@@ -106,7 +107,7 @@ OrderFile::~OrderFile()
 }
 
 //************************************
-// Method:    updateOrder
+// Method:    updateOrder(更新预约记录)
 // Access:    public 
 // Returns:   void
 // Author: 	  Fowindy
@@ -114,6 +115,19 @@ OrderFile::~OrderFile()
 //************************************
 void OrderFile::updateOrder()
 {
-
+	if (this->m_Size == 0)
+	{
+		return;//预约记录为0条,直接return
+	}
+	//创建写入流对象_以重写的方式写入
+	ofstream ofs(ORDER_FILE, ios::out | ios::trunc);
+	for (int i = 0; i < this->m_Size; i++)
+	{
+		for (map<string, string>::iterator mit = this->m_OrderData[i].begin(); mit != this->m_OrderData[i].end(); mit++)
+		{
+			ofs << mit->first << ":" << mit->second << ",";
+		}
+		ofs << endl;
+	}
 }
 
