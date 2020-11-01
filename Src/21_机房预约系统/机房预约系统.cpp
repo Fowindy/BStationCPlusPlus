@@ -12,6 +12,7 @@ using namespace std;
 
 void administartorMenu(Identity* &identity);//管理员菜单函数声明;
 void studentMenu(Identity* identity);//学生菜单函数声明
+void teacherMenu(Identity* identity);//教师菜单函数声明
 //************************************
 // Method:    Show_Menu(显示菜单)
 // Access:    public 
@@ -120,6 +121,7 @@ void LoginIn(string fileName, int type)
 				system("cls");
 				person = new Teacher(id, name, pwd);
 				//进入到教师身份子菜单
+				teacherMenu(person);
 				return;
 			}
 		}
@@ -241,7 +243,41 @@ void studentMenu(Identity* identity)//父类指针传学生进来
 		}
 	}
 }
-
+//************************************
+// Method:    teacherMenu
+// Access:    public 
+// Returns:   void
+// Author: 	  Fowindy
+// Parameter: Identity * identity
+// Created:   2020/11/01 17:01
+//************************************
+void teacherMenu(Identity* identity)//父类指针传教师进来
+{
+	while (true)
+	{
+		//1.调用老师菜单
+		identity->operMenu();
+		//2.定义选择变量
+		int select = 0;
+		//3.接受用户选择
+		GlobalFile::LimitedInputNumber(select, 0, 2);
+		//4.父类指针强转子类指针
+		Teacher* tea = (Teacher*)identity;
+		//5.根据用户选择进入相应教师操作流程
+		switch (select)
+		{
+		case 1://查看所有预约
+			tea->showAllOrder();
+			break;
+		case 2://审核预约
+			tea->validOrder();
+			break;
+		case 0://注销登录
+			tea->SignOut(identity);
+			return;
+		}
+	}
+}
 int main()
 {
 	int select = 0;//用于接收用户的选择
