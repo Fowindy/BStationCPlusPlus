@@ -147,10 +147,10 @@ void Student::showMyOrder()
 		if (atoi(of.m_OrderData[i]["stuId"].c_str()) == this->m_id)//查找自身预约
 		{
 			cout << "第" << ++index << "条" << "\t";
-			cout << "预约日期:周" << of.m_OrderData[i]["date"] << "\t";
-			cout << "预约时段:" << (of.m_OrderData[i]["roomId"] == "1" ? "上午" : "下午") << "\t";
-			cout << "预约机房:" << of.m_OrderData[i]["roomId"] << "号机房" << "\t";
-			string status = "预约状态:";//0:取消预约;1:审核中;2:已预约;-1:预约失败
+			cout << "星期:周" << of.m_OrderData[i]["date"] << "\t";
+			cout << "时段:" << (of.m_OrderData[i]["roomId"] == "1" ? "上午" : "下午") << "\t";
+			cout << "机房:" << of.m_OrderData[i]["roomId"] << "号机房" << "\t";
+			string status = "状态:";//0:取消预约;1:审核中;2:已预约;-1:预约失败
 			int statusIndex = atoi(of.m_OrderData[i]["status"].c_str());
 			switch (statusIndex)
 			{
@@ -164,7 +164,7 @@ void Student::showMyOrder()
 				status += "已预约";
 				break;
 			case -1://预约失败
-				status += "预约失败";
+				status += "预约失败:审核不通过";
 				break;
 			default://状态不明
 				status += "状态不明,请检查预约文件是否有误!";
@@ -194,7 +194,7 @@ void Student::showAllOrder()
 		cout << "第" << i + 1 << "条" << "\t";
 		cout << "学号:" << of.m_OrderData[i]["stuId"] << "\t";
 		cout << "姓名:" << of.m_OrderData[i]["stuName"] << "\t";
-		cout << "日期:周" << of.m_OrderData[i]["date"] << "\t";
+		cout << "星期:周" << of.m_OrderData[i]["date"] << "\t";
 		cout << "时段:" << (of.m_OrderData[i]["roomId"] == "1" ? "上午" : "下午") << "\t";
 		cout << "机房:" << of.m_OrderData[i]["roomId"] << "号机房" << "\t";
 		string status = "状态:";//0:取消预约;1:审核中;2:已预约;-1:预约失败
@@ -259,10 +259,10 @@ void Student::cancelOrder()
 				//将映射关系加载进容器
 				mIndex[index] = i;
 				//将可取消的预约显示给用户选择
-				cout << "预约日期:周" << of.m_OrderData[i]["date"] << "\t";
-				cout << "预约时段:" << (of.m_OrderData[i]["roomId"] == "1" ? "上午" : "下午") << "\t";
-				cout << "预约机房:" << of.m_OrderData[i]["roomId"] << "号机房" << "\t";
-				string status = "预约状态:";//0:取消预约;1:审核中;2:已预约;-1:预约失败
+				cout << "星期:周" << of.m_OrderData[i]["date"] << "\t";
+				cout << "时段:" << (of.m_OrderData[i]["roomId"] == "1" ? "上午" : "下午") << "\t";
+				cout << "机房:" << of.m_OrderData[i]["roomId"] << "号机房" << "\t";
+				string status = "状态:";//0:取消预约;1:审核中;2:已预约;-1:预约失败
 				int statusIndex = atoi(of.m_OrderData[i]["status"].c_str());
 				switch (statusIndex)
 				{
@@ -278,6 +278,13 @@ void Student::cancelOrder()
 				//of.m_OrderData[i]["status"] = "0";
 			}
 		}
+	}
+	if (index == 0)
+	{
+		cout << "当前没有可取消的预约!" << endl;
+		system("pause");
+		system("cls");
+		return;
 	}
 	//限定用户选择
 	GlobalFile::LimitedInputNumber(select, 0, index);
