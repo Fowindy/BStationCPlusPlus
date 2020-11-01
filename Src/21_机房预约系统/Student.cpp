@@ -4,6 +4,7 @@
 #include <string>
 #include "GlobalFile.h"
 #include "OrderFile.h"
+#include <process.h>
 //构造函数
 Student::Student()
 {
@@ -114,15 +115,13 @@ void Student::applyOrder()
 	ofs << "date:" << date << ","
 		<< "interval:" << interval << ","
 		<< "roomId:" << room << ","
+		<< "status:" << status << ","
 		<< "stuId:" << this->m_id << ","
-		<< "stuName:" << this->m_Name << ","
-		<< "status:" << status
+		<< "stuName:" << this->m_Name
 		<< endl;
 #pragma endregion
 	//写入完毕关闭文件流
 	ofs.close();
-	//新增预约立即更新
-
 	system("pause");
 	system("cls");//清屏
 }
@@ -131,6 +130,49 @@ void Student::applyOrder()
 void Student::showMyOrder()
 {
 	OrderFile of;
+	if (of.m_Size == 0)
+	{
+		cout << "无预约记录!" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	for (int i = 0; i < of.m_Size; i++)
+	{
+		// string 转int
+		// string利用.c-str()转const char *
+		//利用atoi ( const char *)转int
+		if (atoi(of.m_OrderData[i]["stuId"].c_str()) == this->m_id)//查找自身预约
+		{
+			cout << "预约日期:周" << of.m_OrderData[i]["date"] << "\t";
+			cout << "预约时段:" << (of.m_OrderData[i]["roomId"] == "1" ? "上午" : "下午") << "\t";
+			cout << "预约机房:" << of.m_OrderData[i]["roomId"] << "号机房" << "\t";
+			string status = "预约状态:";//0:取消预约;1:审核中;2:已预约;-1:预约失败
+			int statusIndex = atoi(of.m_OrderData[i]["status"].c_str());
+			switch (statusIndex)
+			{
+			case 0://取消预约
+				status += "已取消";
+				break;
+			case 1://审核中
+				status += "审核中";
+				break;
+			case 2://已预约
+				status += "已预约";
+				break;
+			case -1://预约失败
+				status += "预约失败";
+				break;
+			default://状态不明
+				status += "状态不明,请检查预约文件是否有误!";
+				break;
+			}
+			cout << status << endl;
+		}
+	}
+	system("pause");
+	system("cls");
+	return;
 }
 
 //查看所有预约

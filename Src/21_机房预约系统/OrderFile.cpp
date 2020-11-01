@@ -71,16 +71,16 @@ OrderFile::OrderFile()
 #pragma endregion
 
 #pragma region 测试代码_读取大容器中所有信息
-	for (map<int, map<string, string>>::iterator it = m_OrderData.begin(); it != m_OrderData.end(); it++)
-	{
-		cout << "第" << it->first + 1 << "条预定信息如下:" << endl;
-		for (map<string, string>::iterator mit = it->second.begin(); mit != it->second.end(); mit++)
-		{
-			cout << "key = " << mit->first
-				<< "\tvalue = " << mit->second << "\t";
-		}
-		cout << endl;
-	}
+	//for (map<int, map<string, string>>::iterator it = m_OrderData.begin(); it != m_OrderData.end(); it++)
+	//{
+	//	cout << "第" << it->first + 1 << "条预定信息如下:" << endl;
+	//	for (map<string, string>::iterator mit = it->second.begin(); mit != it->second.end(); mit++)
+	//	{
+	//		cout << "key = " << mit->first
+	//			<< "\tvalue = " << mit->second << "\t";
+	//	}
+	//	cout << endl;
+	//}
 #pragma endregion
 	//读取完毕,关闭流
 	ifs.close();
