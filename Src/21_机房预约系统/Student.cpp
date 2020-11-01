@@ -102,15 +102,23 @@ void Student::applyOrder()
 	//上传预约信息
 	ofstream ofs(ORDER_FILE, ios::app | ios::out);
 #pragma region txt方式写入
-	ofs << "date:" << date << " "
-		<< "interval:" << interval << " "
-		<< "roomId:" << room << " "
-		<< "stuId:" << this->m_id << " "
-		<< "stuName:" << this->m_Name << " "
+	//ofs << "date:" << date << " "
+	//	<< "interval:" << interval << " "
+	//	<< "roomId:" << room << " "
+	//	<< "stuId:" << this->m_id << " "
+	//	<< "stuName:" << this->m_Name << " "
+	//	<< "status:" << status
+	//	<< endl;
+#pragma endregion
+#pragma region csv方式写入_可与txt逗号方式兼容
+	ofs << "date:" << date << ","
+		<< "interval:" << interval << ","
+		<< "roomId:" << room << ","
+		<< "stuId:" << this->m_id << ","
+		<< "stuName:" << this->m_Name << ","
 		<< "status:" << status
 		<< endl;
 #pragma endregion
-
 	//写入完毕关闭文件流
 	ofs.close();
 	system("pause");

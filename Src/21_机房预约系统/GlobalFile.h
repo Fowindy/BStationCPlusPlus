@@ -12,7 +12,10 @@ using namespace std;	//使用标准命名空间
 #define	COMPUTER_FILE "computerRoom.txt"
 //订单文件
 #pragma region txt方式
-#define ORDER_FILE "order.txt"  
+//#define ORDER_FILE "order.txt"  
+#pragma endregion
+#pragma region csv方式
+#define ORDER_FILE "order.csv"  
 #pragma endregion
 
 
