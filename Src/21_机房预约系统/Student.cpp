@@ -137,6 +137,8 @@ void Student::showMyOrder()
 		system("cls");
 		return;
 	}
+	//记录编号
+	int index = 0;
 	for (int i = 0; i < of.m_Size; i++)
 	{
 		// string 转int
@@ -144,6 +146,7 @@ void Student::showMyOrder()
 		//利用atoi ( const char *)转int
 		if (atoi(of.m_OrderData[i]["stuId"].c_str()) == this->m_id)//查找自身预约
 		{
+			cout << "第" << ++index << "条" << "\t";
 			cout << "预约日期:周" << of.m_OrderData[i]["date"] << "\t";
 			cout << "预约时段:" << (of.m_OrderData[i]["roomId"] == "1" ? "上午" : "下午") << "\t";
 			cout << "预约机房:" << of.m_OrderData[i]["roomId"] << "号机房" << "\t";
@@ -224,7 +227,79 @@ void Student::showAllOrder()
 //取消预约
 void Student::cancelOrder()
 {
-
+	//创建预约文件对象
+	OrderFile of;
+	//判断预约对象中存储的条数是否为0,为0提示退出
+	if (of.m_Size == 0)
+	{
+		cout << "无预约记录!" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	//提示用户输入取消的标号
+	cout << "请输入需要取消的序号(0代表返回):" << endl;
+	//记录取消的编号
+	int index = 0;
+	//定义用户选择
+	int select = 0;
+	//建立文件编号和取消编号的映射关系容器
+	map<int, int>mIndex;
+	//取消自己预约成功或审核中的预约
+	//遍历所有预约
+	for (int i = 0; i < of.m_Size; i++)
+	{
+		//1.限定自己
+		if (atoi(of.m_OrderData[i]["stuId"].c_str()) == this->m_id)
+		{
+			//2.限定状态为预约成功:1或审核:2的预约
+			if (atoi(of.m_OrderData[i]["status"].c_str()) == 1 || atoi(of.m_OrderData[i]["status"].c_str()) == 2)
+			{
+				cout << ++index << "、";
+				//将映射关系加载进容器
+				mIndex[index] = i;
+				//将可取消的预约显示给用户选择
+				cout << "预约日期:周" << of.m_OrderData[i]["date"] << "\t";
+				cout << "预约时段:" << (of.m_OrderData[i]["roomId"] == "1" ? "上午" : "下午") << "\t";
+				cout << "预约机房:" << of.m_OrderData[i]["roomId"] << "号机房" << "\t";
+				string status = "预约状态:";//0:取消预约;1:审核中;2:已预约;-1:预约失败
+				int statusIndex = atoi(of.m_OrderData[i]["status"].c_str());
+				switch (statusIndex)
+				{
+				case 1://审核中
+					status += "审核中";
+					break;
+				case 2://已预约
+					status += "已预约";
+					break;
+				}
+				cout << status << endl;
+				//取消预约:将状态置为取消状态:0
+				//of.m_OrderData[i]["status"] = "0";
+			}
+		}
+	}
+	//限定用户选择
+	GlobalFile::LimitedInputNumber(select, 0, index);
+	if (select == 0)
+	{
+		cout << "返回上一级" << endl;
+		system("pause");
+		system("cls");
+		return;
+	}
+	else
+	{
+		//根据映射取消预约
+		of.m_OrderData[mIndex[select]]["status"] = "0";
+		//提示
+		cout << "取消成功!" << endl;
+	}
+	//更新预约状态
+	of.updateOrder();
+	system("pause");
+	system("cls");
+	return;
 }
 
 //析构函数
