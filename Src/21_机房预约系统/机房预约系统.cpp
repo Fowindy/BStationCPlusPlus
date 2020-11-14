@@ -278,7 +278,7 @@ void teacherMenu(Identity* identity)//父类指针传教师进来
 		}
 	}
 }
-int main()
+int main1()
 {
 	int select = 0;//用于接收用户的选择
 	while (true)

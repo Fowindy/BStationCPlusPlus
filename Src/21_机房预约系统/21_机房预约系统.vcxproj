@@ -122,6 +122,10 @@
     <ClCompile Include="OrderFile.cpp" />
     <ClCompile Include="Student.cpp" />
     <ClCompile Include="Teacher.cpp" />
+    <ClCompile Include="test.cpp">
+      <SubType>
+      </SubType>
+    </ClCompile>
     <ClCompile Include="机房预约系统.cpp">
       <SubType>
       </SubType>
