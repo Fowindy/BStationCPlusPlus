@@ -5,7 +5,8 @@
 using namespace std;
 int main()
 {
-	cout << "ÎÒÊÇÖÐ¹úÈË" << endl;
+	cout << "æˆ‘æ˜¯ä¸­å›½äºº" << endl;
+	cout<<"No BOM"<<endl;
 	system("pause");
 	return 0;
 }
